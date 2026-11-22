@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:30+02:00",
+ "updated": "2026-11-22T14:33+02:00",
  "status": "hit",
  "best": {
   "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -347,6 +347,33 @@
     {
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/it/7-days-premium-venedig-mestre.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "rom-2702-2p-weekend",
+   "destination": "Ρώμη Σαββατοκύριακο (για 2 άτομα, εξαίρεση: Ryanair)",
+   "country": "Ιταλία",
+   "from": "2027-02-26",
+   "to": "2027-02-28",
+   "exact": true,
+   "kind": "package",
+   "flight": "Ryanair απευθείας (low-cost, εξαίρεση αυτή τη φορά), 116 € για 2 άτομα (Παρ 22:50 → 23:59 Φιουμιτσίνο / επιστροφή Κυρ 10:55), μόνο μικρή τσάντα",
+   "hotel": "c-hotels Club House Roma (Aurelio, κοντά στο Βατικανό, με μετρό), Smart δίκλινο με διπλό κρεβάτι, 8,9/10 (4.347 κριτικές), καθαριότητα 9,2, 148 € για 2 βράδια για 2",
+   "total": 264,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:33+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/fco/270226/270228/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/it/club-house-roma.el.html?checkin=2027-02-26&checkout=2027-02-28&group_adults=2&no_rooms=1&group_children=0"
     }
    ]
   }
