@@ -69,14 +69,14 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
     <img src="icon-192.png" alt="">
     <div>
       <h1>Λαβράκι</h1>
-      <div class="sub">Ταξίδι 26/6–31/7/2027 από Αθήνα</div>
+      <div class="sub">Ταξίδι μέσα στο 2027 από Αθήνα</div>
     </div>
   </header>
 
   <section class="card" aria-live="polite">
     <span id="pill" class="pill">Φορτώνω…</span>
     <div class="stats">
-      <div class="stat"><b id="days">–</b><span>μέρες μέχρι τις 26/6</span></div>
+      <div class="stat"><b id="last">–</b><span>τελευταίος έλεγχος</span></div>
       <div class="stat"><b id="checks">–</b><span>έλεγχοι τιμών μέχρι τώρα</span></div>
     </div>
   </section>
@@ -95,11 +95,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
     <details>
       <summary>Τι ψάχνω</summary>
       <ul>
-        <li>Αναχώρηση από Αθήνα, 1 άτομο, 4–8 βράδια μέσα στο 26/6–31/7/2027.</li>
+        <li>Αναχώρηση από Αθήνα, 1 άτομο, 4–8 βράδια, οποτεδήποτε μέσα στο 2027.</li>
         <li>Νέα Υόρκη, Λισαβόνα, Μονακό (Νίκαια), Κόμο (Μιλάνο), Ελβετία, Νορβηγία, Δανία, Σουηδία, Φινλανδία.</li>
         <li>Απευθείας πτήσεις, χωρίς Ryanair, easyJet, Wizz Air και παρόμοιες.</li>
         <li>Ξενοδοχείο στο κέντρο, ≥ 8/10 στο Booking, καθαριότητα ≥ 8,5, χωρίς παράπονα για βρώμα.</li>
-        <li>Λαβράκι: πακέτο περίπου 25–30% κάτω από το τυπικό για την περίοδο, με ίδια ποιότητα.</li>
+        <li>Λαβράκι: πακέτο περίπου 25–30% κάτω από το τυπικό για τον ίδιο μήνα και προορισμό, με ίδια ποιότητα.</li>
       </ul>
     </details>
   </section>
@@ -140,6 +140,9 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 
     var log = Array.isArray(d.log) ? d.log : [];
     $("checks").textContent = log.filter(function(e){ return e.result !== "setup"; }).length;
+    var dates = log.map(function(e){ return String(e.date || ""); }).sort();
+    var lastIso = dates.length ? dates[dates.length - 1] : "";
+    $("last").textContent = lastIso ? fmtDate(lastIso).slice(0, 5) : "–";
 
     var box = $("best"); box.textContent = "";
     var b = d.best;
@@ -181,7 +184,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
       .catch(function(){ $("fresh").textContent = "Δεν φόρτωσαν τα δεδομένα. Έλεγξε τη σύνδεση και πάτα «Ανανέωση»."; });
   }
 
-  daysLeft();
   load();
   $("refresh").addEventListener("click", load);
   document.addEventListener("visibilitychange", function(){ if (!document.hidden) load(); });
