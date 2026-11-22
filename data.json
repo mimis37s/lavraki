@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:35:00+02:00",
+  "updated": "2026-11-22T13:50:00+02:00",
   "status": "hit",
   "best": {
     "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -185,6 +185,33 @@
         {
           "label": "Ξενοδοχείο για 2 (Booking)",
           "url": "https://www.booking.com/hotel/tr/ayasultanhotel.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
+        }
+      ]
+    },
+    {
+      "id": "ist-2701-2p-5star",
+      "destination": "Κωνσταντινούπολη 5★ (για 2 άτομα)",
+      "country": "Τουρκία",
+      "from": "2027-01-26",
+      "to": "2027-01-30",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας, 180 € για 2 άτομα (8:00 / επιστροφή 22:00)",
+      "hotel": "Shirisha Hotel Istanbul 5★, Σουλταναχμέτ (150 μ. από το κέντρο), θερμαινόμενη πισίνα, σπα, υδρομασάζ, Standard δίκλινο, 9,4/10 (317 κριτικές), καθαριότητα 9,6, 384 € για 4 βράδια για 2 (μη επιστρέψιμη) ή 427 € με δωρεάν ακύρωση",
+      "total": 564,
+      "savings": null,
+      "status": "near",
+      "checked": "2026-11-22",
+      "checkedAt": "2026-11-22T13:50:00+02:00",
+      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+      "links": [
+        {
+          "label": "Πτήση για 2 (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270126/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο για 2 (Booking)",
+          "url": "https://www.booking.com/hotel/tr/shirisha.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
         }
       ]
     }
