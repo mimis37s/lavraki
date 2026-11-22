@@ -1,31 +1,35 @@
 {
-  "updated": "2026-11-22T13:10:00+02:00",
-  "status": "none",
+  "updated": "2026-11-22T13:20:00+02:00",
+  "status": "hit",
   "best": {
-    "destination": "Κοπεγχάγη",
-    "dates": "5/7–9/7/2027 (4 βράδια)",
-    "flight": "Aegean, απευθείας, 214 € μετ' επιστροφής (Skyscanner, live)",
-    "hotel": "Bob W Copenhagen Østerbro, μικρό στούντιο με κουζίνα, 8,7/10 (4.471 κριτικές), καθαριότητα 9,1 · 571 € για 4 βράδια (Black Friday, από 815 €)",
-    "total": "785 €",
-    "typical": "~1.030 € (ίδιες πτήσεις + ίδιο δωμάτιο σε κανονική τιμή)",
-    "savings": "~24% κάτω, οριακά κάτω από το όριο λαβρακιού",
+    "destination": "Λίμνη Κόμο (Μπελάτζιο)",
+    "dates": "30/6–4/7/2027 (4 βράδια)",
+    "flight": "Aegean απευθείας Αθήνα–Μιλάνο, 177 € (7:40 / επιστροφή 10:15)",
+    "hotel": "Hotel Fioroni, Μπελάτζιο, μονόκλινο με πρωινό, 8,9/10, καθαριότητα 9,2, 340 € για 4 βράδια",
+    "total": "517 €",
+    "typical": "~1.050–1.150 € (ίδια πτήση + τα επόμενα φθηνότερα 8+ ξενοδοχεία στο Μπελάτζιο)",
+    "savings": "~50% κάτω από το τυπικό για Μπελάτζιο τέλη Ιουνίου",
     "checked": "2026-11-22",
     "links": [
       {
+        "label": "Πτήση (Google Flights)",
+        "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-06-30%20through%202027-07-04%20nonstop%20Aegean"
+      },
+      {
         "label": "Πτήση (Skyscanner)",
-        "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270705/270709/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270630/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
       },
       {
         "label": "Ξενοδοχείο (Booking)",
-        "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
+        "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
       }
     ]
   },
   "log": [
     {
       "date": "2026-11-22",
-      "result": "none",
-      "summary": "Live Skyscanner + Booking: 3 πακέτα, κανένα ακόμα λαβράκι. Λισαβόνα 15–20/1 560 € (~19% κάτω), Όσλο 12–17/1 666 € (~22%), Κοπεγχάγη 5–9/7 785 € (~24%, πτήση ακόμα 214 €)."
+      "result": "hit",
+      "summary": "ΛΑΒΡΑΚΙ (live): Λίμνη Κόμο/Μπελάτζιο 30/6–4/7, Aegean 177 € + Hotel Fioroni (8,9, καθαριότητα 9,2) 340 € = 517 €, ~50% κάτω. Επίσης: Λισαβόνα 560 €, Όσλο 666 €, Κοπεγχάγη 785 €."
     }
   ],
   "deals": [
@@ -121,35 +125,40 @@
           "url": "https://www.booking.com/hotel/pt/numa-i-voga-rooms-amp-apartments.el.html?checkin=2027-01-15&checkout=2027-01-20&group_adults=1&no_rooms=1&group_children=0"
         }
       ]
+    },
+    {
+      "id": "como-2706",
+      "destination": "Μιλάνο / λίμνη Κόμο (Μπελάτζιο)",
+      "country": "Ιταλία",
+      "from": "2027-06-30",
+      "to": "2027-07-04",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας Αθήνα–Μιλάνο Μαλπένσα, 177 € (7:40 / επιστροφή 10:15)",
+      "hotel": "Hotel Fioroni, Μπελάτζιο (λίμνη Κόμο), μονόκλινο με πρωινό και κλιματισμό, 8,9/10 (2.402 κριτικές), καθαριότητα 9,2, 340 € για 4 βράδια. Τα επόμενα φθηνότερα 8+ ξενοδοχεία στο Μπελάτζιο για τις ίδιες μέρες: ~830–970 €. Δωρεάν ακύρωση: δεν ελέγχθηκε",
+      "total": 517,
+      "savings": 50,
+      "status": "hit",
+      "checked": "2026-11-22",
+      "checkedAt": "2026-11-22T13:20:00+02:00",
+      "source": "Live Skyscanner + Booking",
+      "links": [
+        {
+          "label": "Πτήση (Google Flights)",
+          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-06-30%20through%202027-07-04%20nonstop%20Aegean"
+        },
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270630/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο (Booking)",
+          "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
+        }
+      ]
     }
   ],
   "candidates": [
-    {
-      "id": "mxp-2706",
-      "destination": "Μιλάνο / λίμνη Κόμο",
-      "country": "Ιταλία",
-      "from": "2027-06-26",
-      "to": "2027-07-04",
-      "exact": true,
-      "kind": "flight",
-      "flight": "Aegean απευθείας, ~162 € (64 + 98)",
-      "hotel": null,
-      "total": 162,
-      "savings": null,
-      "status": "normal",
-      "checked": "2026-11-22",
-      "source": "Σελίδες ναύλων Aegean",
-      "links": [
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270626/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχεία Κόμο (Booking)",
-          "url": "https://www.booking.com/searchresults.el.html?ss=Como&checkin=2027-06-26&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
-        }
-      ]
-    },
     {
       "id": "arn-2701",
       "destination": "Στοκχόλμη",
