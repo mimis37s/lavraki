@@ -1,6 +1,6 @@
 // Always ask the network first and skip the browser's HTTP cache, so the app shows the latest check.
 // The cache is only an offline fallback.
-const CACHE = "lavraki-v9";
+const CACHE = "lavraki-v10";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
