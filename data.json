@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:33+02:00",
+ "updated": "2026-11-22T14:35+02:00",
  "status": "hit",
  "best": {
   "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -347,6 +347,33 @@
     {
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/it/7-days-premium-venedig-mestre.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "mil-2702-2p-weekend",
+   "destination": "Μιλάνο Σαββατοκύριακο (για 2 άτομα, εξαίρεση: easyJet)",
+   "country": "Ιταλία",
+   "from": "2027-02-19",
+   "to": "2027-02-21",
+   "exact": true,
+   "kind": "package",
+   "flight": "easyJet απευθείας στη Μαλπένσα (low-cost, εξαίρεση αυτή τη φορά), 135 € για 2 άτομα (Παρ 11:05 → 12:45 / επιστροφή Κυρ 17:45), μόνο μικρή τσάντα",
+   "hotel": "Hotel Oregon (5,8 χλμ. από το κέντρο), δίκλινο με διπλό κρεβάτι, 8,2/10 (648 κριτικές), καθαριότητα 8,5, 152 € για 2 βράδια για 2",
+   "total": 287,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:35+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270219/270221/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/it/oregon-milano.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
    ]
   }
