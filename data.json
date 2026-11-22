@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:05:00+02:00",
+  "updated": "2026-11-22T13:10:00+02:00",
   "status": "none",
   "best": {
     "destination": "Κοπεγχάγη",
@@ -25,7 +25,7 @@
     {
       "date": "2026-11-22",
       "result": "none",
-      "summary": "Live Skyscanner + Booking: Όσλο 12–17/1 με Aegean 251 € + The Sweet (καθαριότητα 8,9, δωρεάν ακύρωση) 415 € = 666 €, ~22% κάτω. Κοπεγχάγη 5–9/7 785 € (~24% κάτω). Όχι ακόμα λαβράκι."
+      "summary": "Live Skyscanner + Booking: 3 πακέτα, κανένα ακόμα λαβράκι. Λισαβόνα 15–20/1 560 € (~19% κάτω), Όσλο 12–17/1 666 € (~22%), Κοπεγχάγη 5–9/7 785 € (~24%, πτήση ακόμα 214 €)."
     }
   ],
   "deals": [
@@ -58,7 +58,7 @@
           "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
         }
       ],
-      "checkedAt": "2026-11-22T13:35:00+02:00"
+      "checkedAt": "2026-11-22T13:00:00+02:00"
     },
     {
       "id": "osl-2701",
@@ -88,6 +88,37 @@
         {
           "label": "Ξενοδοχείο (Booking)",
           "url": "https://www.booking.com/hotel/no/the-sweet-by-the-apartments-company.el.html?checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0"
+        }
+      ]
+    },
+    {
+      "id": "lis-2701",
+      "destination": "Λισαβόνα",
+      "country": "Πορτογαλία",
+      "from": "2027-01-15",
+      "to": "2027-01-20",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας, 253 € (13:45 / επιστροφή 12:00). Φθηνότερα: 204 € με επιστροφή TAP 20:55 (φτάνει 3:10 τα ξημερώματα)",
+      "hotel": "Numa Lisbon Rato (Santo António, 1,4 χλμ. από το κέντρο, μετρό), Standard δωμάτιο, 8,9/10 (1.729 κριτικές), καθαριότητα 9,2, 307 € για 5 βράδια (Black Friday, από 439 €). Εναλλακτικά: Hotel Marquês de Pombal, 9,0, καθαριότητα 9,3, 385 € με δωρεάν ακύρωση",
+      "total": 560,
+      "savings": 19,
+      "status": "near",
+      "checked": "2026-11-22",
+      "checkedAt": "2026-11-22T13:10:00+02:00",
+      "source": "Live Skyscanner + Booking",
+      "links": [
+        {
+          "label": "Πτήση (Google Flights)",
+          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Lisbon%20from%20Athens%20on%202027-01-15%20through%202027-01-20%20nonstop%20Aegean"
+        },
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/lis/270115/270120/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο (Booking)",
+          "url": "https://www.booking.com/hotel/pt/numa-i-voga-rooms-amp-apartments.el.html?checkin=2027-01-15&checkout=2027-01-20&group_adults=1&no_rooms=1&group_children=0"
         }
       ]
     }
