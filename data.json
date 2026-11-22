@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:20:00+02:00",
+  "updated": "2026-11-22T13:35:00+02:00",
   "status": "hit",
   "best": {
     "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -154,6 +154,37 @@
         {
           "label": "Ξενοδοχείο (Booking)",
           "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
+        }
+      ]
+    },
+    {
+      "id": "ist-2701-2p",
+      "destination": "Κωνσταντινούπολη (για 2 άτομα)",
+      "country": "Τουρκία",
+      "from": "2027-01-26",
+      "to": "2027-01-30",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας, 180 € για 2 άτομα (8:00 / επιστροφή 22:00)",
+      "hotel": "Ayasultan Hotel, Σουλταναχμέτ (100 μ. από το κέντρο), Economy δίκλινο με πρωινό, 9,1/10 (4.529 κριτικές), καθαριότητα 9,1, 208 € για 4 βράδια για 2 (μη επιστρέψιμη) ή 245 € με δωρεάν ακύρωση",
+      "total": 388,
+      "savings": 20,
+      "status": "near",
+      "checked": "2026-11-22",
+      "checkedAt": "2026-11-22T13:35:00+02:00",
+      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+      "links": [
+        {
+          "label": "Πτήση για 2 (Google Flights)",
+          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Istanbul%20from%20Athens%20on%202027-01-26%20through%202027-01-30%20for%202%20adults%20nonstop%20Aegean"
+        },
+        {
+          "label": "Πτήση για 2 (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270126/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο για 2 (Booking)",
+          "url": "https://www.booking.com/hotel/tr/ayasultanhotel.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
         }
       ]
     }
