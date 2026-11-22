@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:40:00+02:00",
+  "updated": "2026-11-22T13:05:00+02:00",
   "status": "none",
   "best": {
     "destination": "Κοπεγχάγη",
@@ -25,7 +25,7 @@
     {
       "date": "2026-11-22",
       "result": "none",
-      "summary": "Live έλεγχος Skyscanner + Booking: Κοπεγχάγη 5–9/7, Aegean απευθείας 214 € + Bob W Østerbro (8,7, καθαριότητα 9,1) 571 € = 785 €, ~24% κάτω από την κανονική τιμή, οριακά όχι λαβράκι. Υποψήφια πτήσεις: Σεούλ ~402 € (Ethiopian), Βανκούβερ ~560 € (Condor), Μόναχο ~115 € (Sky Express)."
+      "summary": "Live Skyscanner + Booking: Όσλο 12–17/1 με Aegean 251 € + The Sweet (καθαριότητα 8,9, δωρεάν ακύρωση) 415 € = 666 €, ~22% κάτω. Κοπεγχάγη 5–9/7 785 € (~24% κάτω). Όχι ακόμα λαβράκι."
     }
   ],
   "deals": [
@@ -59,6 +59,37 @@
         }
       ],
       "checkedAt": "2026-11-22T13:35:00+02:00"
+    },
+    {
+      "id": "osl-2701",
+      "destination": "Όσλο",
+      "country": "Νορβηγία",
+      "from": "2027-01-12",
+      "to": "2027-01-17",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας, 251 € (8:30 / επιστροφή 12:20)",
+      "hotel": "The Apartments Company – The Sweet (Frogner, 1,3 χλμ. από το κέντρο), στούντιο 21 m² με κουζίνα, 8,2/10 (2.114 κριτικές), καθαριότητα 8,9, 415 € για 5 βράδια, δωρεάν ακύρωση",
+      "total": 666,
+      "savings": 22,
+      "status": "near",
+      "checked": "2026-11-22",
+      "checkedAt": "2026-11-22T13:05:00+02:00",
+      "source": "Live Skyscanner + Booking",
+      "links": [
+        {
+          "label": "Πτήση (Google Flights)",
+          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Oslo%20from%20Athens%20on%202027-01-12%20through%202027-01-17%20nonstop%20Aegean"
+        },
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/osl/270112/270117/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο (Booking)",
+          "url": "https://www.booking.com/hotel/no/the-sweet-by-the-apartments-company.el.html?checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0"
+        }
+      ]
     }
   ],
   "candidates": [
@@ -85,32 +116,6 @@
         {
           "label": "Ξενοδοχεία Κόμο (Booking)",
           "url": "https://www.booking.com/searchresults.el.html?ss=Como&checkin=2027-06-26&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
-        }
-      ]
-    },
-    {
-      "id": "osl-2701",
-      "destination": "Όσλο",
-      "country": "Νορβηγία",
-      "from": "2027-01-12",
-      "to": "2027-01-17",
-      "exact": true,
-      "kind": "flight",
-      "flight": "Aegean απευθείας, ~195 €",
-      "hotel": null,
-      "total": 195,
-      "savings": null,
-      "status": "normal",
-      "checked": "2026-11-22",
-      "source": "traveltips360.gr (προσφορά Aegean)",
-      "links": [
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/osl/270112/270117/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχεία (Booking)",
-          "url": "https://www.booking.com/searchresults.el.html?ss=Oslo&checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
         }
       ]
     },
