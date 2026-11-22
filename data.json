@@ -27,5 +27,184 @@
       "result": "none",
       "summary": "Live έλεγχος Skyscanner + Booking: Κοπεγχάγη 5–9/7, Aegean απευθείας 214 € + Bob W Østerbro (8,7, καθαριότητα 9,1) 571 € = 785 €, ~24% κάτω από την κανονική τιμή, οριακά όχι λαβράκι. Υποψήφια πτήσεις: Σεούλ ~402 € (Ethiopian), Βανκούβερ ~560 € (Condor), Μόναχο ~115 € (Sky Express)."
     }
+  ],
+  "deals": [
+    {
+      "id": "cph-2707",
+      "destination": "Κοπεγχάγη",
+      "country": "Δανία",
+      "from": "2027-07-05",
+      "to": "2027-07-09",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας, 214 € (7:45 / επιστροφή 11:00)",
+      "hotel": "Bob W Copenhagen Østerbro, στούντιο, 8,7/10, καθαριότητα 9,1, 571 € για 4 βράδια",
+      "total": 785,
+      "savings": 24,
+      "status": "near",
+      "checked": "2026-11-22",
+      "source": "Live Skyscanner + Booking",
+      "links": [
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270705/270709/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο (Booking)",
+          "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
+        }
+      ]
+    },
+    {
+      "id": "mxp-2706",
+      "destination": "Μιλάνο / λίμνη Κόμο",
+      "country": "Ιταλία",
+      "from": "2027-06-26",
+      "to": "2027-07-04",
+      "exact": true,
+      "kind": "flight",
+      "flight": "Aegean απευθείας, ~162 € (64 + 98)",
+      "hotel": null,
+      "total": 162,
+      "savings": null,
+      "status": "normal",
+      "checked": "2026-11-22",
+      "source": "Σελίδες ναύλων Aegean",
+      "links": [
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270626/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχεία Κόμο (Booking)",
+          "url": "https://www.booking.com/searchresults.el.html?ss=Como&checkin=2027-06-26&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
+        }
+      ]
+    },
+    {
+      "id": "osl-2701",
+      "destination": "Όσλο",
+      "country": "Νορβηγία",
+      "from": "2027-01-12",
+      "to": "2027-01-17",
+      "exact": true,
+      "kind": "flight",
+      "flight": "Aegean απευθείας, ~195 €",
+      "hotel": null,
+      "total": 195,
+      "savings": null,
+      "status": "normal",
+      "checked": "2026-11-22",
+      "source": "traveltips360.gr (προσφορά Aegean)",
+      "links": [
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/osl/270112/270117/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχεία (Booking)",
+          "url": "https://www.booking.com/searchresults.el.html?ss=Oslo&checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
+        }
+      ]
+    },
+    {
+      "id": "arn-2701",
+      "destination": "Στοκχόλμη",
+      "country": "Σουηδία",
+      "from": "2027-01-28",
+      "to": "2027-02-01",
+      "exact": true,
+      "kind": "flight",
+      "flight": "Aegean απευθείας, ~188 €",
+      "hotel": null,
+      "total": 188,
+      "savings": null,
+      "status": "normal",
+      "checked": "2026-11-22",
+      "source": "traveltips360.gr (προσφορά Aegean)",
+      "links": [
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/arn/270128/270201/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχεία (Booking)",
+          "url": "https://www.booking.com/searchresults.el.html?ss=Stockholm&checkin=2027-01-28&checkout=2027-02-01&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
+        }
+      ]
+    },
+    {
+      "id": "muc-2706",
+      "destination": "Μόναχο",
+      "country": "Γερμανία",
+      "from": "2027-06-04",
+      "to": "2027-06-08",
+      "exact": false,
+      "window": "Ιούνιος–Ιούλιος 2027",
+      "kind": "flight",
+      "flight": "Sky Express απευθείας, από ~115 € (μόνο χειραποσκευή)",
+      "hotel": null,
+      "total": 115,
+      "savings": null,
+      "status": "check",
+      "checked": "2026-11-22",
+      "source": "dinothetourist.com, θέλει επαλήθευση",
+      "links": [
+        {
+          "label": "Πτήση (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/muc/270604/270608/?adultsv2=1&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχεία (Booking)",
+          "url": "https://www.booking.com/searchresults.el.html?ss=Munich&checkin=2027-06-04&checkout=2027-06-08&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
+        }
+      ]
+    },
+    {
+      "id": "yvr-2705",
+      "destination": "Βανκούβερ",
+      "country": "Καναδάς",
+      "from": "2027-05-01",
+      "to": "2027-05-31",
+      "exact": false,
+      "window": "Μάιος 2027",
+      "kind": "flight",
+      "flight": "Condor, 1 στάση στη Φρανκφούρτη, ~560 €",
+      "hotel": null,
+      "total": 560,
+      "savings": null,
+      "status": "check",
+      "checked": "2026-11-22",
+      "source": "dinothetourist.com, θέλει επαλήθευση",
+      "links": [
+        {
+          "label": "Πτήσεις Μαΐου (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/yvr/2705/2705/?adultsv2=1&cabinclass=economy"
+        }
+      ]
+    },
+    {
+      "id": "icn-2701",
+      "destination": "Σεούλ",
+      "country": "Νότια Κορέα",
+      "from": "2027-01-01",
+      "to": "2027-06-30",
+      "exact": false,
+      "window": "έως Ιούνιο 2027",
+      "kind": "flight",
+      "flight": "Ethiopian, 1 στάση στην Αντίς Αμπέμπα, ~402 €, 2 × 23 kg",
+      "hotel": null,
+      "total": 402,
+      "savings": null,
+      "status": "check",
+      "checked": "2026-11-22",
+      "source": "dinothetourist.com (αγγελία Αυγ 2026), θέλει επαλήθευση",
+      "links": [
+        {
+          "label": "Πτήσεις (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/icn/2703/2703/?adultsv2=1&cabinclass=economy"
+        }
+      ]
+    }
   ]
 }
