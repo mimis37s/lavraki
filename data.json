@@ -1,374 +1,401 @@
 {
-  "updated": "2026-11-22T14:15:00+02:00",
-  "status": "hit",
-  "best": {
-    "destination": "Λίμνη Κόμο (Μπελάτζιο)",
-    "dates": "30/6–4/7/2027 (4 βράδια)",
-    "flight": "Aegean απευθείας Αθήνα–Μιλάνο, 177 € (7:40 / επιστροφή 10:15)",
-    "hotel": "Hotel Fioroni, Μπελάτζιο, μονόκλινο με πρωινό, 8,9/10, καθαριότητα 9,2, 340 € για 4 βράδια",
-    "total": "517 €",
-    "typical": "~1.050–1.150 € (ίδια πτήση + τα επόμενα φθηνότερα 8+ ξενοδοχεία στο Μπελάτζιο)",
-    "savings": "~50% κάτω από το τυπικό για Μπελάτζιο τέλη Ιουνίου",
-    "checked": "2026-11-22",
-    "links": [
-      {
-        "label": "Πτήση (Google Flights)",
-        "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-06-30%20through%202027-07-04%20nonstop%20Aegean"
-      },
-      {
-        "label": "Πτήση (Skyscanner)",
-        "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270630/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
-      },
-      {
-        "label": "Ξενοδοχείο (Booking)",
-        "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
-      }
-    ]
-  },
-  "log": [
-    {
-      "date": "2026-11-22",
-      "result": "hit",
-      "summary": "ΛΑΒΡΑΚΙ (live): Λίμνη Κόμο/Μπελάτζιο 30/6–4/7, Aegean 177 € + Hotel Fioroni (8,9, καθαριότητα 9,2) 340 € = 517 €, ~50% κάτω. Επίσης: Λισαβόνα 560 €, Όσλο 666 €, Κοπεγχάγη 785 €."
-    }
-  ],
-  "deals": [
-    {
-      "id": "cph-2707",
-      "destination": "Κοπεγχάγη",
-      "country": "Δανία",
-      "from": "2027-07-05",
-      "to": "2027-07-09",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 214 € (7:45 / επιστροφή 11:00)",
-      "hotel": "Bob W Copenhagen Østerbro, στούντιο, 8,7/10, καθαριότητα 9,1, 571 € για 4 βράδια",
-      "total": 785,
-      "savings": 24,
-      "status": "near",
-      "checked": "2026-11-22",
-      "source": "Live Skyscanner + Booking",
-      "links": [
-        {
-          "label": "Πτήση (Google Flights)",
-          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Copenhagen%20from%20Athens%20on%202027-07-05%20through%202027-07-09%20nonstop%20Aegean"
-        },
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270705/270709/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο (Booking)",
-          "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
-        }
-      ],
-      "checkedAt": "2026-11-22T13:00:00+02:00"
-    },
-    {
-      "id": "osl-2701",
-      "destination": "Όσλο",
-      "country": "Νορβηγία",
-      "from": "2027-01-12",
-      "to": "2027-01-17",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 251 € (8:30 / επιστροφή 12:20)",
-      "hotel": "The Apartments Company – The Sweet (Frogner, 1,3 χλμ. από το κέντρο), στούντιο 21 m² με κουζίνα, 8,2/10 (2.114 κριτικές), καθαριότητα 8,9, 415 € για 5 βράδια, δωρεάν ακύρωση",
-      "total": 666,
-      "savings": 22,
-      "status": "near",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T13:05:00+02:00",
-      "source": "Live Skyscanner + Booking",
-      "links": [
-        {
-          "label": "Πτήση (Google Flights)",
-          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Oslo%20from%20Athens%20on%202027-01-12%20through%202027-01-17%20nonstop%20Aegean"
-        },
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/osl/270112/270117/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο (Booking)",
-          "url": "https://www.booking.com/hotel/no/the-sweet-by-the-apartments-company.el.html?checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0"
-        }
-      ]
-    },
-    {
-      "id": "lis-2701",
-      "destination": "Λισαβόνα",
-      "country": "Πορτογαλία",
-      "from": "2027-01-15",
-      "to": "2027-01-20",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 253 € (13:45 / επιστροφή 12:00). Φθηνότερα: 204 € με επιστροφή TAP 20:55 (φτάνει 3:10 τα ξημερώματα)",
-      "hotel": "Numa Lisbon Rato (Santo António, 1,4 χλμ. από το κέντρο, μετρό), Standard δωμάτιο, 8,9/10 (1.729 κριτικές), καθαριότητα 9,2, 307 € για 5 βράδια (Black Friday, από 439 €). Εναλλακτικά: Hotel Marquês de Pombal, 9,0, καθαριότητα 9,3, 385 € με δωρεάν ακύρωση",
-      "total": 560,
-      "savings": 19,
-      "status": "near",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T13:10:00+02:00",
-      "source": "Live Skyscanner + Booking",
-      "links": [
-        {
-          "label": "Πτήση (Google Flights)",
-          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Lisbon%20from%20Athens%20on%202027-01-15%20through%202027-01-20%20nonstop%20Aegean"
-        },
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/lis/270115/270120/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο (Booking)",
-          "url": "https://www.booking.com/hotel/pt/numa-i-voga-rooms-amp-apartments.el.html?checkin=2027-01-15&checkout=2027-01-20&group_adults=1&no_rooms=1&group_children=0"
-        }
-      ]
-    },
-    {
-      "id": "como-2706",
-      "destination": "Μιλάνο / λίμνη Κόμο (Μπελάτζιο)",
-      "country": "Ιταλία",
-      "from": "2027-06-30",
-      "to": "2027-07-04",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας Αθήνα–Μιλάνο Μαλπένσα, 177 € (7:40 / επιστροφή 10:15)",
-      "hotel": "Hotel Fioroni, Μπελάτζιο (λίμνη Κόμο), μονόκλινο με πρωινό και κλιματισμό, 8,9/10 (2.402 κριτικές), καθαριότητα 9,2, 340 € για 4 βράδια. Τα επόμενα φθηνότερα 8+ ξενοδοχεία στο Μπελάτζιο για τις ίδιες μέρες: ~830–970 €. Δωρεάν ακύρωση: δεν ελέγχθηκε",
-      "total": 517,
-      "savings": 50,
-      "status": "hit",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T13:20:00+02:00",
-      "source": "Live Skyscanner + Booking",
-      "links": [
-        {
-          "label": "Πτήση (Google Flights)",
-          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-06-30%20through%202027-07-04%20nonstop%20Aegean"
-        },
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270630/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο (Booking)",
-          "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
-        }
-      ]
-    },
-    {
-      "id": "ist-2701-2p",
-      "destination": "Κωνσταντινούπολη (για 2 άτομα)",
-      "country": "Τουρκία",
-      "from": "2027-01-26",
-      "to": "2027-01-30",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 180 € για 2 άτομα (8:00 / επιστροφή 22:00)",
-      "hotel": "Ayasultan Hotel, Σουλταναχμέτ (100 μ. από το κέντρο), Economy δίκλινο με πρωινό, 9,1/10 (4.529 κριτικές), καθαριότητα 9,1, 208 € για 4 βράδια για 2 (μη επιστρέψιμη) ή 245 € με δωρεάν ακύρωση",
-      "total": 388,
-      "savings": 20,
-      "status": "near",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T13:35:00+02:00",
-      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
-      "links": [
-        {
-          "label": "Πτήση για 2 (Google Flights)",
-          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Istanbul%20from%20Athens%20on%202027-01-26%20through%202027-01-30%20for%202%20adults%20nonstop%20Aegean"
-        },
-        {
-          "label": "Πτήση για 2 (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270126/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο για 2 (Booking)",
-          "url": "https://www.booking.com/hotel/tr/ayasultanhotel.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
-        }
-      ]
-    },
-    {
-      "id": "ist-2701-2p-5star",
-      "destination": "Κωνσταντινούπολη 5★ (για 2 άτομα)",
-      "country": "Τουρκία",
-      "from": "2027-01-26",
-      "to": "2027-01-30",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 180 € για 2 άτομα (8:00 / επιστροφή 22:00)",
-      "hotel": "Shirisha Hotel Istanbul 5★, Σουλταναχμέτ (150 μ. από το κέντρο), θερμαινόμενη πισίνα, σπα, υδρομασάζ, Standard δίκλινο, 9,4/10 (317 κριτικές), καθαριότητα 9,6, 384 € για 4 βράδια για 2 (μη επιστρέψιμη) ή 427 € με δωρεάν ακύρωση",
-      "total": 564,
-      "savings": null,
-      "status": "near",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T13:50:00+02:00",
-      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
-      "links": [
-        {
-          "label": "Πτήση για 2 (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270126/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο για 2 (Booking)",
-          "url": "https://www.booking.com/hotel/tr/shirisha.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
-        }
-      ]
-    },
-    {
-      "id": "ist-2701-2p-weekend",
-      "destination": "Κωνσταντινούπολη Σαββατοκύριακο (για 2 άτομα)",
-      "country": "Τουρκία",
-      "from": "2027-01-29",
-      "to": "2027-01-31",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 199 € για 2 άτομα (Παρ 18:30 / επιστροφή Κυρ 16:45)",
-      "hotel": "Burak Apart, Σουλταναχμέτ (600 μ. από το κέντρο), Standard διπλό, 8,8/10 (453 κριτικές), καθαριότητα 8,6, 42 € για 2 βράδια για 2 (μη επιστρέψιμη) ή 46 € με δωρεάν ακύρωση. Εναλλακτικά: Sofia Konaklama (μόνο ενήλικες), 8,6, καθαριότητα 8,6, 48 €",
-      "total": 241,
-      "savings": null,
-      "status": "near",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T14:05:00+02:00",
-      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
-      "links": [
-        {
-          "label": "Πτήση για 2 (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270129/270131/?adultsv2=2&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο για 2 (Booking)",
-          "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-01-29&checkout=2027-01-31&group_adults=2&no_rooms=1&group_children=0"
-        }
-      ]
-    },
-    {
-      "id": "ist-2702-2p-weekend",
-      "destination": "Κωνσταντινούπολη Σαββατοκύριακο (για 2 άτομα)",
-      "country": "Τουρκία",
-      "from": "2027-02-26",
-      "to": "2027-02-28",
-      "exact": true,
-      "kind": "package",
-      "flight": "Aegean απευθείας, 211 € για 2 άτομα (Παρ 13:10 / επιστροφή Κυρ 11:30)",
-      "hotel": "Burak Apart, Σουλταναχμέτ (600 μ. από το κέντρο), Standard διπλό, 8,8/10 (453 κριτικές), καθαριότητα 8,6, 42 € για 2 βράδια για 2",
-      "total": 253,
-      "savings": null,
-      "status": "near",
-      "checked": "2026-11-22",
-      "checkedAt": "2026-11-22T14:15:00+02:00",
-      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
-      "links": [
-        {
-          "label": "Πτήση για 2 (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270226/270228/?adultsv2=2&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχείο για 2 (Booking)",
-          "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-02-26&checkout=2027-02-28&group_adults=2&no_rooms=1&group_children=0"
-        }
-      ]
-    }
-  ],
-  "candidates": [
-    {
-      "id": "arn-2701",
-      "destination": "Στοκχόλμη",
-      "country": "Σουηδία",
-      "from": "2027-01-28",
-      "to": "2027-02-01",
-      "exact": true,
-      "kind": "flight",
-      "flight": "Aegean απευθείας, ~188 €",
-      "hotel": null,
-      "total": 188,
-      "savings": null,
-      "status": "normal",
-      "checked": "2026-11-22",
-      "source": "traveltips360.gr (προσφορά Aegean)",
-      "links": [
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/arn/270128/270201/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχεία (Booking)",
-          "url": "https://www.booking.com/searchresults.el.html?ss=Stockholm&checkin=2027-01-28&checkout=2027-02-01&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
-        }
-      ]
-    },
-    {
-      "id": "muc-2706",
-      "destination": "Μόναχο",
-      "country": "Γερμανία",
-      "from": "2027-06-04",
-      "to": "2027-06-08",
-      "exact": false,
-      "window": "Ιούνιος–Ιούλιος 2027",
-      "kind": "flight",
-      "flight": "Sky Express απευθείας, από ~115 € (μόνο χειραποσκευή)",
-      "hotel": null,
-      "total": 115,
-      "savings": null,
-      "status": "check",
-      "checked": "2026-11-22",
-      "source": "dinothetourist.com, θέλει επαλήθευση",
-      "links": [
-        {
-          "label": "Πτήση (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/muc/270604/270608/?adultsv2=1&cabinclass=economy&preferdirects=true"
-        },
-        {
-          "label": "Ξενοδοχεία (Booking)",
-          "url": "https://www.booking.com/searchresults.el.html?ss=Munich&checkin=2027-06-04&checkout=2027-06-08&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
-        }
-      ]
-    },
-    {
-      "id": "yvr-2705",
-      "destination": "Βανκούβερ",
-      "country": "Καναδάς",
-      "from": "2027-05-01",
-      "to": "2027-05-31",
-      "exact": false,
-      "window": "Μάιος 2027",
-      "kind": "flight",
-      "flight": "Condor, 1 στάση στη Φρανκφούρτη, ~560 €",
-      "hotel": null,
-      "total": 560,
-      "savings": null,
-      "status": "check",
-      "checked": "2026-11-22",
-      "source": "dinothetourist.com, θέλει επαλήθευση",
-      "links": [
-        {
-          "label": "Πτήσεις Μαΐου (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/yvr/2705/2705/?adultsv2=1&cabinclass=economy"
-        }
-      ]
-    },
-    {
-      "id": "icn-2701",
-      "destination": "Σεούλ",
-      "country": "Νότια Κορέα",
-      "from": "2027-01-01",
-      "to": "2027-06-30",
-      "exact": false,
-      "window": "έως Ιούνιο 2027",
-      "kind": "flight",
-      "flight": "Ethiopian, 1 στάση στην Αντίς Αμπέμπα, ~402 €, 2 × 23 kg",
-      "hotel": null,
-      "total": 402,
-      "savings": null,
-      "status": "check",
-      "checked": "2026-11-22",
-      "source": "dinothetourist.com (αγγελία Αυγ 2026), θέλει επαλήθευση",
-      "links": [
-        {
-          "label": "Πτήσεις (Skyscanner)",
-          "url": "https://www.skyscanner.gr/transport/flights/ath/icn/2703/2703/?adultsv2=1&cabinclass=economy"
-        }
-      ]
-    }
+ "updated": "2026-11-22T14:24+02:00",
+ "status": "hit",
+ "best": {
+  "destination": "Λίμνη Κόμο (Μπελάτζιο)",
+  "dates": "30/6–4/7/2027 (4 βράδια)",
+  "flight": "Aegean απευθείας Αθήνα–Μιλάνο, 177 € (7:40 / επιστροφή 10:15)",
+  "hotel": "Hotel Fioroni, Μπελάτζιο, μονόκλινο με πρωινό, 8,9/10, καθαριότητα 9,2, 340 € για 4 βράδια",
+  "total": "517 €",
+  "typical": "~1.050–1.150 € (ίδια πτήση + τα επόμενα φθηνότερα 8+ ξενοδοχεία στο Μπελάτζιο)",
+  "savings": "~50% κάτω από το τυπικό για Μπελάτζιο τέλη Ιουνίου",
+  "checked": "2026-11-22",
+  "links": [
+   {
+    "label": "Πτήση (Google Flights)",
+    "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-06-30%20through%202027-07-04%20nonstop%20Aegean"
+   },
+   {
+    "label": "Πτήση (Skyscanner)",
+    "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270630/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
+   },
+   {
+    "label": "Ξενοδοχείο (Booking)",
+    "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
+   }
   ]
+ },
+ "log": [
+  {
+   "date": "2026-11-22",
+   "result": "hit",
+   "summary": "ΛΑΒΡΑΚΙ (live): Λίμνη Κόμο/Μπελάτζιο 30/6–4/7, Aegean 177 € + Hotel Fioroni (8,9, καθαριότητα 9,2) 340 € = 517 €, ~50% κάτω. Επίσης: Λισαβόνα 560 €, Όσλο 666 €, Κοπεγχάγη 785 €."
+  }
+ ],
+ "deals": [
+  {
+   "id": "cph-2707",
+   "destination": "Κοπεγχάγη",
+   "country": "Δανία",
+   "from": "2027-07-05",
+   "to": "2027-07-09",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 214 € (7:45 / επιστροφή 11:00)",
+   "hotel": "Bob W Copenhagen Østerbro, στούντιο, 8,7/10, καθαριότητα 9,1, 571 € για 4 βράδια",
+   "total": 785,
+   "savings": 24,
+   "status": "near",
+   "checked": "2026-11-22",
+   "source": "Live Skyscanner + Booking",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Copenhagen%20from%20Athens%20on%202027-07-05%20through%202027-07-09%20nonstop%20Aegean"
+    },
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270705/270709/?adultsv2=1&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο (Booking)",
+     "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
+    }
+   ],
+   "checkedAt": "2026-11-22T13:00:00+02:00"
+  },
+  {
+   "id": "osl-2701",
+   "destination": "Όσλο",
+   "country": "Νορβηγία",
+   "from": "2027-01-12",
+   "to": "2027-01-17",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 251 € (8:30 / επιστροφή 12:20)",
+   "hotel": "The Apartments Company – The Sweet (Frogner, 1,3 χλμ. από το κέντρο), στούντιο 21 m² με κουζίνα, 8,2/10 (2.114 κριτικές), καθαριότητα 8,9, 415 € για 5 βράδια, δωρεάν ακύρωση",
+   "total": 666,
+   "savings": 22,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T13:05:00+02:00",
+   "source": "Live Skyscanner + Booking",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Oslo%20from%20Athens%20on%202027-01-12%20through%202027-01-17%20nonstop%20Aegean"
+    },
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/osl/270112/270117/?adultsv2=1&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο (Booking)",
+     "url": "https://www.booking.com/hotel/no/the-sweet-by-the-apartments-company.el.html?checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "lis-2701",
+   "destination": "Λισαβόνα",
+   "country": "Πορτογαλία",
+   "from": "2027-01-15",
+   "to": "2027-01-20",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 253 € (13:45 / επιστροφή 12:00). Φθηνότερα: 204 € με επιστροφή TAP 20:55 (φτάνει 3:10 τα ξημερώματα)",
+   "hotel": "Numa Lisbon Rato (Santo António, 1,4 χλμ. από το κέντρο, μετρό), Standard δωμάτιο, 8,9/10 (1.729 κριτικές), καθαριότητα 9,2, 307 € για 5 βράδια (Black Friday, από 439 €). Εναλλακτικά: Hotel Marquês de Pombal, 9,0, καθαριότητα 9,3, 385 € με δωρεάν ακύρωση",
+   "total": 560,
+   "savings": 19,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T13:10:00+02:00",
+   "source": "Live Skyscanner + Booking",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Lisbon%20from%20Athens%20on%202027-01-15%20through%202027-01-20%20nonstop%20Aegean"
+    },
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/lis/270115/270120/?adultsv2=1&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο (Booking)",
+     "url": "https://www.booking.com/hotel/pt/numa-i-voga-rooms-amp-apartments.el.html?checkin=2027-01-15&checkout=2027-01-20&group_adults=1&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "como-2706",
+   "destination": "Μιλάνο / λίμνη Κόμο (Μπελάτζιο)",
+   "country": "Ιταλία",
+   "from": "2027-06-30",
+   "to": "2027-07-04",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας Αθήνα–Μιλάνο Μαλπένσα, 177 € (7:40 / επιστροφή 10:15)",
+   "hotel": "Hotel Fioroni, Μπελάτζιο (λίμνη Κόμο), μονόκλινο με πρωινό και κλιματισμό, 8,9/10 (2.402 κριτικές), καθαριότητα 9,2, 340 € για 4 βράδια. Τα επόμενα φθηνότερα 8+ ξενοδοχεία στο Μπελάτζιο για τις ίδιες μέρες: ~830–970 €. Δωρεάν ακύρωση: δεν ελέγχθηκε",
+   "total": 517,
+   "savings": 50,
+   "status": "hit",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T13:20:00+02:00",
+   "source": "Live Skyscanner + Booking",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-06-30%20through%202027-07-04%20nonstop%20Aegean"
+    },
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/mxp/270630/270704/?adultsv2=1&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο (Booking)",
+     "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "ist-2701-2p",
+   "destination": "Κωνσταντινούπολη (για 2 άτομα)",
+   "country": "Τουρκία",
+   "from": "2027-01-26",
+   "to": "2027-01-30",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 180 € για 2 άτομα (8:00 / επιστροφή 22:00)",
+   "hotel": "Ayasultan Hotel, Σουλταναχμέτ (100 μ. από το κέντρο), Economy δίκλινο με πρωινό, 9,1/10 (4.529 κριτικές), καθαριότητα 9,1, 208 € για 4 βράδια για 2 (μη επιστρέψιμη) ή 245 € με δωρεάν ακύρωση",
+   "total": 388,
+   "savings": 20,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T13:35:00+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Istanbul%20from%20Athens%20on%202027-01-26%20through%202027-01-30%20for%202%20adults%20nonstop%20Aegean"
+    },
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270126/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/tr/ayasultanhotel.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "ist-2701-2p-5star",
+   "destination": "Κωνσταντινούπολη 5★ (για 2 άτομα)",
+   "country": "Τουρκία",
+   "from": "2027-01-26",
+   "to": "2027-01-30",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 180 € για 2 άτομα (8:00 / επιστροφή 22:00)",
+   "hotel": "Shirisha Hotel Istanbul 5★, Σουλταναχμέτ (150 μ. από το κέντρο), θερμαινόμενη πισίνα, σπα, υδρομασάζ, Standard δίκλινο, 9,4/10 (317 κριτικές), καθαριότητα 9,6, 384 € για 4 βράδια για 2 (μη επιστρέψιμη) ή 427 € με δωρεάν ακύρωση",
+   "total": 564,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T13:50:00+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270126/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/tr/shirisha.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "ist-2701-2p-weekend",
+   "destination": "Κωνσταντινούπολη Σαββατοκύριακο (για 2 άτομα)",
+   "country": "Τουρκία",
+   "from": "2027-01-29",
+   "to": "2027-01-31",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 199 € για 2 άτομα (Παρ 18:30 / επιστροφή Κυρ 16:45)",
+   "hotel": "Burak Apart, Σουλταναχμέτ (600 μ. από το κέντρο), Standard διπλό, 8,8/10 (453 κριτικές), καθαριότητα 8,6, 42 € για 2 βράδια για 2 (μη επιστρέψιμη) ή 46 € με δωρεάν ακύρωση. Εναλλακτικά: Sofia Konaklama (μόνο ενήλικες), 8,6, καθαριότητα 8,6, 48 €",
+   "total": 241,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:05:00+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270129/270131/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-01-29&checkout=2027-01-31&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "ist-2702-2p-weekend",
+   "destination": "Κωνσταντινούπολη Σαββατοκύριακο (για 2 άτομα)",
+   "country": "Τουρκία",
+   "from": "2027-02-26",
+   "to": "2027-02-28",
+   "exact": true,
+   "kind": "package",
+   "flight": "Aegean απευθείας, 211 € για 2 άτομα (Παρ 13:10 / επιστροφή Κυρ 11:30)",
+   "hotel": "Burak Apart, Σουλταναχμέτ (600 μ. από το κέντρο), Standard διπλό, 8,8/10 (453 κριτικές), καθαριότητα 8,6, 42 € για 2 βράδια για 2",
+   "total": 253,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:15:00+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270226/270228/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-02-26&checkout=2027-02-28&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "vie-2702-2p-weekend",
+   "destination": "Βιέννη Σαββατοκύριακο (για 2 άτομα)",
+   "country": "Αυστρία",
+   "from": "2027-02-19",
+   "to": "2027-02-21",
+   "exact": true,
+   "kind": "package",
+   "flight": "Austrian Airlines απευθείας, 210 € για 2 άτομα (Παρ 13:25 / επιστροφή Κυρ 09:30)",
+   "hotel": "lyf Schönbrunn Vienna (Meidling, κοντά στα ανάκτορα Σένμπρουν), στούντιο με διπλό κρεβάτι, 8,9/10 (4.005 κριτικές), καθαριότητα 9,2, 112 € για 2 βράδια για 2",
+   "total": 322,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:24+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/270219/270221/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/at/lyf-schonbrunn-vienna.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "id": "arn-2701",
+   "destination": "Στοκχόλμη",
+   "country": "Σουηδία",
+   "from": "2027-01-28",
+   "to": "2027-02-01",
+   "exact": true,
+   "kind": "flight",
+   "flight": "Aegean απευθείας, ~188 €",
+   "hotel": null,
+   "total": 188,
+   "savings": null,
+   "status": "normal",
+   "checked": "2026-11-22",
+   "source": "traveltips360.gr (προσφορά Aegean)",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/arn/270128/270201/?adultsv2=1&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχεία (Booking)",
+     "url": "https://www.booking.com/searchresults.el.html?ss=Stockholm&checkin=2027-01-28&checkout=2027-02-01&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
+    }
+   ]
+  },
+  {
+   "id": "muc-2706",
+   "destination": "Μόναχο",
+   "country": "Γερμανία",
+   "from": "2027-06-04",
+   "to": "2027-06-08",
+   "exact": false,
+   "window": "Ιούνιος–Ιούλιος 2027",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, από ~115 € (μόνο χειραποσκευή)",
+   "hotel": null,
+   "total": 115,
+   "savings": null,
+   "status": "check",
+   "checked": "2026-11-22",
+   "source": "dinothetourist.com, θέλει επαλήθευση",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/muc/270604/270608/?adultsv2=1&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχεία (Booking)",
+     "url": "https://www.booking.com/searchresults.el.html?ss=Munich&checkin=2027-06-04&checkout=2027-06-08&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
+    }
+   ]
+  },
+  {
+   "id": "yvr-2705",
+   "destination": "Βανκούβερ",
+   "country": "Καναδάς",
+   "from": "2027-05-01",
+   "to": "2027-05-31",
+   "exact": false,
+   "window": "Μάιος 2027",
+   "kind": "flight",
+   "flight": "Condor, 1 στάση στη Φρανκφούρτη, ~560 €",
+   "hotel": null,
+   "total": 560,
+   "savings": null,
+   "status": "check",
+   "checked": "2026-11-22",
+   "source": "dinothetourist.com, θέλει επαλήθευση",
+   "links": [
+    {
+     "label": "Πτήσεις Μαΐου (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/yvr/2705/2705/?adultsv2=1&cabinclass=economy"
+    }
+   ]
+  },
+  {
+   "id": "icn-2701",
+   "destination": "Σεούλ",
+   "country": "Νότια Κορέα",
+   "from": "2027-01-01",
+   "to": "2027-06-30",
+   "exact": false,
+   "window": "έως Ιούνιο 2027",
+   "kind": "flight",
+   "flight": "Ethiopian, 1 στάση στην Αντίς Αμπέμπα, ~402 €, 2 × 23 kg",
+   "hotel": null,
+   "total": 402,
+   "savings": null,
+   "status": "check",
+   "checked": "2026-11-22",
+   "source": "dinothetourist.com (αγγελία Αυγ 2026), θέλει επαλήθευση",
+   "links": [
+    {
+     "label": "Πτήσεις (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/icn/2703/2703/?adultsv2=1&cabinclass=economy"
+    }
+   ]
+  }
+ ]
 }
