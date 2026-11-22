@@ -1,0 +1,47 @@
+name: Αυτόματος έλεγχος τιμών
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # every 3 hours
+  workflow_dispatch: {}       # "Run workflow" button for a manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests
+        run: python3 -m unittest discover -s engine/tests
+
+      - name: Fetch prices
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+          LITEAPI_KEY: ${{ secrets.LITEAPI_KEY }}
+        run: python3 engine/run.py
+
+      - name: Save results
+        run: |
+          git config user.name "lavraki-bot"
+          git config user.email "lavraki-bot@users.noreply.github.com"
+          git add auto.json 2>/dev/null || true
+          git add engine/history.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Τίποτα καινούργιο."; exit 0; fi
+          git commit -q -m "Αυτόματες τιμές $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do
+            git pull --rebase -q && git push -q && exit 0
+            sleep 7
+          done
+          exit 1
