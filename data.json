@@ -62,7 +62,10 @@
      "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
     }
    ],
-   "checkedAt": "2026-11-22T13:00:00+02:00"
+   "checkedAt": "2026-11-22T13:00:00+02:00",
+   "people": 1,
+   "lowcost": false,
+   "city": "Κοπεγχάγη"
   },
   {
    "id": "osl-2701",
@@ -93,7 +96,10 @@
      "label": "Ξενοδοχείο (Booking)",
      "url": "https://www.booking.com/hotel/no/the-sweet-by-the-apartments-company.el.html?checkin=2027-01-12&checkout=2027-01-17&group_adults=1&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Όσλο"
   },
   {
    "id": "lis-2701",
@@ -124,7 +130,10 @@
      "label": "Ξενοδοχείο (Booking)",
      "url": "https://www.booking.com/hotel/pt/numa-i-voga-rooms-amp-apartments.el.html?checkin=2027-01-15&checkout=2027-01-20&group_adults=1&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Λισαβόνα"
   },
   {
    "id": "como-2706",
@@ -155,7 +164,10 @@
      "label": "Ξενοδοχείο (Booking)",
      "url": "https://www.booking.com/hotel/it/fioroni.el.html?checkin=2027-06-30&checkout=2027-07-04&group_adults=1&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Λίμνη Κόμο"
   },
   {
    "id": "ist-2701-2p",
@@ -186,7 +198,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/tr/ayasultanhotel.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Κωνσταντινούπολη"
   },
   {
    "id": "ist-2701-2p-5star",
@@ -213,7 +228,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/tr/shirisha.el.html?checkin=2027-01-26&checkout=2027-01-30&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Κωνσταντινούπολη 5★"
   },
   {
    "id": "ist-2701-2p-weekend",
@@ -240,7 +258,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-01-29&checkout=2027-01-31&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Κωνσταντινούπολη"
   },
   {
    "id": "ist-2702-2p-weekend",
@@ -267,7 +288,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-02-26&checkout=2027-02-28&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Κωνσταντινούπολη"
   },
   {
    "id": "vie-2702-2p-weekend",
@@ -294,7 +318,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/at/lyf-schonbrunn-vienna.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Βιέννη"
   },
   {
    "id": "bud-2702-2p-weekend",
@@ -321,7 +348,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/hu/nexto-dormero-hotel-budapest.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": true,
+   "city": "Βουδαπέστη"
   },
   {
    "id": "vce-2702-2p-weekend",
@@ -348,7 +378,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/it/7-days-premium-venedig-mestre.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": true,
+   "city": "Βενετία"
   },
   {
    "id": "mil-2702-2p-weekend",
@@ -375,7 +408,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/it/oregon-milano.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": true,
+   "city": "Μιλάνο"
   },
   {
    "id": "nyc-2706-2p",
@@ -402,7 +438,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/us/candlewood-suites-new-york-city.el.html?checkin=2027-06-28&checkout=2027-07-04&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Νέα Υόρκη"
   },
   {
    "id": "nyc-2707-2p",
@@ -429,7 +468,10 @@
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/us/suites-new-york-manhattan-downtown.el.html?checkin=2027-07-19&checkout=2027-07-25&group_adults=2&no_rooms=1&group_children=0"
     }
-   ]
+   ],
+   "people": 2,
+   "lowcost": false,
+   "city": "Νέα Υόρκη"
   }
  ],
  "candidates": [
@@ -457,7 +499,10 @@
      "label": "Ξενοδοχεία (Booking)",
      "url": "https://www.booking.com/searchresults.el.html?ss=Stockholm&checkin=2027-01-28&checkout=2027-02-01&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Στοκχόλμη"
   },
   {
    "id": "muc-2706",
@@ -484,7 +529,10 @@
      "label": "Ξενοδοχεία (Booking)",
      "url": "https://www.booking.com/searchresults.el.html?ss=Munich&checkin=2027-06-04&checkout=2027-06-08&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Μόναχο"
   },
   {
    "id": "yvr-2705",
@@ -507,7 +555,10 @@
      "label": "Πτήσεις Μαΐου (Skyscanner)",
      "url": "https://www.skyscanner.gr/transport/flights/ath/yvr/2705/2705/?adultsv2=1&cabinclass=economy"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Βανκούβερ"
   },
   {
    "id": "icn-2701",
@@ -530,7 +581,10 @@
      "label": "Πτήσεις (Skyscanner)",
      "url": "https://www.skyscanner.gr/transport/flights/ath/icn/2703/2703/?adultsv2=1&cabinclass=economy"
     }
-   ]
+   ],
+   "people": 1,
+   "lowcost": false,
+   "city": "Σεούλ"
   }
  ]
 }
