@@ -1,0 +1,892 @@
+{
+ "updated": "2026-11-22T21:28+02:00",
+ "deals": [],
+ "flights": [
+  {
+   "destination": "Ρώμη",
+   "city": "Ρώμη",
+   "from": "2027-01-22",
+   "to": "2027-01-24",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-ROM-2027-01-22",
+   "kind": "flight",
+   "flight": "MW απευθείας, 134 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 134,
+   "typical": 274,
+   "savings": 51,
+   "status": "hit",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Rome%20from%20Athens%20on%202027-01-22%20through%202027-01-24%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Μαδρίτη",
+   "city": "Μαδρίτη",
+   "from": "2026-12-28",
+   "to": "2027-01-05",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-MAD-2026-12-28",
+   "kind": "flight",
+   "flight": "Iberia απευθείας, 290 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 290,
+   "typical": 497,
+   "savings": 42,
+   "status": "hit",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Madrid%20from%20Athens%20on%202026-12-28%20through%202027-01-05%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Ζυρίχη",
+   "city": "Ζυρίχη",
+   "from": "2026-12-28",
+   "to": "2027-01-05",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-ZRH-2026-12-28",
+   "kind": "flight",
+   "flight": "SWISS απευθείας, 298 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 298,
+   "typical": 450,
+   "savings": 34,
+   "status": "hit",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Zurich%20from%20Athens%20on%202026-12-28%20through%202027-01-05%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Μόναχο",
+   "city": "Μόναχο",
+   "from": "2027-01-23",
+   "to": "2027-01-26",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-MUC-2027-01-23",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 302 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 302,
+   "typical": 446,
+   "savings": 32,
+   "status": "hit",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Munich%20from%20Athens%20on%202027-01-23%20through%202027-01-26%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Νέα Υόρκη",
+   "city": "Νέα Υόρκη",
+   "from": "2026-12-22",
+   "to": "2026-12-29",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-NYC-2026-12-22",
+   "kind": "flight",
+   "flight": "VS απευθείας, 1648 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 1648,
+   "typical": 2433,
+   "savings": 32,
+   "status": "hit",
+   "alts": [
+    {
+     "from": "2026-12-05",
+     "to": "2026-12-13",
+     "price": 1716
+    },
+    {
+     "from": "2026-12-07",
+     "to": "2026-12-13",
+     "price": 1810
+    },
+    {
+     "from": "2026-12-03",
+     "to": "2026-12-10",
+     "price": 1816
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20New%20York%20from%20Athens%20on%202026-12-22%20through%202026-12-29%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Παρίσι",
+   "city": "Παρίσι",
+   "from": "2027-01-13",
+   "to": "2027-01-17",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-PAR-2027-01-13",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 244 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 244,
+   "typical": 356,
+   "savings": 31,
+   "status": "hit",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Paris%20from%20Athens%20on%202027-01-13%20through%202027-01-17%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Λισαβόνα",
+   "city": "Λισαβόνα",
+   "from": "2026-12-06",
+   "to": "2026-12-10",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-LIS-2026-12-06",
+   "kind": "flight",
+   "flight": "TAP απευθείας, 356 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 356,
+   "typical": 467,
+   "savings": 24,
+   "status": "near",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Lisbon%20from%20Athens%20on%202026-12-06%20through%202026-12-10%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Βιέννη",
+   "city": "Βιέννη",
+   "from": "2027-01-29",
+   "to": "2027-02-02",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-VIE-2027-01-29",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 174 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 174,
+   "typical": 228,
+   "savings": 24,
+   "status": "near",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Vienna%20from%20Athens%20on%202027-01-29%20through%202027-02-02%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Τιφλίδα",
+   "city": "Τιφλίδα",
+   "from": "2026-12-17",
+   "to": "2026-12-22",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-TBS-2026-12-17",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 392 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 392,
+   "typical": 500,
+   "savings": 22,
+   "status": "near",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Tbilisi%20from%20Athens%20on%202026-12-17%20through%202026-12-22%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Κωνσταντινούπολη",
+   "city": "Κωνσταντινούπολη",
+   "from": "2026-12-12",
+   "to": "2026-12-14",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-IST-2026-12-12",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 188 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 188,
+   "typical": 228,
+   "savings": 18,
+   "status": "near",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Istanbul%20from%20Athens%20on%202026-12-12%20through%202026-12-14%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Πράγα",
+   "city": "Πράγα",
+   "from": "2026-12-16",
+   "to": "2026-12-20",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-PRG-2026-12-16",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 454 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 454,
+   "typical": 544,
+   "savings": 17,
+   "status": "near",
+   "alts": [
+    {
+     "from": "2026-12-02",
+     "to": "2026-12-06",
+     "price": 462
+    },
+    {
+     "from": "2026-12-07",
+     "to": "2026-12-09",
+     "price": 508
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Prague%20from%20Athens%20on%202026-12-16%20through%202026-12-20%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Βενετία",
+   "city": "Βενετία",
+   "from": "2027-02-06",
+   "to": "2027-02-14",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-VCE-2027-02-06",
+   "kind": "flight",
+   "flight": "MW απευθείας, 106 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 106,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Venice%20from%20Athens%20on%202027-02-06%20through%202027-02-14%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Νάπολη",
+   "city": "Νάπολη",
+   "from": "2027-01-15",
+   "to": "2027-01-17",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-NAP-2027-01-15",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 176 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 176,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Naples%20from%20Athens%20on%202027-01-15%20through%202027-01-17%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Μιλάνο",
+   "city": "Μιλάνο",
+   "from": "2027-01-30",
+   "to": "2027-02-01",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-MIL-2027-01-30",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 194 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 194,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Milan%20from%20Athens%20on%202027-01-30%20through%202027-02-01%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Μάλτα",
+   "city": "Μάλτα",
+   "from": "2027-01-07",
+   "to": "2027-01-11",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-MLA-2027-01-07",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 202 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 202,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Valletta%20from%20Athens%20on%202027-01-07%20through%202027-01-11%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Γενεύη",
+   "city": "Γενεύη",
+   "from": "2027-01-14",
+   "to": "2027-01-17",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-GVA-2027-01-14",
+   "kind": "flight",
+   "flight": "SWISS απευθείας, 274 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 274,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Geneva%20from%20Athens%20on%202027-01-14%20through%202027-01-17%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Βρυξέλλες",
+   "city": "Βρυξέλλες",
+   "from": "2027-02-19",
+   "to": "2027-02-22",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-BRU-2027-02-19",
+   "kind": "flight",
+   "flight": "Brussels Airlines απευθείας, 290 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 290,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Brussels%20from%20Athens%20on%202027-02-19%20through%202027-02-22%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Βαρκελώνη",
+   "city": "Βαρκελώνη",
+   "from": "2026-12-02",
+   "to": "2026-12-05",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-BCN-2026-12-02",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 338 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 338,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Barcelona%20from%20Athens%20on%202026-12-02%20through%202026-12-05%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Λονδίνο",
+   "city": "Λονδίνο",
+   "from": "2026-12-02",
+   "to": "2026-12-06",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-LON-2026-12-02",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 378 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 378,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [
+    {
+     "from": "2026-12-29",
+     "to": "2027-01-03",
+     "price": 424
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20London%20from%20Athens%20on%202026-12-02%20through%202026-12-06%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Εδιμβούργο",
+   "city": "Εδιμβούργο",
+   "from": "2026-12-02",
+   "to": "2026-12-06",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-EDI-2026-12-02",
+   "kind": "flight",
+   "flight": "Sky Express με 1 στάση, 382 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 382,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Edinburgh%20from%20Athens%20on%202026-12-02%20through%202026-12-06%20for%202%20adults"
+    }
+   ]
+  },
+  {
+   "destination": "Φλωρεντία",
+   "city": "Φλωρεντία",
+   "from": "2027-01-08",
+   "to": "2027-01-12",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-FLR-2027-01-08",
+   "kind": "flight",
+   "flight": "SWISS με 1 στάση, 396 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 396,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [
+    {
+     "from": "2027-01-09",
+     "to": "2027-01-12",
+     "price": 420
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Florence%20from%20Athens%20on%202027-01-08%20through%202027-01-12%20for%202%20adults"
+    }
+   ]
+  },
+  {
+   "destination": "Βερολίνο",
+   "city": "Βερολίνο",
+   "from": "2027-01-09",
+   "to": "2027-01-15",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-BER-2027-01-09",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 432 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 432,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Berlin%20from%20Athens%20on%202027-01-09%20through%202027-01-15%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Κοπεγχάγη",
+   "city": "Κοπεγχάγη",
+   "from": "2027-03-09",
+   "to": "2027-03-14",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-CPH-2027-03-09",
+   "kind": "flight",
+   "flight": "SAS απευθείας, 436 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 436,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Copenhagen%20from%20Athens%20on%202027-03-09%20through%202027-03-14%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Όσλο",
+   "city": "Όσλο",
+   "from": "2027-06-15",
+   "to": "2027-06-18",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-OSL-2027-06-15",
+   "kind": "flight",
+   "flight": "SAS απευθείας, 550 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 550,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Oslo%20from%20Athens%20on%202027-06-15%20through%202027-06-18%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Νίκαια / Μονακό",
+   "city": "Νίκαια / Μονακό",
+   "from": "2027-07-11",
+   "to": "2027-07-15",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-NCE-2027-07-11",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 572 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 572,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Nice%20from%20Athens%20on%202027-07-11%20through%202027-07-15%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Άμστερνταμ",
+   "city": "Άμστερνταμ",
+   "from": "2027-01-12",
+   "to": "2027-01-19",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-AMS-2027-01-12",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 582 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 582,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Amsterdam%20from%20Athens%20on%202027-01-12%20through%202027-01-19%20for%202%20adults%20nonstop"
+    }
+   ]
+  },
+  {
+   "destination": "Μαρακές",
+   "city": "Μαρακές",
+   "from": "2026-12-25",
+   "to": "2027-01-01",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-RAK-2026-12-25",
+   "kind": "flight",
+   "flight": "KLM με 1 στάση, 724 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 724,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Marrakech%20from%20Athens%20on%202026-12-25%20through%202027-01-01%20for%202%20adults"
+    }
+   ]
+  },
+  {
+   "destination": "Τόκιο",
+   "city": "Τόκιο",
+   "from": "2026-12-02",
+   "to": "2026-12-09",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-TYO-2026-12-02",
+   "kind": "flight",
+   "flight": "ET με 1 στάση, 1164 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 1164,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Tokyo%20from%20Athens%20on%202026-12-02%20through%202026-12-09%20for%202%20adults"
+    }
+   ]
+  },
+  {
+   "destination": "Μπανγκόκ",
+   "city": "Μπανγκόκ",
+   "from": "2027-01-15",
+   "to": "2027-01-23",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-BKK-2027-01-15",
+   "kind": "flight",
+   "flight": "6E με 1 στάση, 1198 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 1198,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Bangkok%20from%20Athens%20on%202027-01-15%20through%202027-01-23%20for%202%20adults"
+    }
+   ]
+  },
+  {
+   "destination": "Ντουμπάι",
+   "city": "Ντουμπάι",
+   "from": "2026-12-19",
+   "to": "2026-12-24",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T21:28+02:00",
+   "auto": true,
+   "id": "auto-f-DXB-2026-12-19",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 1238 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 1238,
+   "typical": null,
+   "savings": null,
+   "status": "check",
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Google Flights)",
+     "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Dubai%20from%20Athens%20on%202026-12-19%20through%202026-12-24%20for%202%20adults%20nonstop"
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "routes": 39,
+  "months": 9,
+  "priced_trips": 76,
+  "errors": 0,
+  "hotels": false
+ }
+}
