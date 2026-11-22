@@ -96,7 +96,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
       <summary>Τι ψάχνω</summary>
       <ul>
         <li>Αναχώρηση από Αθήνα, 1 άτομο, 4–8 βράδια, οποτεδήποτε μέσα στο 2027.</li>
-        <li>Νέα Υόρκη, Λισαβόνα, Μονακό (Νίκαια), Κόμο (Μιλάνο), Ελβετία, Νορβηγία, Δανία, Σουηδία, Φινλανδία.</li>
+        <li>Οπουδήποτε αξίζει, με προτεραιότητα σε Νέα Υόρκη, Λισαβόνα, Μονακό, Κόμο, Ελβετία και Σκανδιναβία.</li>
         <li>Απευθείας πτήσεις, χωρίς Ryanair, easyJet, Wizz Air και παρόμοιες.</li>
         <li>Ξενοδοχείο στο κέντρο, ≥ 8/10 στο Booking, καθαριότητα ≥ 8,5, χωρίς παράπονα για βρώμα.</li>
         <li>Λαβράκι: πακέτο περίπου 25–30% κάτω από το τυπικό για τον ίδιο μήνα και προορισμό, με ίδια ποιότητα.</li>
@@ -187,7 +187,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
   load();
   $("refresh").addEventListener("click", load);
   document.addEventListener("visibilitychange", function(){ if (!document.hidden) load(); });
-  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function(){});
+  if ("serviceWorker" in navigator){
+    var hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange", function(){ if (hadController) location.reload(); });
+    navigator.serviceWorker.register("sw.js").then(function(r){ r.update(); }).catch(function(){});
+  }
 })();
 </script>
 </body>
