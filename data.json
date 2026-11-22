@@ -46,6 +46,10 @@
       "source": "Live Skyscanner + Booking",
       "links": [
         {
+          "label": "Πτήση (Google Flights)",
+          "url": "https://www.google.com/travel/flights?hl=el&q=Flights%20to%20Copenhagen%20from%20Athens%20on%202027-07-05%20through%202027-07-09%20nonstop%20Aegean"
+        },
+        {
           "label": "Πτήση (Skyscanner)",
           "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270705/270709/?adultsv2=1&cabinclass=economy&preferdirects=true"
         },
@@ -53,8 +57,11 @@
           "label": "Ξενοδοχείο (Booking)",
           "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
         }
-      ]
-    },
+      ],
+      "checkedAt": "2026-11-22T13:35:00+02:00"
+    }
+  ],
+  "candidates": [
     {
       "id": "mxp-2706",
       "destination": "Μιλάνο / λίμνη Κόμο",

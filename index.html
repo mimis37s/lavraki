@@ -123,7 +123,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <section class="panel" id="p-deals" role="tabpanel" aria-labelledby="t-deals" hidden>
     <div class="card">
       <h2>Λαβράκια ανά περίοδο</h2>
-      <p class="hint">Για όσους είναι ευέλικτοι: ό,τι βρήκαν οι έλεγχοι και ισχύει ακόμα, από το καλύτερο προς το χειρότερο.</p>
+      <p class="hint">Για όσους είναι ευέλικτοι: έτοιμα πακέτα πτήση + ξενοδοχείο που βρήκαν οι live έλεγχοι και ισχύουν ακόμα, από το καλύτερο προς το χειρότερο.</p>
       <div class="chips" id="periods" style="margin-top:10px"></div>
     </div>
     <div class="card" id="dealList"></div>
@@ -152,20 +152,20 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 
   // [Greek name, Skyscanner place code, Booking search text, English name for Google Flights]
   var CITIES = [
-    ["Νέα Υόρκη","nyca","New York","New York"],["Λισαβόνα","lis","Lisbon","Lisbon"],["Πόρτο","opo","Porto","Porto"],
-    ["Μονακό / Νίκαια","nce","Monaco","Nice"],["Μιλάνο / λίμνη Κόμο","mila","Como","Milan"],["Ζυρίχη","zrh","Zurich","Zurich"],
+    ["Νέα Υόρκη","ewr","New York","New York"],["Λισαβόνα","lis","Lisbon","Lisbon"],["Πόρτο","opo","Porto","Porto"],
+    ["Μονακό / Νίκαια","nce","Monaco","Nice"],["Μιλάνο / λίμνη Κόμο","mxp","Como","Milan"],["Ζυρίχη","zrh","Zurich","Zurich"],
     ["Γενεύη","gva","Geneva","Geneva"],["Κοπεγχάγη","cph","Copenhagen","Copenhagen"],["Όσλο","osl","Oslo","Oslo"],
-    ["Μπέργκεν","bgo","Bergen","Bergen"],["Στοκχόλμη","stoc","Stockholm","Stockholm"],["Ελσίνκι","hel","Helsinki","Helsinki"],
-    ["Λονδίνο","lond","London","London"],["Παρίσι","pari","Paris","Paris"],["Ρώμη","rome","Rome","Rome"],
+    ["Μπέργκεν","bgo","Bergen","Bergen"],["Στοκχόλμη","arn","Stockholm","Stockholm"],["Ελσίνκι","hel","Helsinki","Helsinki"],
+    ["Λονδίνο","lhr","London","London"],["Παρίσι","cdg","Paris","Paris"],["Ρώμη","fco","Rome","Rome"],
     ["Φλωρεντία","flr","Florence","Florence"],["Βενετία","vce","Venice","Venice"],["Βαρκελώνη","bcn","Barcelona","Barcelona"],
     ["Μαδρίτη","mad","Madrid","Madrid"],["Άμστερνταμ","ams","Amsterdam","Amsterdam"],["Βρυξέλλες","bru","Brussels","Brussels"],
     ["Βιέννη","vie","Vienna","Vienna"],["Πράγα","prg","Prague","Prague"],["Βουδαπέστη","bud","Budapest","Budapest"],
     ["Βερολίνο","ber","Berlin","Berlin"],["Μόναχο","muc","Munich","Munich"],["Δουβλίνο","dub","Dublin","Dublin"],
     ["Εδιμβούργο","edi","Edinburgh","Edinburgh"],["Ρέικιαβικ","kef","Reykjavik","Reykjavik"],["Κωνσταντινούπολη","ist","Istanbul","Istanbul"],
-    ["Ντουμπάι","dxb","Dubai","Dubai"],["Μαρακές","rak","Marrakech","Marrakech"],["Τόκιο","tyoa","Tokyo","Tokyo"],
+    ["Ντουμπάι","dxb","Dubai","Dubai"],["Μαρακές","rak","Marrakech","Marrakech"],["Τόκιο","hnd","Tokyo","Tokyo"],
     ["Σεούλ","icn","Seoul","Seoul"],["Σιγκαπούρη","sin","Singapore","Singapore"],["Μπανγκόκ","bkk","Bangkok","Bangkok"],
     ["Βανκούβερ","yvr","Vancouver","Vancouver"],["Τορόντο","yyz","Toronto","Toronto"],["Μόντρεαλ","yul","Montreal","Montreal"],
-    ["Βοστώνη","bos","Boston","Boston"],["Σικάγο","chia","Chicago","Chicago"]
+    ["Βοστώνη","bos","Boston","Boston"],["Σικάγο","ord","Chicago","Chicago"]
   ];
   var STATUS = { hit:["Λαβράκι","hit"], near:["Κοντά σε λαβράκι","near"], check:["Θέλει επαλήθευση",""], normal:["Κανονική τιμή",""] };
   var RANK = { hit:0, near:1, check:2, normal:3 };
@@ -178,6 +178,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   function toIso(d){ return d.toISOString().slice(0,10); }
   function addDays(s, n){ var d=new Date(s+"T12:00:00Z"); d.setUTCDate(d.getUTCDate()+n); return toIso(d); }
   function daysBetween(a,b){ return Math.round((new Date(b+"T12:00:00Z")-new Date(a+"T12:00:00Z"))/86400000); }
+  function ago(s){ if(!s) return ""; var t=new Date(String(s).length<=10? s+"T12:00:00":s).getTime(), h=Math.round((Date.now()-t)/3600000); if(!isFinite(h)) return fmt(s); if(h<1) return "μόλις τώρα"; if(h<24) return "πριν από "+h+" "+(h===1?"ώρα":"ώρες"); var dd=Math.round(h/24); return "πριν από "+dd+" "+(dd===1?"μέρα":"μέρες"); }
   function quarter(s){ var m=+String(s).slice(5,7); return m<=3?"q1":m<=6?"q2":m<=9?"q3":"q4"; }
   function ymd(s){ return s.slice(2).replace(/-/g,""); }  // 2027-07-05 -> 270705
   function ym(s){ return s.slice(2,7).replace("-",""); }  // 2027-07-05 -> 2707
@@ -209,7 +210,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
     add(w,"div","meta", x.exact ? fmt(x.from)+" – "+fmt(x.to) : (x.window || fmt(x.from)+" – "+fmt(x.to)));
     if(x.flight) add(w,"div",null,"✈️ "+x.flight);
     if(x.hotel) add(w,"div",null,"🏨 "+x.hotel);
-    add(w,"div","meta","Έλεγχος "+fmt(x.checked)+(x.source?" · "+x.source:""));
+    add(w,"div","meta","Τιμή από έλεγχο "+ago(x.checkedAt||x.checked)+(x.source?" · "+x.source:"")+". Μπορεί να έχει αλλάξει από τότε· πάτα τα κουμπιά για την τιμή τώρα.");
     if(Array.isArray(x.links) && x.links.length){
       var l=add(w,"div","links");
       x.links.forEach(function(k){ if(k && /^https:\/\//.test(k.url||"")) link(l, k.label||"Άνοιγμα", k.url); });
@@ -218,7 +219,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 
   function liveDeals(){
     var today=toIso(new Date());
-    return ((DATA && DATA.deals) || []).filter(function(x){ return (x.to||"") >= today; })
+    return ((DATA && DATA.deals) || []).filter(function(x){ return x.kind==="package" && (x.to||"") >= today; })
       .sort(function(a,b){ return (RANK[a.status]-RANK[b.status]) || ((b.savings||0)-(a.savings||0)) || ((a.total||1e9)-(b.total||1e9)); });
   }
 
@@ -245,18 +246,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 
     add(box,"h3",null,"Τιμές τώρα");
     var dep=from, ret=exact ? to : addDays(from,nights), l=add(box,"div","links");
-    if(c && c[1]){
-      link(l, exact ? "Πτήσεις (Skyscanner)" : "Φθηνότερες μέρες του μήνα (Skyscanner)",
-        "https://www.skyscanner.gr/transport/flights/ath/"+c[1]+"/"+(exact?ymd(dep):ym(dep))+"/"+(exact?ymd(ret):ym(dep))+"/?adultsv2=1&cabinclass=economy&preferdirects=true");
-    }
     if(c){
       link(l,"Πτήσεις (Google Flights)","https://www.google.com/travel/flights?hl=el&q="+encodeURIComponent("Flights to "+c[3]+" from Athens on "+dep+" through "+ret+" nonstop"));
+      if(c[1]) link(l,"Πτήσεις (Skyscanner)","https://www.skyscanner.gr/transport/flights/ath/"+c[1]+"/"+ymd(dep)+"/"+ymd(ret)+"/?adultsv2=1&cabinclass=economy&preferdirects=true");
       link(l,"Ξενοδοχεία 8+ (Booking)","https://www.booking.com/searchresults.el.html?ss="+encodeURIComponent(c[2])+"&checkin="+dep+"&checkout="+ret+"&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80");
     } else {
-      link(l,"Οπουδήποτε (Skyscanner)","https://www.skyscanner.gr/transport/flights-from/ath/"+ym(dep)+"/"+ym(dep)+"/?adultsv2=1&cabinclass=economy&preferdirects=true");
       link(l,"Εξερεύνηση (Google Flights)","https://www.google.com/travel/explore?hl=el&q="+encodeURIComponent("flights from Athens"));
     }
-    if(!exact) add(box,"p","hint","Τα κουμπιά ανοίγουν με παράδειγμα "+fmt(dep)+" – "+fmt(ret)+". Στο Skyscanner βλέπεις όλο τον μήνα και διαλέγεις τις φθηνότερες μέρες.");
+    if(!exact) add(box,"p","hint","Τα κουμπιά ανοίγουν με παράδειγμα "+fmt(dep)+" – "+fmt(ret)+". Στο Google Flights πάτα «Πλέγμα ημερομηνιών» για να δεις τις φθηνότερες μέρες.");
     add(box,"p","hint","Οι έλεγχοι τρέχουν αυτόματα κάθε μέρα. Για να μπει ένας προορισμός σε συνεχή παρακολούθηση, πες το στον Claude.");
   }
 
@@ -271,7 +268,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   function renderDeals(){
     var box=$("dealList"); box.textContent="";
     var list=liveDeals().filter(function(x){ return period==="all" || quarter(x.from)===period || quarter(x.to)===period; });
-    if(!list.length){ add(box,"p","empty","Δεν υπάρχει ακόμα κάτι για αυτή την περίοδο. Οι έλεγχοι ψάχνουν κάθε μέρα."); return; }
+    if(!list.length){ add(box,"p","empty","Δεν υπάρχει ακόμα πακέτο για αυτή την περίοδο. Οι live έλεγχοι προσθέτουν νέα πακέτα όσο τρέχουν."); return; }
     list.forEach(function(x,i){ dealCard(box,x,i===0); });
   }
 
