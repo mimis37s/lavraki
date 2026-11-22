@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:43+02:00",
+ "updated": "2026-11-22T14:47+02:00",
  "status": "hit",
  "best": {
   "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -401,6 +401,33 @@
     {
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/us/candlewood-suites-new-york-city.el.html?checkin=2027-06-28&checkout=2027-07-04&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "nyc-2707-2p",
+   "destination": "Νέα Υόρκη (για 2 άτομα)",
+   "country": "ΗΠΑ",
+   "from": "2027-07-19",
+   "to": "2027-07-25",
+   "exact": true,
+   "kind": "package",
+   "flight": "United απευθείας Αθήνα–Νιούαρκ (πωλείται μέσω Lufthansa), 1.612 € για 2 άτομα (Δευ 19/7 10:25 → 14:15 / επιστροφή Κυρ 25/7 15:50 → Δευ 26/7 08:10)",
+   "hotel": "Fairfield Inn & Suites Manhattan/Downtown East (κοντά στη Γέφυρα του Μπρούκλιν), δωμάτιο με king κρεβάτι, πρωινό, δωρεάν ακύρωση, 8,2/10 (1.849 κριτικές), καθαριότητα 8,5, 1.039 € για 6 βράδια για 2",
+   "total": 2651,
+   "savings": null,
+   "status": "near",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:47+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ewr/270719/270725/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/us/suites-new-york-manhattan-downtown.el.html?checkin=2027-07-19&checkout=2027-07-25&group_adults=2&no_rooms=1&group_children=0"
     }
    ]
   }
