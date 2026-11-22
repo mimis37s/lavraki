@@ -139,10 +139,27 @@ def baseline(history, key, offers):
     rows = history.get(key, [])
     if len(rows) >= 5:
         return median([e["med"] for e in rows])
-    prices = [o["price"] for o in offers]
-    if len(prices) >= 4:
-        return median(prices)
+    # No history yet: use the cheapest fare of every departure day in the month and take the
+    # median. That is "what a normal day costs", so a day far below it is a real catch.
+    daily = {}
+    for o in offers:
+        daily[o["dep"]] = min(o["price"], daily.get(o["dep"], o["price"]))
+    if len(daily) >= 4:
+        return median(list(daily.values()))
     return None
+
+
+def alternatives(offers, best, limit=3, within=0.15):
+    """Other departure days in the same month at most 15% dearer: a fallback if the best fare goes."""
+    seen, out = {best["dep"]}, []
+    for o in sorted(offers, key=lambda x: x["price"]):
+        if o["dep"] in seen or o["price"] > best["price"] * (1 + within):
+            continue
+        seen.add(o["dep"])
+        out.append({"from": o["dep"], "to": o["ret"], "price": o["price"]})
+        if len(out) >= limit:
+            break
+    return out
 
 
 # ---------------------------------------------------------------- hotels
@@ -235,7 +252,8 @@ def build(http, tp_token, lite_key, today=None, sleep=0.15):
                 continue
             best = min(offers, key=lambda o: o["price"])
             saving = (1 - best["price"] / base) if base else None
-            flights.append({"dest": dest, "month": month, "offer": best, "base": base, "saving": saving})
+            flights.append({"dest": dest, "month": month, "offer": best, "base": base, "saving": saving,
+                            "alts": alternatives(offers, best)})
             if sleep:
                 time.sleep(sleep)
 
@@ -264,6 +282,7 @@ def build(http, tp_token, lite_key, today=None, sleep=0.15):
                                 typical=round(f["base"] * adults) if f["base"] else None,
                                 savings=round(f["saving"] * 100) if f["saving"] and f["saving"] > 0 else None,
                                 status=status_for(f["saving"]),
+                                alts=[dict(a, price=a["price"] * adults) for a in f["alts"]],
                                 source="Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
                                 links=[{"label": "Πτήση (Google Flights)", "url": gflights(d, o["dep"], o["ret"], adults, o["stops"] == 0)}]))
         if not lite_key:

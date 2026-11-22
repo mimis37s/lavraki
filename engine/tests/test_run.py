@@ -77,8 +77,9 @@ class EngineTest(unittest.TestCase):
         self.assertEqual(out["deals"], [])
         vie = [f for f in out["flights"] if f["id"].startswith("auto-f-VIE")][0]
         self.assertEqual(vie["total"], 190)            # 95 € x 2 people
-        self.assertEqual(vie["typical"], 310)          # median(95,150,160,170)=155 x 2
+        self.assertEqual(vie["typical"], 310)          # median of daily lows (95,150,160,170)=155 x 2
         self.assertEqual(vie["savings"], 39)
+        self.assertEqual(vie["alts"], [])              # nothing within 15% of 95 €
         self.assertEqual(vie["status"], "hit")
         self.assertIn("ATH-VIE-2027-02", hist)
         self.assertTrue(all("X-Access-Token" for _ in http.gets))
@@ -92,6 +93,14 @@ class EngineTest(unittest.TestCase):
         self.assertIn("lyf Schönbrunn", vie["hotel"])
         nyc = [d for d in out["deals"] if d["id"].startswith("auto-p-NYC")][0]
         self.assertEqual(nyc["status"], "check")       # one fare only: no baseline yet
+
+    def test_daily_baseline_and_alts(self):
+        offers = [{"dep": "2027-02-0%d" % d, "ret": "2027-02-1%d" % d, "price": p}
+                  for d, p in [(1, 100), (2, 105), (3, 110), (4, 200), (5, 300)]]
+        offers.append({"dep": "2027-02-01", "ret": "2027-02-12", "price": 400})  # same day, dearer: ignored
+        self.assertEqual(run.baseline({}, "K", offers), 110)
+        alts = run.alternatives(offers, offers[0])
+        self.assertEqual([a["price"] for a in alts], [105, 110])
 
     def test_history_baseline(self):
         hist = {"K": [{"d": f"2026-11-{i:02d}", "min": 100, "med": 200} for i in range(1, 7)]}

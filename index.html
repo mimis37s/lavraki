@@ -362,6 +362,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
     var more=el(w,"div","more"); more.hidden=true;
     var l1=el(more,"div","line"); el(l1,"span",null,"✈️"); el(l1,"span",null,x.flight);
     if(x.typical) el(more,"div","total","Συνήθως κοστίζει περίπου "+money(x.typical)+" για "+people(x)+" άτομα.");
+    if(x.alts && x.alts.length){
+      var al=el(more,"div","alts"); el(al,"div","checked","Αν η τιμή έχει φύγει, παρόμοιες τιμές βρέθηκαν και για:");
+      var row=el(al,"div","actions"), cm=cityMatch(cityOf(x));
+      x.alts.forEach(function(a){ var b=el(row,"a","btn",range(a.from,a.to)+", "+money(Math.round(a.price/people(x)))+" το άτομο");
+        b.href="https://www.google.com/travel/flights?hl=el&q="+encodeURIComponent("Flights to "+(cm?cm[3]:cityOf(x))+" from Athens on "+a.from+" through "+a.to+" for "+people(x)+" adults");
+        b.target="_blank"; b.rel="noopener"; });
+    }
     el(more,"div","checked","Η τιμή βρέθηκε "+ago(x.checkedAt||x.checked)+". Δες την τελική τιμή πριν πληρώσεις.");
     var s2=el(more,"div","steps"), L=links(x);
     if(L.flight){ var a=el(s2,"a","btn go wide","1. Δες την πτήση"); a.href=L.flight.url; a.target="_blank"; a.rel="noopener"; }
