@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T14:05:00+02:00",
+  "updated": "2026-11-22T14:15:00+02:00",
   "status": "hit",
   "best": {
     "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -239,6 +239,33 @@
         {
           "label": "Ξενοδοχείο για 2 (Booking)",
           "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-01-29&checkout=2027-01-31&group_adults=2&no_rooms=1&group_children=0"
+        }
+      ]
+    },
+    {
+      "id": "ist-2702-2p-weekend",
+      "destination": "Κωνσταντινούπολη Σαββατοκύριακο (για 2 άτομα)",
+      "country": "Τουρκία",
+      "from": "2027-02-26",
+      "to": "2027-02-28",
+      "exact": true,
+      "kind": "package",
+      "flight": "Aegean απευθείας, 211 € για 2 άτομα (Παρ 13:10 / επιστροφή Κυρ 11:30)",
+      "hotel": "Burak Apart, Σουλταναχμέτ (600 μ. από το κέντρο), Standard διπλό, 8,8/10 (453 κριτικές), καθαριότητα 8,6, 42 € για 2 βράδια για 2",
+      "total": 253,
+      "savings": null,
+      "status": "near",
+      "checked": "2026-11-22",
+      "checkedAt": "2026-11-22T14:15:00+02:00",
+      "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+      "links": [
+        {
+          "label": "Πτήση για 2 (Skyscanner)",
+          "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270226/270228/?adultsv2=2&cabinclass=economy&preferdirects=true"
+        },
+        {
+          "label": "Ξενοδοχείο για 2 (Booking)",
+          "url": "https://www.booking.com/hotel/tr/burak-apart-istanbul.el.html?checkin=2027-02-26&checkout=2027-02-28&group_adults=2&no_rooms=1&group_children=0"
         }
       ]
     }
