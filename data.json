@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:27+02:00",
+ "updated": "2026-11-22T14:30+02:00",
  "status": "hit",
  "best": {
   "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -320,6 +320,33 @@
     {
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/hu/nexto-dormero-hotel-budapest.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "vce-2702-2p-weekend",
+   "destination": "Βενετία Σαββατοκύριακο (για 2 άτομα, εξαίρεση: Wizz Air)",
+   "country": "Ιταλία",
+   "from": "2027-02-19",
+   "to": "2027-02-21",
+   "exact": true,
+   "kind": "package",
+   "flight": "Wizz Air απευθείας (low-cost, εξαίρεση αυτή τη φορά), 115 € για 2 άτομα (Παρ 23:00 → 00:20 / επιστροφή Κυρ 19:35), μόνο μικρή τσάντα κάτω από το κάθισμα",
+   "hotel": "Campanile Venice Mestre (δίπλα στον σταθμό Μέστρε, 10 λεπτά με τρένο ως τη Βενετία), δίκλινο με 2 μονά, 8,5/10 (6.180 κριτικές), καθαριότητα 8,8, δωρεάν ακύρωση, 127 € για 2 βράδια για 2",
+   "total": 242,
+   "savings": null,
+   "status": "hit",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:30+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/vce/270219/270221/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/it/7-days-premium-venedig-mestre.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
    ]
   }
