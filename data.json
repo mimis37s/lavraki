@@ -1,12 +1,31 @@
 {
-  "updated": "2026-11-22T13:05:00+02:00",
+  "updated": "2026-11-22T13:40:00+02:00",
   "status": "none",
-  "best": null,
+  "best": {
+    "destination": "Κοπεγχάγη",
+    "dates": "5/7–9/7/2027 (4 βράδια)",
+    "flight": "Aegean, απευθείας, 214 € μετ' επιστροφής (Skyscanner, live)",
+    "hotel": "Bob W Copenhagen Østerbro, μικρό στούντιο με κουζίνα, 8,7/10 (4.471 κριτικές), καθαριότητα 9,1 · 571 € για 4 βράδια (Black Friday, από 815 €)",
+    "total": "785 €",
+    "typical": "~1.030 € (ίδιες πτήσεις + ίδιο δωμάτιο σε κανονική τιμή)",
+    "savings": "~24% κάτω, οριακά κάτω από το όριο λαβρακιού",
+    "checked": "2026-11-22",
+    "links": [
+      {
+        "label": "Πτήση (Skyscanner)",
+        "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270705/270709/?adultsv2=1&cabinclass=economy&preferdirects=true"
+      },
+      {
+        "label": "Ξενοδοχείο (Booking)",
+        "url": "https://www.booking.com/hotel/dk/bob-w-osterbro-copenhagen.el.html?checkin=2027-07-05&checkout=2027-07-09&group_adults=1&no_rooms=1&group_children=0"
+      }
+    ]
+  },
   "log": [
     {
       "date": "2026-11-22",
       "result": "none",
-      "summary": "Όλο το 2027, κάθε προορισμός. Όχι επιβεβαιωμένο λαβράκι. Υποψήφια (μόνο πτήσεις, θέλουν έλεγχο): Σεούλ ~402 € μετ' επιστροφής με Ethiopian (στάση Αντίς Αμπέμπα, έως Ιούν 2027)· Βανκούβερ ~560 € με Condor (στάση Φρανκφούρτη, Μάιος 2027)· Μόναχο ~115 € απευθείας Sky Express (Ιούν–Ιούλ 2027). Ευρώπη απευθείας Aegean: Όσλο 12–17/1 ~195 €, Στοκχόλμη 28/1–1/2 ~188 €."
+      "summary": "Live έλεγχος Skyscanner + Booking: Κοπεγχάγη 5–9/7, Aegean απευθείας 214 € + Bob W Østerbro (8,7, καθαριότητα 9,1) 571 € = 785 €, ~24% κάτω από την κανονική τιμή, οριακά όχι λαβράκι. Υποψήφια πτήσεις: Σεούλ ~402 € (Ethiopian), Βανκούβερ ~560 € (Condor), Μόναχο ~115 € (Sky Express)."
     }
   ]
 }
