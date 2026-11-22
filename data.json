@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:24+02:00",
+ "updated": "2026-11-22T14:27+02:00",
  "status": "hit",
  "best": {
   "destination": "Λίμνη Κόμο (Μπελάτζιο)",
@@ -293,6 +293,33 @@
     {
      "label": "Ξενοδοχείο για 2 (Booking)",
      "url": "https://www.booking.com/hotel/at/lyf-schonbrunn-vienna.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
+    }
+   ]
+  },
+  {
+   "id": "bud-2702-2p-weekend",
+   "destination": "Βουδαπέστη Σαββατοκύριακο (για 2 άτομα, εξαίρεση: Wizz Air)",
+   "country": "Ουγγαρία",
+   "from": "2027-02-19",
+   "to": "2027-02-21",
+   "exact": true,
+   "kind": "package",
+   "flight": "Wizz Air απευθείας (low-cost, εξαίρεση αυτή τη φορά), 109 € για 2 άτομα (Παρ 09:55 / επιστροφή Κυρ 05:40), μόνο μικρή τσάντα κάτω από το κάθισμα",
+   "hotel": "NEXTO DORMERO Hotel Budapest (Τερεζβάρος, 1 χλμ. από το κέντρο), Standard δίκλινο, 8,8/10 (4.160 κριτικές), καθαριότητα 9,0, δωρεάν ακύρωση, 124 € για 2 βράδια για 2",
+   "total": 233,
+   "savings": null,
+   "status": "hit",
+   "checked": "2026-11-22",
+   "checkedAt": "2026-11-22T14:27+02:00",
+   "source": "Live Skyscanner + Booking · σύνολο για 2 άτομα",
+   "links": [
+    {
+     "label": "Πτήση για 2 (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/bud/270219/270221/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Ξενοδοχείο για 2 (Booking)",
+     "url": "https://www.booking.com/hotel/hu/nexto-dormero-hotel-budapest.el.html?checkin=2027-02-19&checkout=2027-02-21&group_adults=2&no_rooms=1&group_children=0"
     }
    ]
   }
