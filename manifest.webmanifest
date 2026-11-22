@@ -1,0 +1,15 @@
+{
+  "name": "Λαβράκι",
+  "short_name": "Λαβράκι",
+  "description": "Παρακολούθηση τιμών για το ταξίδι 26/6–4/7/2027",
+  "lang": "el",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1d23",
+  "theme_color": "#0f2d36",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

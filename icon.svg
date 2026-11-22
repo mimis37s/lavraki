@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14495a"/>
+      <stop offset="1" stop-color="#0a2630"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f6f78"/>
+      <stop offset="0.38" stop-color="#9fb7bd"/>
+      <stop offset="0.62" stop-color="#e4ecee"/>
+      <stop offset="1" stop-color="#f7fafa"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#sea)"/>
+  <!-- bubbles -->
+  <circle cx="98" cy="170" r="9" fill="none" stroke="#5fb7c4" stroke-width="4" opacity=".7"/>
+  <circle cx="122" cy="132" r="6" fill="none" stroke="#5fb7c4" stroke-width="3.5" opacity=".6"/>
+  <!-- spiny dorsal fin -->
+  <path d="M214 196 L222 146 L238 190 L250 138 L264 186 L276 136 L290 184 L300 144 L310 196 Z" fill="#e3a83f"/>
+  <!-- soft dorsal fin -->
+  <path d="M318 198 C332 168 360 164 378 186 L370 212 Z" fill="#c98a1b"/>
+  <!-- tail -->
+  <path d="M392 256 L462 196 C452 236 452 276 462 316 Z" fill="#4f6f78"/>
+  <!-- anal fin -->
+  <path d="M316 306 C336 336 360 336 372 318 L350 296 Z" fill="#c98a1b"/>
+  <!-- body -->
+  <path d="M72 262 C108 204 186 186 266 192 C330 197 374 222 404 256 C374 290 330 315 266 320 C186 326 108 312 72 262 Z" fill="url(#body)"/>
+  <!-- mouth -->
+  <path d="M72 262 C80 268 92 270 104 266" fill="none" stroke="#2c4a52" stroke-width="5" stroke-linecap="round"/>
+  <!-- gill cover -->
+  <path d="M168 210 C150 238 150 286 170 310" fill="none" stroke="#5d7d85" stroke-width="7" stroke-linecap="round"/>
+  <!-- lateral line -->
+  <path d="M176 244 C240 236 320 238 396 256" fill="none" stroke="#6f8f97" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <!-- pectoral fin -->
+  <path d="M190 270 C214 266 238 276 248 296 C222 298 200 290 190 270 Z" fill="#e3a83f" opacity=".9"/>
+  <!-- eye -->
+  <circle cx="122" cy="246" r="15" fill="#0a2630"/>
+  <circle cx="117" cy="241" r="5" fill="#ffffff"/>
+</svg>
