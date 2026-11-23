@@ -270,5 +270,43 @@
   "direct": true,
   "hotel_max_night": 130,
   "note": "live 178 €: δεν είναι αρκετά φθηνό"
+ },
+ "ATH-TYO-2026-12-02-2026-12-09": {
+  "at": "2026-11-23T15:02+02:00",
+  "city": "Τόκιο",
+  "iata": "TYO",
+  "sky": "tyoa",
+  "from": "2026-12-02",
+  "to": "2026-12-09",
+  "nights": 7,
+  "max_pp": 550,
+  "typical": null,
+  "engine": 582,
+  "hotel_max_night": 120,
+  "price": 569,
+  "airline": "Ethiopian",
+  "direct": false,
+  "status": "normal",
+  "ok": false,
+  "note": "live 569 €: δεν είναι αρκετά φθηνό"
+ },
+ "ATH-BKK-2027-01-15-2027-01-23": {
+  "at": "2026-11-23T15:02+02:00",
+  "city": "Μπανγκόκ",
+  "iata": "BKK",
+  "sky": "bkk",
+  "from": "2027-01-15",
+  "to": "2027-01-23",
+  "nights": 8,
+  "max_pp": 550,
+  "typical": null,
+  "engine": 599,
+  "hotel_max_night": 120,
+  "price": 610,
+  "airline": "Royal Jordanian",
+  "direct": false,
+  "status": "normal",
+  "ok": false,
+  "note": "live 610 €: δεν είναι αρκετά φθηνό"
  }
 }
