@@ -121,6 +121,18 @@ nav.bar button[aria-selected="true"]{color:var(--deep);background:var(--tide)}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.deal > button.head:focus-visible{outline:3px solid var(--lemon);outline-offset:2px}
 @media (prefers-reduced-motion: reduce){ .toast{transition:none} }
 @media (min-width:600px){ .catch .city{font-size:40px} }
+
+/* v2 additions */
+[hidden]{display:none !important}
+.fresh-top{color:var(--silver);font-size:13px;margin:-10px 0 14px}
+.seg{display:inline-grid;grid-template-columns:1fr 1fr;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:3px;margin-bottom:12px}
+.seg button{border:0;background:transparent;border-radius:999px;padding:7px 16px;font-size:14px;font-weight:600;color:var(--silver);cursor:pointer;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--deep);color:#fff}
+.badge.ok{background:#e3effd;color:#1d4f8a}
+.sub{font-size:13px;color:var(--silver);text-decoration:underline;text-underline-offset:2px}
+.linkbtn{border:0;background:none;padding:6px 0;color:var(--silver);font-size:13px;text-decoration:underline;text-underline-offset:2px;cursor:pointer;align-self:flex-start}
+.note{background:#fdf6e0;border:1px solid #f0dfa6;color:#5c4500;border-radius:12px;padding:10px 12px;font-size:14px}
+nav.bar div.four{grid-template-columns:repeat(4,1fr)}
 </style>
 </head>
 <body>
@@ -129,12 +141,17 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
     <img src="icon-192.png" alt="">
     <div>
       <h1>Λαβράκι</h1>
-      <p>Πτήση + ξενοδοχείο από Αθήνα, σε τιμή ευκαιρίας</p>
+      <p>Πτήσεις από Αθήνα σε τιμή ευκαιρίας</p>
     </div>
   </header>
+  <p class="fresh-top" id="fresh"></p>
 
-  <!-- ============ Deals ============ -->
+  <!-- ============ Λαβράκια (public, automatic) ============ -->
   <section class="view" id="v-deals" aria-labelledby="t-deals">
+    <div class="seg" role="group" aria-label="Πόσα άτομα ταξιδεύετε">
+      <button type="button" data-ppl="1">1 άτομο</button>
+      <button type="button" data-ppl="2">2 άτομα</button>
+    </div>
     <article class="catch" id="catch" hidden></article>
 
     <div class="filters" role="group" aria-label="Φίλτρα">
@@ -144,18 +161,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
 
     <p class="count" id="count" aria-live="polite"></p>
     <div class="list" id="list"></div>
-
-    <section id="fl-wrap" hidden>
-      <h2 style="margin-top:26px">Φθηνές πτήσεις αυτή τη στιγμή</h2>
-      <p class="lede">Βρέθηκαν αυτόματα, με κανονικές εταιρείες. Το ξενοδοχείο το διαλέγεις εσύ με το κουμπί.</p>
-      <div class="list" id="fl-list"></div>
-    </section>
   </section>
 
   <!-- ============ Search ============ -->
   <section class="view" id="v-search" aria-labelledby="t-search" hidden>
     <h2>Υπάρχει λαβράκι εκεί που θέλω;</h2>
-    <p class="lede">Διάλεξε πού και πότε. Θα δεις τα ελεγμένα πακέτα και κουμπιά για τις τιμές αυτή τη στιγμή.</p>
+    <p class="lede">Διάλεξε πού και πότε. Θα δεις ό,τι έχει βρει η μηχανή και κουμπιά για τις τιμές αυτή τη στιγμή.</p>
     <form class="panel" id="form">
       <div>
         <label for="dest">Προορισμός</label>
@@ -164,32 +175,39 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
       </div>
       <div class="two">
         <div><label for="month">Μήνας</label><select id="month"></select></div>
-        <div><label for="people">Άτομα</label><select id="people"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option></select></div>
+        <div><label for="nights">Βράδια</label><select id="nights"><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7</option><option>10</option></select></div>
       </div>
-      <div><label for="nights">Βράδια</label><select id="nights"><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7</option><option>10</option></select></div>
       <button class="btn go" type="submit">Ψάξε λαβράκι</button>
     </form>
     <div id="result" aria-live="polite"></div>
   </section>
 
-  <!-- ============ How ============ -->
-  <section class="view how" id="v-how" aria-labelledby="t-how" hidden>
-    <h2>Πώς διαλέγουμε ένα λαβράκι</h2>
-    <p class="lede">Κάθε πακέτο είναι πτήση και ξενοδοχείο που ελέγξαμε live, μαζί.</p>
-    <div class="panel"><h3>✈️ Πτήση</h3><p>Από Αθήνα, απευθείας όπου γίνεται, με κανονικές εταιρείες (όχι Ryanair, Wizz, easyJet). Αν κάπου μπει low-cost, το γράφει καθαρά πάνω στο πακέτο.</p></div>
-    <div class="panel"><h3>🏨 Ξενοδοχείο</h3><p>Βαθμολογία 8 και πάνω στο Booking, αρκετές κριτικές και καθαριότητα τουλάχιστον 8,5. Δίκλινο ή διπλό με ιδιωτικό μπάνιο.</p></div>
-    <div class="panel"><h3>🎣 Πότε είναι λαβράκι</h3><p>Όταν το σύνολο είναι αισθητά κάτω από ό,τι κοστίζει συνήθως η ίδια ποιότητα την ίδια εποχή. Τα «Καλή τιμή» είναι κοντά, αλλά όχι ακόμα λαβράκια.</p></div>
-    <div class="panel"><h3>🔄 Πόσο φρέσκες είναι οι τιμές</h3><p>Οι τιμές ξαναελέγχονται αρκετές φορές τη μέρα. Κάθε πακέτο γράφει πότε ελέγχθηκε. Οι τιμές αλλάζουν γρήγορα, οπότε δες την τελική τιμή πριν πληρώσεις.</p></div>
-    <div class="panel"><h3>📲 Βάλ' το στην οθόνη σου</h3><p>Στο iPhone: Κοινή χρήση ▸ Προσθήκη στην οθόνη Αφετηρίας. Στο Android: μενού ⋮ ▸ Εγκατάσταση εφαρμογής.</p></div>
+  <!-- ============ Personal (hand-checked) ============ -->
+  <section class="view" id="v-me" aria-labelledby="t-me" hidden>
+    <h2>Τα δικά μου</h2>
+    <p class="lede">Πακέτα πτήση + ξενοδοχείο που ελέγχθηκαν ένα ένα, live.</p>
+    <div class="list" id="me-list"></div>
   </section>
 
-  <p class="fresh" id="fresh"></p>
+  <!-- ============ How ============ -->
+  <section class="view how" id="v-how" aria-labelledby="t-how" hidden>
+    <h2>Πώς βρίσκουμε ένα λαβράκι</h2>
+    <p class="lede">Μια μηχανή ελέγχει κάθε ώρα πάνω από 39 προορισμούς από Αθήνα, για τους επόμενους 9 μήνες.</p>
+    <div class="panel"><h3>✈️ Μόνο κανονικές εταιρείες</h3><p>Aegean, Sky Express, Lufthansa, SWISS, KLM και άλλες. Όχι Ryanair, Wizz, easyJet και παρόμοιες. Απευθείας πτήσεις όπου υπάρχουν.</p></div>
+    <div class="panel"><h3>🎣 Πότε είναι λαβράκι</h3><p>Συγκρίνουμε την τιμή με το πόσο κοστίζει συνήθως η ίδια διαδρομή τον ίδιο μήνα. 30% και πάνω φθηνότερα είναι λαβράκι, 15% και πάνω καλή τιμή.</p></div>
+    <div class="panel"><h3>✓ Επιβεβαιωμένα</h3><p>Τα καλύτερα τα ελέγχουμε και με το χέρι. Όσα έχουν το σήμα «Επιβεβαιώθηκε live», τα είδαμε με τα μάτια μας στο Skyscanner.</p></div>
+    <div class="panel"><h3>🏨 Ξενοδοχείο</h3><p>Με το κουμπί «Ξενοδοχεία 8+» βλέπεις στο Booking μόνο ξενοδοχεία με βαθμολογία 8 και πάνω, για τις ίδιες μέρες, από το φθηνότερο.</p></div>
+    <div class="panel"><h3>🔄 Αν άλλαξε η τιμή</h3><p>Οι τιμές αλλάζουν γρήγορα. Κάθε πτήση δείχνει πότε βρέθηκε, και παρόμοιες ημερομηνίες για εναλλακτική. Αν μια τιμή δεν ισχύει, πάτα «Η τιμή δεν ισχύει πια» για να το ξέρουμε.</p></div>
+    <div class="panel"><h3>📲 Βάλ' το στην οθόνη σου</h3><p>iPhone: στο Safari, Κοινή χρήση ▸ Προσθήκη στην οθόνη Αφετηρίας. Android: στο Chrome, μενού ⋮ ▸ Εγκατάσταση εφαρμογής.</p></div>
+    <p class="hint">Η εφαρμογή δεν πουλάει εισιτήρια. Σε στέλνει στα sites όπου γίνεται η κράτηση.</p>
+  </section>
 </main>
 
 <nav class="bar" aria-label="Ενότητες">
-  <div role="tablist">
+  <div role="tablist" id="tabs">
     <button type="button" role="tab" id="t-deals" aria-controls="v-deals" aria-selected="true"><span aria-hidden="true">🎣</span>Λαβράκια</button>
     <button type="button" role="tab" id="t-search" aria-controls="v-search" aria-selected="false"><span aria-hidden="true">🔎</span>Ψάξε</button>
+    <button type="button" role="tab" id="t-me" aria-controls="v-me" aria-selected="false" hidden><span aria-hidden="true">⭐</span>Δικά μου</button>
     <button type="button" role="tab" id="t-how" aria-controls="v-how" aria-selected="false"><span aria-hidden="true">💡</span>Πώς δουλεύει</button>
   </div>
 </nav>
@@ -197,88 +215,164 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
 
 <script>
 (function(){
+  // Free, cookie-less visit counter. Fill in the GoatCounter code (e.g. "lavraki") to switch it on.
+  var GOATCOUNTER = "";
+
   var $=function(id){return document.getElementById(id);};
   function el(p,tag,cls,text){var n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;if(p)p.appendChild(n);return n;}
+  function store(k,v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v); }catch(e){ return null; } }
 
   var MON=["Ιαν","Φεβ","Μαρ","Απρ","Μαΐ","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"];
-  var MONACC=["Ιανουάριο","Φεβρουάριο","Μάρτιο","Απρίλιο","Μάιο","Ιούνιο","Ιούλιο","Αύγουστο","Σεπτέμβριο","Οκτώβριο","Νοέμβριο","Δεκέμβριο"];
   var MONLONG=["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάιος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"];
-  // [Greek name, Skyscanner code, Booking text, English name]
-  var CITIES=[["Νέα Υόρκη","nyca","New York","New York"],["Λισαβόνα","lis","Lisbon","Lisbon"],["Πόρτο","opo","Porto","Porto"],["Νίκαια / Μονακό","nce","Nice","Nice"],["Μιλάνο","mila","Milan","Milan"],["Λίμνη Κόμο","mxp","Bellagio","Milan"],["Ζυρίχη","zrh","Zurich","Zurich"],["Γενεύη","gva","Geneva","Geneva"],["Κοπεγχάγη","cph","Copenhagen","Copenhagen"],["Όσλο","osl","Oslo","Oslo"],["Στοκχόλμη","arn","Stockholm","Stockholm"],["Λονδίνο","lond","London","London"],["Παρίσι","pari","Paris","Paris"],["Ρώμη","rome","Rome","Rome"],["Βενετία","vce","Venice","Venice"],["Βαρκελώνη","bcn","Barcelona","Barcelona"],["Μαδρίτη","mad","Madrid","Madrid"],["Άμστερνταμ","ams","Amsterdam","Amsterdam"],["Βιέννη","vie","Vienna","Vienna"],["Πράγα","prg","Prague","Prague"],["Βουδαπέστη","bud","Budapest","Budapest"],["Βερολίνο","ber","Berlin","Berlin"],["Μόναχο","muc","Munich","Munich"],["Κωνσταντινούπολη","ist","Istanbul","Istanbul"],["Ντουμπάι","dxb","Dubai","Dubai"],["Μαρακές","rak","Marrakech","Marrakech"],["Τόκιο","tyoa","Tokyo","Tokyo"],["Μπανγκόκ","bkk","Bangkok","Bangkok"],["Βοστώνη","bos","Boston","Boston"],["Σικάγο","chia","Chicago","Chicago"],["Τορόντο","yyz","Toronto","Toronto"],["Ρέικιαβικ","kef","Reykjavik","Reykjavik"]];
-  var BUDGET=[["all","Όλες οι τιμές",1e9],["150","Έως 150 € το άτομο",150],["400","Έως 400 €",400],["800","Έως 800 €",800]];
+  var MONACC=["Ιανουάριο","Φεβρουάριο","Μάρτιο","Απρίλιο","Μάιο","Ιούνιο","Ιούλιο","Αύγουστο","Σεπτέμβριο","Οκτώβριο","Νοέμβριο","Δεκέμβριο"];
+  // Greek name -> [IATA city, Skyscanner code, English name for Booking]
+  var CITY={"Λισαβόνα":["LIS","lis","Lisbon"],"Πόρτο":["OPO","opo","Porto"],"Μαδρίτη":["MAD","mad","Madrid"],"Βαρκελώνη":["BCN","bcn","Barcelona"],"Παρίσι":["PAR","pari","Paris"],"Νίκαια / Μονακό":["NCE","nce","Nice"],"Λονδίνο":["LON","lond","London"],"Εδιμβούργο":["EDI","edi","Edinburgh"],"Δουβλίνο":["DUB","dub","Dublin"],"Άμστερνταμ":["AMS","ams","Amsterdam"],"Βρυξέλλες":["BRU","bru","Brussels"],"Ρώμη":["ROM","rome","Rome"],"Μιλάνο":["MIL","mila","Milan"],"Βενετία":["VCE","vce","Venice"],"Φλωρεντία":["FLR","flr","Florence"],"Νάπολη":["NAP","nap","Naples"],"Ζυρίχη":["ZRH","zrh","Zurich"],"Γενεύη":["GVA","gva","Geneva"],"Βιέννη":["VIE","vie","Vienna"],"Πράγα":["PRG","prg","Prague"],"Βουδαπέστη":["BUD","bud","Budapest"],"Βερολίνο":["BER","ber","Berlin"],"Μόναχο":["MUC","muc","Munich"],"Κοπεγχάγη":["CPH","cph","Copenhagen"],"Όσλο":["OSL","osl","Oslo"],"Στοκχόλμη":["STO","stoc","Stockholm"],"Ελσίνκι":["HEL","hel","Helsinki"],"Ρέικιαβικ":["REK","kef","Reykjavik"],"Κωνσταντινούπολη":["IST","ist","Istanbul"],"Μάλτα":["MLA","mla","Valletta"],"Τιφλίδα":["TBS","tbs","Tbilisi"],"Μαρακές":["RAK","rak","Marrakech"],"Ντουμπάι":["DXB","dxb","Dubai"],"Νέα Υόρκη":["NYC","nyca","New York"],"Βοστώνη":["BOS","bos","Boston"],"Σικάγο":["CHI","chia","Chicago"],"Τορόντο":["YTO","ytoa","Toronto"],"Τόκιο":["TYO","tyoa","Tokyo"],"Μπανγκόκ":["BKK","bkk","Bangkok"],"Λίμνη Κόμο":["MIL","mxp","Bellagio"]};
+  var BUDGET=[["all","Όλες οι τιμές",1e9],["100","Έως 100 € το άτομο",100],["200","Έως 200 €",200],["400","Έως 400 €",400],["800","Έως 800 €",800]];
   var RANK={hit:0,near:1,check:2,normal:3};
-  var DATA=null, budget="all", month="all", open=null;
+  var PUB=null, ME=[], VER={}, budget="all", month="all", open=null;
+  var PPL=+(store("lavraki_ppl")||2)===1?1:2;
+  var HIDDEN={}; try{ HIDDEN=JSON.parse(store("lavraki_hidden")||"{}")||{}; }catch(e){}
 
   function norm(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").trim();}
   function d(s){return new Date(String(s).slice(0,10)+"T12:00:00Z");}
   function iso(x){return x.toISOString().slice(0,10);}
-  function nights(x){return Math.round((d(x.to)-d(x.from))/864e5);}
+  function nights(x){return x.nights||Math.round((d(x.to)-d(x.from))/864e5);}
   function people(x){return x.people || (/2p|για 2/.test(x.id+" "+x.destination)?2:1);}
   function pp(x){return Math.round(x.total/people(x));}
-  function money(n){return n.toLocaleString("el-GR")+" €";}
+  function money(n){return Math.round(n).toLocaleString("el-GR")+" €";}
   function range(a,b){
     var A=d(a),B=d(b),y=B.getUTCFullYear();
     if(A.getUTCMonth()===B.getUTCMonth()) return A.getUTCDate()+"–"+B.getUTCDate()+" "+MON[B.getUTCMonth()]+" "+y;
     return A.getUTCDate()+" "+MON[A.getUTCMonth()]+" – "+B.getUTCDate()+" "+MON[B.getUTCMonth()]+" "+y;
   }
-  function ago(s){ if(!s) return ""; var t=new Date(String(s).length<=10?s+"T12:00:00":s).getTime(),h=Math.round((Date.now()-t)/36e5);
-    if(!isFinite(h)) return ""; if(h<1) return "μόλις τώρα"; if(h<24) return "πριν από "+h+(h===1?" ώρα":" ώρες"); var n=Math.round(h/24); return "πριν από "+n+(n===1?" μέρα":" μέρες"); }
+  function ago(s){ if(!s) return ""; var t=new Date(String(s).length<=10?s+"T12:00:00":s).getTime(),m=Math.round((Date.now()-t)/6e4);
+    if(!isFinite(m)) return ""; if(m<2) return "μόλις τώρα"; if(m<60) return "πριν από "+m+" λεπτά"; var h=Math.round(m/60); if(h<24) return "πριν από "+h+(h===1?" ώρα":" ώρες"); var n=Math.round(h/24); return "πριν από "+n+(n===1?" μέρα":" μέρες"); }
   function cityOf(x){ return x.city || String(x.destination||"").replace(/\s*\(.*?\)/g,"").replace(" Σαββατοκύριακο","").trim(); }
-  function hotelName(x){ return String(x.hotel||"").split(/[(,]/)[0].trim(); }
-  function grab(re,s){ var m=String(s||"").match(re); return m?m[1]:null; }
-  function airline(x){ return String(x.flight||"").split(/ απευθείας|,|\(/)[0].trim(); }
+  function info(x){ return CITY[cityOf(x)] || null; }
+  function airline(x){ return String(x.flight||"").split(/ απευθείας| με 1 στάση|,|\(/)[0].trim(); }
   function direct(x){ return /απευθείας/.test(x.flight||""); }
-  function links(x){ var f=null,h=null,other=[];
-    (x.links||[]).forEach(function(k){ if(!k||!/^https:\/\//.test(k.url||"")) return;
-      if(/booking\.com/.test(k.url)) h=h||k; else if(/skyscanner/.test(k.url)) f=k; else if(!f&&/google\.com\/travel/.test(k.url)) f=k; else other.push(k); });
-    return {flight:f,hotel:h}; }
+  function keyOf(x){ if(x.key) return x.key; var c=info(x); return c?("ATH-"+c[0]+"-"+x.from+"-"+x.to):x.id; }
+  function yymmdd(s){ return s.slice(2).replace(/-/g,""); }
+  function sky(code,from,to,n,dir){ return "https://www.skyscanner.gr/transport/flights/ath/"+code+"/"+yymmdd(from)+"/"+yymmdd(to)+"/?adultsv2="+n+"&cabinclass=economy&preferdirects="+(dir?"true":"false"); }
+  function booking(name,from,to,n){ return "https://www.booking.com/searchresults.el.html?ss="+encodeURIComponent(name)+"&checkin="+from+"&checkout="+to+"&group_adults="+n+"&no_rooms=1&group_children=0&nflt=review_score%3D80&order=price&selected_currency=EUR"; }
+  function flightUrl(x,from,to){ var c=info(x), code=x.sky||(c&&c[1]); return code?sky(code,from||x.from,to||x.to,PPL,direct(x)):null; }
+  function hotelUrl(x,from,to){ var c=info(x); return booking(c?c[2]:cityOf(x),from||x.from,to||x.to,PPL); }
+  function aviaUrl(x){ var l=(x.links||[]).filter(function(k){ return /aviasales\.com/.test(k.url||""); })[0]; return l?l.url:null; }
+  function linkOf(x,re){ var l=(x.links||[]).filter(function(k){ return re.test(k.url||"") && /^https:\/\//.test(k.url); })[0]; return l?l.url:null; }
+  function toast(t){ var n=$("toast"); n.textContent=t; n.classList.add("on"); clearTimeout(toast.t); toast.t=setTimeout(function(){n.classList.remove("on");},2600); }
+  function count(path){ try{ if(window.goatcounter && window.goatcounter.count) window.goatcounter.count({path:path,event:true}); }catch(e){} }
   function shareUrl(x){ return location.origin+location.pathname+"#d="+encodeURIComponent(x.id); }
-  function toast(t){ var n=$("toast"); n.textContent=t; n.classList.add("on"); clearTimeout(toast.t); toast.t=setTimeout(function(){n.classList.remove("on");},2200); }
+
+  // ---------- share card: a picture people actually forward ----------
+  function shareImage(x){
+    var W=1080,H=1350,c=document.createElement("canvas"); c.width=W; c.height=H; var g=c.getContext("2d");
+    var F='"Commissioner", "Noto Sans", system-ui, sans-serif';
+    g.fillStyle="#0c2b36"; g.fillRect(0,0,W,H);
+    g.fillStyle="#a9c6cd"; g.font="600 40px "+F; g.fillText("🎣 Λαβράκι · από Αθήνα",80,130);
+    g.fillStyle="#ffffff"; var size=cityOf(x).length>12?104:132; g.font="800 "+size+"px "+F; g.fillText(cityOf(x),80,330);
+    g.fillStyle="#cfe1e5"; g.font="500 52px "+F; g.fillText(range(x.from,x.to)+", "+nights(x)+" βράδια",80,420);
+    g.font="500 44px "+F; g.fillText("✈️ "+airline(x)+(direct(x)?", απευθείας":""),80,510);
+    g.save(); g.translate(80,620); g.rotate(-0.05);
+    g.fillStyle="#f6c744"; g.beginPath(); g.moveTo(60,0); g.lineTo(620,0); g.lineTo(620,300); g.lineTo(60,300); g.lineTo(0,150); g.closePath(); g.fill();
+    g.fillStyle="#0c2b36"; g.beginPath(); g.arc(40,150,14,0,Math.PI*2); g.fill();
+    g.fillStyle="#3a2c00"; g.font="800 150px "+F; g.fillText(money(pp(x)),110,190); g.font="600 46px "+F; g.fillText("το άτομο, μετ' επιστροφής",110,260);
+    g.restore();
+    if(x.savings){ g.fillStyle="#7fdcb7"; g.font="700 56px "+F; g.fillText(x.savings+"% κάτω από το συνηθισμένο",80,1060); }
+    g.fillStyle="#a9c6cd"; g.font="500 38px "+F; g.fillText("mimis37s.github.io/lavraki",80,1240);
+    return new Promise(function(res){ c.toBlob(function(b){ res(b); },"image/png"); });
+  }
   function share(x){
-    var text="🎣 Λαβράκι: "+cityOf(x)+", "+range(x.from,x.to)+". "+money(pp(x))+" το άτομο με πτήση και ξενοδοχείο.";
-    var url=shareUrl(x);
-    if(navigator.share){ navigator.share({title:"Λαβράκι: "+cityOf(x),text:text,url:url}).catch(function(){}); return; }
-    var all=text+" "+url;
-    if(navigator.clipboard) navigator.clipboard.writeText(all).then(function(){toast("Το link αντιγράφηκε. Στείλ' το σε φίλο.");},function(){prompt("Αντέγραψε το link:",all);});
-    else prompt("Αντέγραψε το link:",all);
+    var text="🎣 Λαβράκι: "+cityOf(x)+", "+range(x.from,x.to)+". "+money(pp(x))+" το άτομο"+(x.savings?", "+x.savings+"% κάτω από το συνηθισμένο":"")+".";
+    var url=shareUrl(x); count("event/share/"+keyOf(x));
+    var fallback=function(){
+      if(navigator.share){ navigator.share({title:"Λαβράκι: "+cityOf(x),text:text,url:url}).catch(function(){}); return; }
+      var all=text+" "+url;
+      if(navigator.clipboard) navigator.clipboard.writeText(all).then(function(){toast("Το link αντιγράφηκε. Στείλ' το σε φίλο.");},function(){prompt("Αντέγραψε το link:",all);});
+      else prompt("Αντέγραψε το link:",all);
+    };
+    if(!(navigator.canShare && window.File)) return fallback();
+    (document.fonts?document.fonts.ready:Promise.resolve()).then(function(){ return shareImage(x); }).then(function(blob){
+      var f=new File([blob],"lavraki-"+cityOf(x)+".png",{type:"image/png"});
+      if(blob && navigator.canShare({files:[f]})) return navigator.share({files:[f],text:text+" "+url}).catch(function(){});
+      fallback();
+    }).catch(fallback);
   }
 
-  function live(){
-    var today=iso(new Date());
-    return ((DATA&&DATA.deals)||[]).filter(function(x){ return x.kind==="package" && x.total && (x.from||"")>=today; })
-      .sort(function(a,b){ return (RANK[a.status]-RANK[b.status]) || ((b.savings||0)-(a.savings||0)) || (pp(a)-pp(b)); });
+  // ---------- data ----------
+  function upcoming(list){ var t=iso(new Date()); return (list||[]).filter(function(x){ return x && x.total && (x.from||"")>=t; }); }
+  function publicItems(){
+    if(!PUB) return [];
+    var all=upcoming((PUB.deals||[]).concat(PUB.flights||[])).filter(function(x){ return (x.status==="hit"||x.status==="near") && !HIDDEN[keyOf(x)]; });
+    return all.sort(function(a,b){ return (RANK[a.status]-RANK[b.status]) || ((verified(b)?1:0)-(verified(a)?1:0)) || ((b.savings||0)-(a.savings||0)) || (pp(a)-pp(b)); });
   }
   function filtered(){
     var lim=BUDGET.filter(function(b){return b[0]===budget;})[0][2];
-    return live().filter(function(x){ return pp(x)<=lim && (month==="all" || x.from.slice(0,7)===month || x.to.slice(0,7)===month); });
+    return publicItems().filter(function(x){ return pp(x)<=lim && (month==="all" || x.from.slice(0,7)===month); });
   }
+  function verified(x){ var v=VER[keyOf(x)]; return v && v.at ? v : null; }
 
+  // ---------- pieces ----------
   function tag(p,x){ var t=el(p,"div","tag"); el(t,"b",null,money(pp(x))); el(t,"small",null,"το άτομο"); return t; }
   function badges(p,x){
-    var b=el(p,"div","badges");
+    var b=el(p,"div","badges"), v=verified(x);
     if(x.status==="hit") el(b,"span","badge hit","🎣 Λαβράκι"); else if(x.status==="near") el(b,"span","badge","Καλή τιμή");
     if(x.savings) el(b,"span","badge hit",x.savings+"% κάτω από το συνηθισμένο");
-    el(b,"span","badge",people(x)===1?"Για 1 άτομο":"Για "+people(x)+" άτομα");
+    if(v) el(b,"span","badge ok","✓ Επιβεβαιώθηκε live");
+    if(x.kind==="flight") el(b,"span","badge","Πτήση"); else if(x.kind==="package" && !x.auto) el(b,"span","badge",people(x)===1?"Για 1 άτομο":"Για "+people(x)+" άτομα");
     if(x.lowcost) el(b,"span","badge warn","Low-cost πτήση");
-    if(x.auto) el(b,"span","badge","Αυτόματος έλεγχος");
     return b;
   }
-  function details(p,x){
-    var r=grab(/(\d+,\d)\/10/,x.hotel), c=grab(/καθαριότητα (\d+,\d)/,x.hotel);
-    var l1=el(p,"div","line"); el(l1,"span",null,"✈️"); el(l1,"span",null,x.flight);
-    var l2=el(p,"div","line"); el(l2,"span",null,"🏨"); el(l2,"span",null,x.hotel);
-    el(p,"div","total","Σύνολο "+money(x.total)+" για "+(people(x)===1?"1 άτομο":people(x)+" άτομα")+", "+nights(x)+" βράδια.");
-    el(p,"div","checked","Η τιμή ελέγχθηκε "+ago(x.checkedAt||x.checked)+". Δες την τελική τιμή στο site πριν πληρώσεις.");
-    var L=links(x), s=el(p,"div","steps");
-    if(L.flight){ var a=el(s,"a","btn go wide","1. Κλείσε την πτήση"); a.href=L.flight.url; a.target="_blank"; a.rel="noopener"; }
-    if(L.hotel){ var h=el(s,"a","btn go wide","2. Κλείσε το ξενοδοχείο"); h.href=L.hotel.url; h.target="_blank"; h.rel="noopener"; }
-    var act=el(p,"div","actions"); var sh=el(act,"button","btn wide","📤 Στείλ' το σε φίλο"); sh.type="button";
-    sh.addEventListener("click",function(){share(x);});
+  function stepLink(p,cls,text,url,onclick){ if(!url) return; var a=el(p,"a",cls,text); a.href=url; a.target="_blank"; a.rel="noopener"; if(onclick) a.addEventListener("click",onclick); }
+
+  function autoDetails(more,x){
+    var l1=el(more,"div","line"); el(l1,"span",null,"✈️"); el(l1,"span",null,airline(x)+(direct(x)?", απευθείας":", με 1 στάση"));
+    if(x.hotel){ var l2=el(more,"div","line"); el(l2,"span",null,"🏨"); el(l2,"span",null,x.hotel); }
+    var t=el(more,"div","total"), each=pp(x);
+    t.textContent=(PPL===1?"Για 1 άτομο: ":"Για 2 άτομα: ")+money(each*PPL)+" μετ' επιστροφής"+(x.typical?" (συνήθως περίπου "+money(Math.round(x.typical/people(x))*PPL)+")":"")+".";
+    var v=verified(x);
+    el(more,"div","checked", v ? "Τη βρήκε η μηχανή "+ago(x.checkedAt)+" και την επιβεβαιώσαμε live στο Skyscanner "+ago(v.at)+" ("+money(v.price)+" το άτομο)."
+                               : "Τη βρήκε η μηχανή "+ago(x.checkedAt)+", από τιμές που είδαν ταξιδιώτες τις τελευταίες ώρες. Δες την τελική τιμή πριν πληρώσεις.");
+    var s=el(more,"div","steps");
+    stepLink(s,"btn go wide","1. Δες την πτήση στο Skyscanner",flightUrl(x),function(){ count("event/flight/"+keyOf(x)); });
+    stepLink(s,"btn wide","2. Ξενοδοχεία 8+ για αυτές τις μέρες",hotelUrl(x),function(){ count("event/hotel/"+keyOf(x)); });
+    var av=aviaUrl(x); if(av){ var aa=el(more,"a","sub","Η ίδια τιμή που βρήκε η μηχανή, στο Aviasales (για 1 άτομο)"); aa.href=av; aa.target="_blank"; aa.rel="noopener"; }
+    if(x.alts && x.alts.length){
+      el(more,"div","checked","Αν η τιμή έχει φύγει, παρόμοιες τιμές βρέθηκαν και για:");
+      var row=el(more,"div","actions");
+      x.alts.forEach(function(a){ stepLink(row,"btn",range(a.from,a.to)+", "+money(Math.round(a.price/people(x)))+" το άτομο",flightUrl(x,a.from,a.to)); });
+    }
+    var act=el(more,"div","actions"); var sh=el(act,"button","btn wide","📤 Στείλ' το σε φίλο"); sh.type="button"; sh.addEventListener("click",function(){ share(x); });
+    var bad=el(more,"button","linkbtn","Η τιμή δεν ισχύει πια"); bad.type="button";
+    bad.addEventListener("click",function(){ HIDDEN[keyOf(x)]=iso(new Date()); store("lavraki_hidden",JSON.stringify(HIDDEN)); count("event/price-changed/"+keyOf(x)); toast("Ευχαριστούμε! Το κρύψαμε και θα το ξαναελέγξουμε."); renderAll(); });
   }
 
+  function meDetails(more,x){
+    var l1=el(more,"div","line"); el(l1,"span",null,"✈️"); el(l1,"span",null,x.flight);
+    if(x.hotel){ var l2=el(more,"div","line"); el(l2,"span",null,"🏨"); el(l2,"span",null,x.hotel); }
+    el(more,"div","total","Σύνολο "+money(x.total)+" για "+(people(x)===1?"1 άτομο":people(x)+" άτομα")+", "+nights(x)+" βράδια.");
+    el(more,"div","checked","Ελέγχθηκε live "+ago(x.checkedAt||x.checked)+". Δες την τελική τιμή πριν πληρώσεις.");
+    var s=el(more,"div","steps");
+    var fl=linkOf(x,/skyscanner/), ht=linkOf(x,/booking\.com/);
+    if(fl) fl=fl.replace("://gr.skyscanner.com","://www.skyscanner.gr");
+    stepLink(s,"btn go wide","1. Κλείσε την πτήση",fl||flightUrl(x));
+    stepLink(s,"btn go wide","2. Κλείσε το ξενοδοχείο",ht);
+  }
+
+  function card(p,x,detailsFn){
+    var w=el(p,"article","deal"); w.id="deal-"+x.id;
+    var h=el(w,"button","head"); h.type="button"; h.setAttribute("aria-expanded",String(open===x.id));
+    var left=el(h,"div"); el(left,"div","city",cityOf(x)); el(left,"div","when",range(x.from,x.to)+", "+nights(x)+" βράδια"); badges(left,x);
+    tag(h,x);
+    var more=el(w,"div","more"); more.hidden=open!==x.id;
+    var built=false; function build(){ if(!built){ detailsFn(more,x); built=true; } }
+    if(!more.hidden) build();
+    h.addEventListener("click",function(){ open=(open===x.id)?null:x.id; build(); more.hidden=open!==x.id; h.setAttribute("aria-expanded",String(open===x.id)); if(open===x.id) count("event/open/"+keyOf(x)); });
+  }
+
+  // ---------- render ----------
+  function renderSeg(){ document.querySelectorAll(".seg button").forEach(function(b){ b.setAttribute("aria-pressed",String(+b.dataset.ppl===PPL)); }); }
   function renderCatch(){
-    var box=$("catch"), all=live(); box.textContent="";
-    var x=all.filter(function(y){return y.status==="hit";})[0]||all[0];
+    var box=$("catch"); box.textContent=""; var all=publicItems(); var x=all[0];
     if(!x){ box.hidden=true; return; } box.hidden=false;
     el(box,"p","kicker","Η ψαριά της ημέρας");
     el(box,"h2","city",cityOf(x));
@@ -286,126 +380,91 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
     tag(box,x);
     var f=el(box,"div","facts");
     el(f,"div",null,"✈️ "+airline(x)+(direct(x)?", απευθείας":""));
-    var r=grab(/(\d+,\d)\/10/,x.hotel), c=grab(/καθαριότητα (\d+,\d)/,x.hotel);
-    el(f,"div",null,"🏨 "+hotelName(x)+(r?", βαθμολογία "+r:"")+(c?", καθαριότητα "+c:""));
-    if(x.savings) el(f,"div",null,"📉 "+x.savings+"% κάτω από το συνηθισμένο για την εποχή");
+    if(x.savings) el(f,"div",null,"📉 "+x.savings+"% κάτω από το συνηθισμένο για τον μήνα");
+    if(verified(x)) el(f,"div",null,"✓ Επιβεβαιώθηκε live "+ago(verified(x).at));
+    el(f,"div",null,"👥 "+(PPL===1?"1 άτομο: ":"2 άτομα: ")+money(pp(x)*PPL)+" μετ' επιστροφής");
     var a=el(box,"div","actions");
-    var go=el(a,"button","btn go","Δες το πακέτο"); go.type="button";
+    var go=el(a,"button","btn go","Δες την πτήση"); go.type="button";
     go.addEventListener("click",function(){ budget="all"; month="all"; open=x.id; renderFilters(); renderList(); var n=document.getElementById("deal-"+x.id); if(n) n.scrollIntoView({behavior:"smooth",block:"start"}); });
-    var sh=el(a,"button","btn","📤 Στείλ' το"); sh.type="button"; sh.addEventListener("click",function(){share(x);});
+    var sh=el(a,"button","btn","📤 Στείλ' το"); sh.type="button"; sh.addEventListener("click",function(){ share(x); });
   }
-
   function renderFilters(){
     var b=$("f-budget"); b.textContent="";
     BUDGET.forEach(function(o){ var c=el(b,"button","chip",o[1]); c.type="button"; c.setAttribute("aria-pressed",String(budget===o[0]));
       c.addEventListener("click",function(){ budget=o[0]; renderFilters(); renderList(); }); });
     var m=$("f-month"); m.textContent="";
-    var months={}; live().forEach(function(x){ months[x.from.slice(0,7)]=1; });
+    var months={}; publicItems().forEach(function(x){ months[x.from.slice(0,7)]=1; });
     [["all","Όλοι οι μήνες"]].concat(Object.keys(months).sort().map(function(k){ return [k, MONLONG[+k.slice(5)-1]+" "+k.slice(0,4)]; }))
       .forEach(function(o){ var c=el(m,"button","chip",o[1]); c.type="button"; c.setAttribute("aria-pressed",String(month===o[0]));
         c.addEventListener("click",function(){ month=o[0]; renderFilters(); renderList(); }); });
   }
-
-  function card(p,x){
-    var w=el(p,"article","deal"); w.id="deal-"+x.id;
-    var h=el(w,"button","head"); h.type="button"; h.setAttribute("aria-expanded",String(open===x.id));
-    var left=el(h,"div"); el(left,"div","city",cityOf(x)); el(left,"div","when",range(x.from,x.to)+", "+nights(x)+" βράδια"); badges(left,x);
-    tag(h,x);
-    var more=el(w,"div","more"); more.hidden=open!==x.id; details(more,x);
-    h.addEventListener("click",function(){ open=(open===x.id)?null:x.id; more.hidden=open!==x.id; h.setAttribute("aria-expanded",String(open===x.id)); });
-  }
-
   function renderList(){
     var list=filtered(), box=$("list"); box.textContent="";
-    $("count").textContent=list.length? (list.length===1?"1 πακέτο":list.length+" πακέτα")+", τα λαβράκια πρώτα. Πάτα ένα για λεπτομέρειες.":"";
-    if(!list.length){ var e=el(box,"div","empty"); el(e,"b",null,"Τίποτα σε αυτά τα φίλτρα ακόμα."); el(e,"span",null,"Δοκίμασε μεγαλύτερο ποσό ή άλλον μήνα. Νέα πακέτα μπαίνουν όσο τρέχουν οι έλεγχοι."); return; }
-    list.forEach(function(x){ card(box,x); });
+    $("count").textContent=list.length? (list.length===1?"1 ευκαιρία":list.length+" ευκαιρίες")+", τα λαβράκια πρώτα. Πάτα μία για λεπτομέρειες.":"";
+    if(!list.length){ var e=el(box,"div","empty"); el(e,"b",null,PUB?"Τίποτα σε αυτά τα φίλτρα αυτή τη στιγμή.":"Φορτώνουν οι τιμές…"); if(PUB) el(e,"span",null,"Δοκίμασε μεγαλύτερο ποσό ή άλλον μήνα. Η μηχανή ψάχνει ξανά κάθε ώρα."); return; }
+    list.forEach(function(x){ card(box,x,autoDetails); });
   }
+  function renderMe(){
+    var box=$("me-list"); box.textContent="";
+    var list=upcoming(ME).filter(function(x){ return x.kind==="package"; }).sort(function(a,b){ return (RANK[a.status]-RANK[b.status]) || (pp(a)-pp(b)); });
+    if(!list.length){ var e=el(box,"div","empty"); el(e,"b",null,"Δεν υπάρχουν πακέτα ακόμα."); return; }
+    list.forEach(function(x){ card(box,x,meDetails); });
+  }
+  function renderAll(){ renderSeg(); renderCatch(); renderFilters(); renderList(); if(ME_ON) renderMe(); }
 
-  // ---------- Search ----------
-  function cityMatch(q){ var n=norm(q); if(!n) return null;
-    for(var i=0;i<CITIES.length;i++){ var c=CITIES[i]; if([c[0],c[2],c[3]].some(function(s){ var t=norm(s); return t===n||t.indexOf(n)===0; })) return c; }
-    return [q,null,q,q]; }
+  // ---------- search ----------
+  function cityMatch(q){ var n=norm(q); if(!n) return null; var k=Object.keys(CITY);
+    for(var i=0;i<k.length;i++){ var c=CITY[k[i]]; if([k[i],c[2]].some(function(s){ var t=norm(s); return t===n||t.indexOf(n)===0; })) return [k[i]].concat(c); }
+    return null; }
   function fillMonths(){ var s=$("month"), now=new Date(); s.textContent="";
-    for(var i=0;i<14;i++){ var t=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth()+i,1)); var o=el(s,"option",null,MONLONG[t.getUTCMonth()]+" "+t.getUTCFullYear()); o.value=iso(t).slice(0,7); }
-    s.value="2027-07"; }
+    for(var i=0;i<10;i++){ var t=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth()+i,1)); var o=el(s,"option",null,MONLONG[t.getUTCMonth()]+" "+t.getUTCFullYear()); o.value=iso(t).slice(0,7); } }
   function search(e){
     if(e) e.preventDefault();
-    var q=$("dest").value.trim(), c=cityMatch(q), m=$("month").value, ppl=+$("people").value, n=+$("nights").value, box=$("result"); box.textContent="";
-    if(!c){ el(box,"p","hint","Γράψε έναν προορισμό, π.χ. «Βενετία»."); return; }
-    var found=live().filter(function(x){ var name=norm(cityOf(x)+" "+x.destination);
-      return (x.from.slice(0,7)===m||x.to.slice(0,7)===m) && [c[0],c[2],c[3]].some(function(s){ return s && name.indexOf(norm(s).split(" / ")[0])>=0; }); });
-    var hit=found.some(function(x){return x.status==="hit";});
-    el(box,"div","verdict", hit?"Ναι, υπάρχει λαβράκι 🎣": found.length?"Υπάρχει καλή τιμή, όχι ακόμα λαβράκι":"Δεν έχουμε ελεγμένο πακέτο ακόμα");
-    el(box,"p","hint", found.length?"Αυτά βρήκαν οι έλεγχοι για "+c[0]+" τον "+MONACC[+m.slice(5)-1]+":":"Δες τις τιμές αυτή τη στιγμή με τα κουμπιά παρακάτω.");
-    var prev=open; found.forEach(function(x){ open=x.id; card(box,x); }); open=prev;
-    var dep=m+"-"+(m.slice(5)==="07"?"19":"10"), ret=iso(new Date(d(dep).getTime()+n*864e5));
-    var p=el(box,"div","panel"); el(p,"b",null,"Τιμές αυτή τη στιγμή"); el(p,"p","hint","Ανοίγουν με "+range(dep,ret)+" για "+ppl+(ppl===1?" άτομο":" άτομα")+". Άλλαξε μέρες εκεί αν θες.");
+    var q=$("dest").value.trim(), c=cityMatch(q), m=$("month").value, n=+$("nights").value, box=$("result"); box.textContent="";
+    if(!c){ el(box,"p","hint",q?"Δεν έχουμε ακόμα το «"+q+"». Διάλεξε από τη λίστα, π.χ. Βενετία, Λονδίνο, Νέα Υόρκη.":"Γράψε έναν προορισμό, π.χ. «Βενετία»."); return; }
+    var all=upcoming(PUB?(PUB.deals||[]).concat(PUB.flights||[]):[]).filter(function(x){ return cityOf(x)===c[0] && (x.from.slice(0,7)===m); });
+    var good=all.filter(function(x){ return x.status==="hit"||x.status==="near"; });
+    var hit=good.some(function(x){return x.status==="hit";});
+    el(box,"div","verdict", hit?"Ναι, υπάρχει λαβράκι 🎣": good.length?"Υπάρχει καλή τιμή, όχι ακόμα λαβράκι": all.length?"Υπάρχουν τιμές, αλλά κανονικές":"Δεν έχει βρεθεί τιμή ακόμα");
+    el(box,"p","hint", (good.length?"Για "+c[0]+" τον "+MONACC[+m.slice(5)-1]+":": all.length?"Η φθηνότερη τιμή αυτή τη στιγμή είναι γύρω στα "+money(Math.min.apply(null,all.map(pp)))+" το άτομο.":"Η μηχανή δεν έχει δει ακόμα τιμές για αυτό τον μήνα. Δες τις τιμές αυτή τη στιγμή:"));
+    var prev=open; good.forEach(function(x){ open=x.id; card(box,x,autoDetails); }); open=prev;
+    var dep=m+"-"+(m===iso(new Date()).slice(0,7)?String(Math.min(28,new Date().getDate()+7)).padStart(2,"0"):"10"), ret=iso(new Date(d(dep).getTime()+n*864e5));
+    var p=el(box,"div","panel"); el(p,"b",null,"Τιμές αυτή τη στιγμή"); el(p,"p","hint","Ανοίγουν με "+range(dep,ret)+" για "+PPL+(PPL===1?" άτομο":" άτομα")+". Άλλαξε ημερομηνίες εκεί αν θες.");
     var a=el(p,"div","actions");
-    function L(t,u){ var x=el(a,"a","btn",t); x.href=u; x.target="_blank"; x.rel="noopener"; }
-    L("✈️ Google Flights","https://www.google.com/travel/flights?hl=el&q="+encodeURIComponent("Flights to "+c[3]+" from Athens on "+dep+" through "+ret+" for "+ppl+" adults"));
-    if(c[1]) L("✈️ Skyscanner","https://www.skyscanner.gr/transport/flights/ath/"+c[1]+"/"+dep.slice(2).replace(/-/g,"")+"/"+ret.slice(2).replace(/-/g,"")+"/?adultsv2="+ppl+"&cabinclass=economy&preferdirects=true");
-    L("🏨 Ξενοδοχεία 8+","https://www.booking.com/searchresults.el.html?ss="+encodeURIComponent(c[2])+"&checkin="+dep+"&checkout="+ret+"&group_adults="+ppl+"&no_rooms=1&group_children=0&nflt=review_score%3D80&order=price");
+    stepLink(a,"btn","✈️ Πτήσεις (Skyscanner)",sky(c[2],dep,ret,PPL,true));
+    stepLink(a,"btn","🏨 Ξενοδοχεία 8+ (Booking)",booking(c[3],dep,ret,PPL));
   }
 
-  // ---------- Views ----------
-  var VIEWS=["deals","search","how"];
-  function show(v){ VIEWS.forEach(function(k){ $("t-"+k).setAttribute("aria-selected",String(k===v)); $("v-"+k).hidden=k!==v; }); window.scrollTo(0,0); }
+  // ---------- views ----------
+  var ME_ON=false;
+  (function(){ var q=location.search+location.hash; if(/[?#&]me\b/.test(q)) store("lavraki_me","1"); ME_ON=store("lavraki_me")==="1"; })();
+  var VIEWS=["deals","search","me","how"];
+  if(ME_ON) $("t-me").hidden=false, $("tabs").classList.add("four");
+  function show(v){ if(v==="me"&&!ME_ON) v="deals"; VIEWS.forEach(function(k){ $("t-"+k).setAttribute("aria-selected",String(k===v)); $("v-"+k).hidden=k!==v; }); window.scrollTo(0,0); }
   VIEWS.forEach(function(k){ $("t-"+k).addEventListener("click",function(){ show(k); try{history.replaceState(null,"","#"+k);}catch(e){} }); });
+  document.querySelectorAll(".seg button").forEach(function(b){ b.addEventListener("click",function(){ PPL=+b.dataset.ppl; store("lavraki_ppl",String(PPL)); renderAll(); }); });
 
-  function flightCard(p,x){
-    var w=el(p,"article","deal"); w.id="deal-"+x.id;
-    var h=el(w,"button","head"); h.type="button"; h.setAttribute("aria-expanded","false");
-    var left=el(h,"div"); el(left,"div","city",cityOf(x)); el(left,"div","when",range(x.from,x.to)+", "+nights(x)+" βράδια");
-    var b=el(left,"div","badges"); if(x.savings) el(b,"span","badge hit",x.savings+"% κάτω από το συνηθισμένο"); el(b,"span","badge","Μόνο πτήση");
-    tag(h,x);
-    var more=el(w,"div","more"); more.hidden=true;
-    var l1=el(more,"div","line"); el(l1,"span",null,"✈️"); el(l1,"span",null,x.flight);
-    if(x.typical) el(more,"div","total","Συνήθως κοστίζει περίπου "+money(x.typical)+" για "+people(x)+" άτομα.");
-    if(x.alts && x.alts.length){
-      var al=el(more,"div","alts"); el(al,"div","checked","Αν η τιμή έχει φύγει, παρόμοιες τιμές βρέθηκαν και για:");
-      var row=el(al,"div","actions"), cm=cityMatch(cityOf(x));
-      x.alts.forEach(function(a){ var b=el(row,"a","btn",range(a.from,a.to)+", "+money(Math.round(a.price/people(x)))+" το άτομο");
-        b.href="https://www.google.com/travel/flights?hl=el&q="+encodeURIComponent("Flights to "+(cm?cm[3]:cityOf(x))+" from Athens on "+a.from+" through "+a.to+" for "+people(x)+" adults");
-        b.target="_blank"; b.rel="noopener"; });
-    }
-    el(more,"div","checked","Η τιμή βρέθηκε "+ago(x.checkedAt||x.checked)+". Δες την τελική τιμή πριν πληρώσεις.");
-    var s2=el(more,"div","steps"), L=links(x);
-    if(L.flight){ var a=el(s2,"a","btn go wide","1. Δες την πτήση"); a.href=L.flight.url; a.target="_blank"; a.rel="noopener"; }
-    var c=cityMatch(cityOf(x)); var hb=el(s2,"a","btn wide","2. Ξενοδοχεία 8+ για αυτές τις μέρες");
-    hb.href="https://www.booking.com/searchresults.el.html?ss="+encodeURIComponent(c?c[2]:cityOf(x))+"&checkin="+x.from+"&checkout="+x.to+"&group_adults="+people(x)+"&no_rooms=1&group_children=0&nflt=review_score%3D80&order=price"; hb.target="_blank"; hb.rel="noopener";
-    var sh=el(more,"button","btn wide","📤 Στείλ' το σε φίλο"); sh.type="button"; sh.addEventListener("click",function(){share(x);});
-    h.addEventListener("click",function(){ more.hidden=!more.hidden; h.setAttribute("aria-expanded",String(!more.hidden)); });
-  }
-  function renderFlights(){
-    var today=iso(new Date()), box=$("fl-list"); box.textContent="";
-    var list=((DATA&&DATA.flights)||[]).filter(function(x){ return x.from>=today && (x.status==="hit"||x.status==="near"); })
-      .sort(function(a,b){ return (b.savings||0)-(a.savings||0); }).slice(0,12);
-    $("fl-wrap").hidden=!list.length;
-    list.forEach(function(x){ flightCard(box,x); });
-  }
-
-  function render(data){
-    DATA=data; renderCatch(); renderFilters(); renderList(); renderFlights();
-    $("fresh").textContent=data.updated?"Τελευταίος έλεγχος τιμών "+ago(data.updated):"";
-    var h=decodeURIComponent((location.hash||"").slice(1));
-    if(h.indexOf("d=")===0 && !render.jumped){ render.jumped=true; open=h.slice(2); renderList(); var n=document.getElementById("deal-"+open); if(n) setTimeout(function(){n.scrollIntoView({block:"start"});},50); }
-  }
   function getJson(u){ return fetch(u+"?t="+Date.now(),{cache:"no-store"}).then(function(r){ if(!r.ok) throw 0; return r.json(); }); }
-  function load(){ Promise.all([getJson("data.json"), getJson("auto.json").catch(function(){ return {}; })])
-    .then(function(r){ var d=r[0], a=r[1]||{};
-      d.deals=(d.deals||[]).concat(a.deals||[]); d.flights=a.flights||[];
-      if(a.updated && (!d.updated || a.updated>d.updated)) d.updated=a.updated;
-      return d; }).then(render)
-    .catch(function(){ $("fresh").textContent="Δεν φόρτωσαν οι τιμές. Έλεγξε τη σύνδεση και άνοιξε ξανά την εφαρμογή."; }); }
+  function load(){
+    Promise.all([getJson("auto.json").catch(function(){ return null; }), getJson("verified.json").catch(function(){ return {}; }), ME_ON?getJson("data.json").catch(function(){ return {}; }):Promise.resolve({})])
+      .then(function(r){
+        PUB=r[0]||{deals:[],flights:[]}; VER=r[1]||{}; ME=(r[2]&&r[2].deals)||[];
+        renderAll();
+        $("fresh").textContent=PUB.updated?"Οι τιμές ελέγχθηκαν "+ago(PUB.updated)+".":"";
+        var h=decodeURIComponent((location.hash||"").slice(1));
+        if(h.indexOf("d=")===0 && !load.jumped){ load.jumped=true; open=h.slice(2); var mine=ME.some(function(x){return x.id===open;}); if(mine&&ME_ON){ show("me"); renderMe(); } else renderList();
+          var n=document.getElementById("deal-"+open); if(n) setTimeout(function(){ n.scrollIntoView({block:"start"}); },60); }
+      }).catch(function(){ $("fresh").textContent="Δεν φόρτωσαν οι τιμές. Έλεγξε τη σύνδεση και άνοιξε ξανά την εφαρμογή."; });
+  }
 
-  var dl=$("cities"); CITIES.forEach(function(c){ el(dl,"option").value=c[0]; });
+  Object.keys(CITY).forEach(function(k){ if(k!=="Λίμνη Κόμο") el($("cities"),"option").value=k; });
   fillMonths();
   $("form").addEventListener("submit",search);
   var start=(location.hash||"").slice(1); show(VIEWS.indexOf(start)>=0?start:"deals");
-  load();
+  renderAll(); load();
   document.addEventListener("visibilitychange",function(){ if(!document.hidden) load(); });
   setInterval(function(){ if(!document.hidden) load(); },10*60*1000);
+  if(GOATCOUNTER){ var gs=document.createElement("script"); gs.async=true; gs.src="https://gc.zgo.at/count.js"; gs.setAttribute("data-goatcounter","https://"+GOATCOUNTER+".goatcounter.com/count"); document.head.appendChild(gs); }
   if("serviceWorker" in navigator){ var had=!!navigator.serviceWorker.controller;
     navigator.serviceWorker.addEventListener("controllerchange",function(){ if(had) location.reload(); });
     navigator.serviceWorker.register("sw.js").then(function(r){ r.update(); }).catch(function(){}); }
