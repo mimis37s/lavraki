@@ -166,7 +166,7 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
   <!-- ============ Search ============ -->
   <section class="view" id="v-search" aria-labelledby="t-search" hidden>
     <h2>Υπάρχει λαβράκι εκεί που θέλω;</h2>
-    <p class="lede">Διάλεξε πού και πότε. Θα δεις ό,τι έχει βρει η μηχανή και κουμπιά για τις τιμές αυτή τη στιγμή.</p>
+    <p class="lede">Διάλεξε πού και πότε. Θα δεις αν έχουμε ελέγξει live κάποιο λαβράκι εκεί, και κουμπιά για τις τιμές αυτή τη στιγμή.</p>
     <form class="panel" id="form">
       <div>
         <label for="dest">Προορισμός</label>
@@ -192,10 +192,10 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
   <!-- ============ How ============ -->
   <section class="view how" id="v-how" aria-labelledby="t-how" hidden>
     <h2>Πώς βρίσκουμε ένα λαβράκι</h2>
-    <p class="lede">Μια μηχανή ελέγχει κάθε ώρα πάνω από 39 προορισμούς από Αθήνα, για τους επόμενους 9 μήνες.</p>
+    <p class="lede">Μια μηχανή ψάχνει κάθε ώρα 39 προορισμούς από Αθήνα για τους επόμενους 9 μήνες. Ό,τι φαίνεται φθηνό το ελέγχουμε live, και μόνο αν υπάρχει στ' αλήθεια εμφανίζεται εδώ.</p>
     <div class="panel"><h3>✈️ Μόνο κανονικές εταιρείες</h3><p>Aegean, Sky Express, Lufthansa, SWISS, KLM και άλλες. Όχι Ryanair, Wizz, easyJet και παρόμοιες. Απευθείας πτήσεις όπου υπάρχουν.</p></div>
-    <div class="panel"><h3>🎣 Πότε είναι λαβράκι</h3><p>Συγκρίνουμε την τιμή με το πόσο κοστίζει συνήθως η ίδια διαδρομή τον ίδιο μήνα. 30% και πάνω φθηνότερα είναι λαβράκι, 15% και πάνω καλή τιμή.</p></div>
-    <div class="panel"><h3>✓ Επιβεβαιωμένα</h3><p>Τα καλύτερα τα ελέγχουμε και με το χέρι. Όσα έχουν το σήμα «Επιβεβαιώθηκε live», τα είδαμε με τα μάτια μας στο Skyscanner.</p></div>
+    <div class="panel"><h3>🎣 Πότε είναι λαβράκι</h3><p>Πρέπει να ισχύουν και τα δύο: η τιμή είναι τουλάχιστον 30% κάτω από το πόσο κοστίζει συνήθως η διαδρομή, και κάτω από ένα ρεαλιστικό ταβάνι για τον προορισμό (π.χ. 130 € για Ιταλία, 160 € για Παρίσι ή Ζυρίχη, 550 € για Νέα Υόρκη, μετ' επιστροφής το άτομο). Λίγο πιο πάνω είναι «καλή τιμή».</p></div>
+    <div class="panel"><h3>✓ Ελεγμένα live</h3><p>Κάθε τιμή εδώ την είδαμε στο Skyscanner για τις ίδιες ακριβώς ημερομηνίες, μέσα στις τελευταίες 48 ώρες. Ό,τι είναι παλιότερο κρύβεται μόνο του.</p></div>
     <div class="panel"><h3>🏨 Ξενοδοχείο</h3><p>Με το κουμπί «Ξενοδοχεία 8+» βλέπεις στο Booking μόνο ξενοδοχεία με βαθμολογία 8 και πάνω, για τις ίδιες μέρες, από το φθηνότερο.</p></div>
     <div class="panel"><h3>🔄 Αν άλλαξε η τιμή</h3><p>Οι τιμές αλλάζουν γρήγορα. Κάθε πτήση δείχνει πότε βρέθηκε, και παρόμοιες ημερομηνίες για εναλλακτική. Αν μια τιμή δεν ισχύει, πάτα «Η τιμή δεν ισχύει πια» για να το ξέρουμε.</p></div>
     <div class="panel"><h3>📲 Βάλ' το στην οθόνη σου</h3><p>iPhone: στο Safari, Κοινή χρήση ▸ Προσθήκη στην οθόνη Αφετηρίας. Android: στο Chrome, μενού ⋮ ▸ Εγκατάσταση εφαρμογής.</p></div>
@@ -300,16 +300,28 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
 
   // ---------- data ----------
   function upcoming(list){ var t=iso(new Date()); return (list||[]).filter(function(x){ return x && x.total && (x.from||"")>=t; }); }
+  // Only fares that passed a live check in the last 48 hours reach the public list.
+  // The engine's cached prices are just candidates: about half of them do not exist live.
+  var FRESH_MS=48*3600*1000;
+  function liveItems(){
+    return Object.keys(VER).map(function(k){
+      var v=VER[k]; if(!v||!v.ok||!v.at||!v.price) return null;
+      if(Date.now()-new Date(v.at).getTime()>FRESH_MS) return null;
+      return {id:"v-"+k, key:k, city:v.city, destination:v.city, from:v.from, to:v.to, nights:v.nights, sky:v.sky, iata:v.iata,
+              kind:"flight", people:1, total:v.price, typical:v.typical||null, status:v.status, at:v.at, live:true,
+              savings:v.typical&&v.typical>v.price?Math.round((1-v.price/v.typical)*100):null,
+              flight:(v.airline||"")+(v.direct===false?" με 1 στάση":" απευθείας")};
+    }).filter(Boolean);
+  }
   function publicItems(){
-    if(!PUB) return [];
-    var all=upcoming((PUB.deals||[]).concat(PUB.flights||[])).filter(function(x){ return (x.status==="hit"||x.status==="near") && !HIDDEN[keyOf(x)]; });
-    return all.sort(function(a,b){ return (RANK[a.status]-RANK[b.status]) || ((verified(b)?1:0)-(verified(a)?1:0)) || ((b.savings||0)-(a.savings||0)) || (pp(a)-pp(b)); });
+    var all=upcoming(liveItems()).filter(function(x){ return (x.status==="hit"||x.status==="near") && !HIDDEN[x.key]; });
+    return all.sort(function(a,b){ return (RANK[a.status]-RANK[b.status]) || ((b.savings||0)-(a.savings||0)) || (pp(a)-pp(b)); });
   }
   function filtered(){
     var lim=BUDGET.filter(function(b){return b[0]===budget;})[0][2];
     return publicItems().filter(function(x){ return pp(x)<=lim && (month==="all" || x.from.slice(0,7)===month); });
   }
-  function verified(x){ var v=VER[keyOf(x)]; return v && v.at ? v : null; }
+  function verified(x){ return x.live ? {at:x.at, price:x.total} : null; }
 
   // ---------- pieces ----------
   function tag(p,x){ var t=el(p,"div","tag"); el(t,"b",null,money(pp(x))); el(t,"small",null,"το άτομο"); return t; }
@@ -317,7 +329,7 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
     var b=el(p,"div","badges"), v=verified(x);
     if(x.status==="hit") el(b,"span","badge hit","🎣 Λαβράκι"); else if(x.status==="near") el(b,"span","badge","Καλή τιμή");
     if(x.savings) el(b,"span","badge hit",x.savings+"% κάτω από το συνηθισμένο");
-    if(v) el(b,"span","badge ok","✓ Επιβεβαιώθηκε live");
+    if(v) el(b,"span","badge ok","✓ Ελέγχθηκε live");
     if(x.kind==="flight") el(b,"span","badge","Πτήση"); else if(x.kind==="package" && !x.auto) el(b,"span","badge",people(x)===1?"Για 1 άτομο":"Για "+people(x)+" άτομα");
     if(x.lowcost) el(b,"span","badge warn","Low-cost πτήση");
     return b;
@@ -330,17 +342,11 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
     var t=el(more,"div","total"), each=pp(x);
     t.textContent=(PPL===1?"Για 1 άτομο: ":"Για 2 άτομα: ")+money(each*PPL)+" μετ' επιστροφής"+(x.typical?" (συνήθως περίπου "+money(Math.round(x.typical/people(x))*PPL)+")":"")+".";
     var v=verified(x);
-    el(more,"div","checked", v ? "Τη βρήκε η μηχανή "+ago(x.checkedAt)+" και την επιβεβαιώσαμε live στο Skyscanner "+ago(v.at)+" ("+money(v.price)+" το άτομο)."
-                               : "Τη βρήκε η μηχανή "+ago(x.checkedAt)+", από τιμές που είδαν ταξιδιώτες τις τελευταίες ώρες. Δες την τελική τιμή πριν πληρώσεις.");
+    el(more,"div","checked", v ? "Ελέγχθηκε live στο Skyscanner "+ago(v.at)+", για αυτές ακριβώς τις ημερομηνίες. Οι τιμές αλλάζουν, δες την τελική πριν πληρώσεις."
+                               : "Δεν έχει ελεγχθεί live. Δες την τελική τιμή πριν πληρώσεις.");
     var s=el(more,"div","steps");
     stepLink(s,"btn go wide","1. Δες την πτήση στο Skyscanner",flightUrl(x),function(){ count("event/flight/"+keyOf(x)); });
     stepLink(s,"btn wide","2. Ξενοδοχεία 8+ για αυτές τις μέρες",hotelUrl(x),function(){ count("event/hotel/"+keyOf(x)); });
-    var av=aviaUrl(x); if(av){ var aa=el(more,"a","sub","Η ίδια τιμή που βρήκε η μηχανή, στο Aviasales (για 1 άτομο)"); aa.href=av; aa.target="_blank"; aa.rel="noopener"; }
-    if(x.alts && x.alts.length){
-      el(more,"div","checked","Αν η τιμή έχει φύγει, παρόμοιες τιμές βρέθηκαν και για:");
-      var row=el(more,"div","actions");
-      x.alts.forEach(function(a){ stepLink(row,"btn",range(a.from,a.to)+", "+money(Math.round(a.price/people(x)))+" το άτομο",flightUrl(x,a.from,a.to)); });
-    }
     var act=el(more,"div","actions"); var sh=el(act,"button","btn wide","📤 Στείλ' το σε φίλο"); sh.type="button"; sh.addEventListener("click",function(){ share(x); });
     var bad=el(more,"button","linkbtn","Η τιμή δεν ισχύει πια"); bad.type="button";
     bad.addEventListener("click",function(){ HIDDEN[keyOf(x)]=iso(new Date()); store("lavraki_hidden",JSON.stringify(HIDDEN)); count("event/price-changed/"+keyOf(x)); toast("Ευχαριστούμε! Το κρύψαμε και θα το ξαναελέγξουμε."); renderAll(); });
@@ -380,8 +386,8 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
     tag(box,x);
     var f=el(box,"div","facts");
     el(f,"div",null,"✈️ "+airline(x)+(direct(x)?", απευθείας":""));
-    if(x.savings) el(f,"div",null,"📉 "+x.savings+"% κάτω από το συνηθισμένο για τον μήνα");
-    if(verified(x)) el(f,"div",null,"✓ Επιβεβαιώθηκε live "+ago(verified(x).at));
+    if(x.savings) el(f,"div",null,"📉 "+x.savings+"% κάτω από το συνηθισμένο για τη διαδρομή");
+    if(verified(x)) el(f,"div",null,"✓ Ελέγχθηκε live "+ago(verified(x).at));
     el(f,"div",null,"👥 "+(PPL===1?"1 άτομο: ":"2 άτομα: ")+money(pp(x)*PPL)+" μετ' επιστροφής");
     var a=el(box,"div","actions");
     var go=el(a,"button","btn go","Δες την πτήση"); go.type="button";
@@ -401,7 +407,7 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
   function renderList(){
     var list=filtered(), box=$("list"); box.textContent="";
     $("count").textContent=list.length? (list.length===1?"1 ευκαιρία":list.length+" ευκαιρίες")+", τα λαβράκια πρώτα. Πάτα μία για λεπτομέρειες.":"";
-    if(!list.length){ var e=el(box,"div","empty"); el(e,"b",null,PUB?"Τίποτα σε αυτά τα φίλτρα αυτή τη στιγμή.":"Φορτώνουν οι τιμές…"); if(PUB) el(e,"span",null,"Δοκίμασε μεγαλύτερο ποσό ή άλλον μήνα. Η μηχανή ψάχνει ξανά κάθε ώρα."); return; }
+    if(!list.length){ var e=el(box,"div","empty"); el(e,"b",null,!PUB?"Φορτώνουν οι τιμές…":publicItems().length?"Τίποτα σε αυτά τα φίλτρα αυτή τη στιγμή.":"Αυτή τη στιγμή δεν υπάρχει ελεγμένο λαβράκι."); if(PUB) el(e,"span",null,publicItems().length?"Δοκίμασε μεγαλύτερο ποσό ή άλλον μήνα.":"Δείχνουμε μόνο τιμές που ελέγξαμε live τις τελευταίες 48 ώρες. Ξαναδές σε λίγες ώρες ή ψάξε έναν προορισμό."); return; }
     list.forEach(function(x){ card(box,x,autoDetails); });
   }
   function renderMe(){
@@ -422,11 +428,10 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
     if(e) e.preventDefault();
     var q=$("dest").value.trim(), c=cityMatch(q), m=$("month").value, n=+$("nights").value, box=$("result"); box.textContent="";
     if(!c){ el(box,"p","hint",q?"Δεν έχουμε ακόμα το «"+q+"». Διάλεξε από τη λίστα, π.χ. Βενετία, Λονδίνο, Νέα Υόρκη.":"Γράψε έναν προορισμό, π.χ. «Βενετία»."); return; }
-    var all=upcoming(PUB?(PUB.deals||[]).concat(PUB.flights||[]):[]).filter(function(x){ return cityOf(x)===c[0] && (x.from.slice(0,7)===m); });
-    var good=all.filter(function(x){ return x.status==="hit"||x.status==="near"; });
+    var good=publicItems().filter(function(x){ return cityOf(x)===c[0] && (x.from.slice(0,7)===m); });
     var hit=good.some(function(x){return x.status==="hit";});
-    el(box,"div","verdict", hit?"Ναι, υπάρχει λαβράκι 🎣": good.length?"Υπάρχει καλή τιμή, όχι ακόμα λαβράκι": all.length?"Υπάρχουν τιμές, αλλά κανονικές":"Δεν έχει βρεθεί τιμή ακόμα");
-    el(box,"p","hint", (good.length?"Για "+c[0]+" τον "+MONACC[+m.slice(5)-1]+":": all.length?"Η φθηνότερη τιμή αυτή τη στιγμή είναι γύρω στα "+money(Math.min.apply(null,all.map(pp)))+" το άτομο.":"Η μηχανή δεν έχει δει ακόμα τιμές για αυτό τον μήνα. Δες τις τιμές αυτή τη στιγμή:"));
+    el(box,"div","verdict", hit?"Ναι, υπάρχει λαβράκι 🎣": good.length?"Υπάρχει καλή τιμή, όχι λαβράκι":"Δεν έχουμε ελεγμένο λαβράκι εκεί αυτόν τον μήνα");
+    el(box,"p","hint", good.length?"Για "+c[0]+" τον "+MONACC[+m.slice(5)-1]+", ελεγμένο live:":"Δες τις τιμές αυτή τη στιγμή:");
     var prev=open; good.forEach(function(x){ open=x.id; card(box,x,autoDetails); }); open=prev;
     var dep=m+"-"+(m===iso(new Date()).slice(0,7)?String(Math.min(28,new Date().getDate()+7)).padStart(2,"0"):"10"), ret=iso(new Date(d(dep).getTime()+n*864e5));
     var p=el(box,"div","panel"); el(p,"b",null,"Τιμές αυτή τη στιγμή"); el(p,"p","hint","Ανοίγουν με "+range(dep,ret)+" για "+PPL+(PPL===1?" άτομο":" άτομα")+". Άλλαξε ημερομηνίες εκεί αν θες.");
@@ -450,7 +455,8 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
       .then(function(r){
         PUB=r[0]||{deals:[],flights:[]}; VER=r[1]||{}; ME=(r[2]&&r[2].deals)||[];
         renderAll();
-        $("fresh").textContent=PUB.updated?"Οι τιμές ελέγχθηκαν "+ago(PUB.updated)+".":"";
+        var last=liveItems().map(function(x){return x.at;}).sort().pop();
+        $("fresh").textContent=last?"Τελευταίος live έλεγχος "+ago(last)+".":"";
         var h=decodeURIComponent((location.hash||"").slice(1));
         if(h.indexOf("d=")===0 && !load.jumped){ load.jumped=true; open=h.slice(2); var mine=ME.some(function(x){return x.id===open;}); if(mine&&ME_ON){ show("me"); renderMe(); } else renderList();
           var n=document.getElementById("deal-"+open); if(n) setTimeout(function(){ n.scrollIntoView({block:"start"}); },60); }
