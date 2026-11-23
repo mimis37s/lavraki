@@ -214,7 +214,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
     <p class="lede">Μια μηχανή ψάχνει κάθε ώρα 45 προορισμούς από Αθήνα για τους επόμενους 9 μήνες. Ό,τι φαίνεται φθηνό το ελέγχουμε live, και εμφανίζεται εδώ μόνο αν υπάρχει στ' αλήθεια.</p>
     <div class="panel"><h3>✈️ Μόνο κανονικές εταιρείες</h3><p>Aegean, Sky Express, Lufthansa, SWISS, TAP, KLM και άλλες. Ούτε ένα σκέλος με Ryanair, Wizz, easyJet, Volotea ή άλλη low-cost. Απευθείας πτήσεις όπου υπάρχουν.</p></div>
     <div class="panel"><h3>🎣 Πότε λέγεται λαβράκι</h3><p>Πρέπει να ισχύουν και τα δύο: η πτήση είναι τουλάχιστον 35% κάτω από το πόσο κοστίζει συνήθως η διαδρομή, και κάτω από ένα αυστηρό ταβάνι μετ' επιστροφής το άτομο: 90 € για Ιταλία, Βιέννη, Πράγα, Βουδαπέστη, Κωνσταντινούπολη, 120 € για Παρίσι, Λονδίνο, Ζυρίχη, Άμστερνταμ, 150 € για Ιβηρική και Σκανδιναβία, 450 € για Νέα Υόρκη. Από 25% κάτω είναι «καλή τιμή».</p></div>
-    <div class="panel"><h3>🧳 Πακέτα</h3><p>Ένα πακέτο είναι μια πτήση που πέρασε τον έλεγχο, μαζί με ξενοδοχείο για τις ίδιες μέρες: βαθμολογία 8+, πάνω από 300 κριτικές, καθαριότητα 8,5+, ιδιωτικό μπάνιο, κοντά στο κέντρο ή σε μετρό, και κάτω από ένα ταβάνι ανά βράδυ. Η τιμή του ξενοδοχείου είναι για δίκλινο.</p></div>
+    <div class="panel"><h3>🧳 Πακέτα</h3><p>Ένα πακέτο είναι πτήση + ξενοδοχείο για τις ίδιες μέρες, και κρίνεται ολόκληρο: λαβράκι είναι όταν η πτήση είναι λαβράκι, ή όταν το σύνολο είναι τουλάχιστον 15% κάτω από ό,τι κοστίζει ένα κανονικό ταξίδι εκεί (η πτήση ποτέ πάνω από 15% του ορίου της). Ξενοδοχείο μόνο με βαθμολογία 8+, πάνω από 300 κριτικές, καθαριότητα 8,5+, ιδιωτικό μπάνιο, κοντά στο κέντρο ή σε μετρό. Η τιμή του ξενοδοχείου είναι για δίκλινο.</p></div>
     <div class="panel"><h3>✓ Ελεγμένα live</h3><p>Κάθε τιμή εδώ την είδαμε με τα μάτια μας στο Skyscanner και στο Booking για τις ίδιες ακριβώς ημερομηνίες, μέσα στις τελευταίες 48 ώρες. Ό,τι είναι παλιότερο κρύβεται μόνο του.</p></div>
     <div class="panel"><h3>🔄 Αν άλλαξε η τιμή</h3><p>Οι τιμές αλλάζουν γρήγορα. Αν μια τιμή δεν ισχύει πια, πάτα «Η τιμή δεν ισχύει πια» μέσα στην κάρτα: την κρύβουμε και την ξαναελέγχουμε.</p></div>
     <div class="panel"><h3>📣 Ειδοποιήσεις</h3><p>Κάθε νέο λαβράκι μπαίνει και στο κανάλι Telegram <a href="https://t.me/lavraki_gr" target="_blank" rel="noopener">t.me/lavraki_gr</a>.</p></div>
@@ -288,14 +288,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
   function liveItems(){
     var out=[];
     Object.keys(VER).forEach(function(k){
-      var v=VER[k]; if(!v||!v.ok||!v.at||!v.price||!v.from) return;
+      var v=VER[k]; if(!v||!v.at||!v.price||!v.from) return;
       if(Date.now()-new Date(v.at).getTime()>FRESH_MS) return;
       var base={key:k, city:v.city, from:v.from, to:v.to, nights:v.nights, sky:v.sky||(info(v.city)||[])[1], iata:v.iata,
                 price:v.price, typical:v.typical||null, status:v.status, at:v.at, airline:v.airline||"", direct:v.direct!==false,
                 savings:v.typical&&v.typical>v.price?Math.round((1-v.price/v.typical)*100):null};
-      out.push(Object.assign({},base,{kind:"flight", id:"v-"+k}));
+      if(v.ok) out.push(Object.assign({},base,{kind:"flight", id:"v-"+k}));
+      // a package is judged as a whole (flight + hotel): it can pass even when the flight alone does not
       var h=v.hotel;
-      if(h&&h.ok&&h.total&&h.at&&Date.now()-new Date(h.at).getTime()<=FRESH_MS) out.push(Object.assign({},base,{kind:"package", id:"p-"+k, hotel:h}));
+      if(h&&h.ok&&h.total&&h.at&&Date.now()-new Date(h.at).getTime()<=FRESH_MS) out.push(Object.assign({},base,{kind:"package", id:"p-"+k, hotel:h, status:h.status||v.status}));
     });
     return out;
   }
@@ -350,7 +351,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.d
   function badges(p,x){
     var b=el(p,"div","badges");
     if(x.status==="hit") el(b,"span","badge hit","🎣 Λαβράκι"); else el(b,"span","badge","👍 Καλή τιμή");
-    if(x.savings) el(b,"span","badge hit","πτήση −"+x.savings+"%");
+    if(x.savings && (x.kind==="flight" || x.savings>=25)) el(b,"span","badge hit","πτήση −"+x.savings+"%");
     el(b,"span","badge ok","✓ Ελεγμένο live");
     return b;
   }
