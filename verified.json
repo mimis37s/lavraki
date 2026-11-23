@@ -7,12 +7,13 @@
   "from": "2027-01-15",
   "to": "2027-01-17",
   "nights": 2,
-  "max_pp": 130,
+  "max_pp": 90,
   "typical": null,
   "engine": 88,
   "ok": false,
   "status": "normal",
-  "note": "Live μόνο συνδυασμοί με easyJet/Volotea, όχι Aegean και των δύο δρομολογίων"
+  "note": "Live μόνο συνδυασμοί με easyJet/Volotea, όχι Aegean και των δύο δρομολογίων",
+  "hotel_max_night": 100
  },
  "ATH-MLA-2027-01-07-2027-01-11": {
   "at": "2026-11-23T10:36+02:00",
@@ -22,14 +23,16 @@
   "from": "2027-01-07",
   "to": "2027-01-11",
   "nights": 4,
-  "max_pp": 130,
+  "max_pp": 90,
   "typical": null,
   "engine": 101,
-  "ok": true,
-  "status": "near",
+  "ok": false,
+  "status": "normal",
   "price": 130,
   "airline": "Aegean",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 100,
+  "note": "live 130 €: δεν είναι αρκετά φθηνό"
  },
  "ATH-VIE-2027-01-09-2027-01-11": {
   "at": "2026-11-23T10:36+02:00",
@@ -39,14 +42,16 @@
   "from": "2027-01-09",
   "to": "2027-01-11",
   "nights": 2,
-  "max_pp": 130,
+  "max_pp": 90,
   "typical": null,
   "engine": 107,
-  "ok": true,
-  "status": "near",
+  "ok": false,
+  "status": "normal",
   "price": 106,
   "airline": "Austrian",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 100,
+  "note": "live 106 €: δεν είναι αρκετά φθηνό"
  },
  "ATH-MIL-2027-01-27-2027-01-30": {
   "at": "2026-11-23T10:36+02:00",
@@ -56,12 +61,13 @@
   "from": "2027-01-27",
   "to": "2027-01-30",
   "nights": 3,
-  "max_pp": 130,
+  "max_pp": 90,
   "typical": null,
   "engine": 134,
   "ok": false,
   "status": "normal",
-  "note": "Live η φθηνότερη Aegean είναι 187 €, όχι 134 €"
+  "note": "Live η φθηνότερη Aegean είναι 187 €, όχι 134 €",
+  "hotel_max_night": 100
  },
  "ATH-GVA-2027-01-14-2027-01-17": {
   "at": "2026-11-23T10:36+02:00",
@@ -71,14 +77,16 @@
   "from": "2027-01-14",
   "to": "2027-01-17",
   "nights": 3,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": null,
   "engine": 137,
-  "ok": true,
-  "status": "hit",
+  "ok": false,
+  "status": "normal",
   "price": 125,
   "airline": "SWISS",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 130,
+  "note": "live 125 €: δεν είναι αρκετά φθηνό"
  },
  "ATH-ZRH-2026-12-28-2027-01-05": {
   "at": "2026-11-23T10:36+02:00",
@@ -88,14 +96,16 @@
   "from": "2026-12-28",
   "to": "2027-01-05",
   "nights": 8,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": 219,
   "engine": 140,
-  "ok": true,
-  "status": "hit",
+  "ok": false,
+  "status": "normal",
   "price": 150,
   "airline": "SWISS",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 130,
+  "note": "live 150 €: δεν είναι αρκετά φθηνό"
  },
  "ATH-MUC-2027-01-23-2027-01-26": {
   "at": "2026-11-23T10:36+02:00",
@@ -105,14 +115,16 @@
   "from": "2027-01-23",
   "to": "2027-01-26",
   "nights": 3,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": 223,
   "engine": 151,
-  "ok": true,
-  "status": "hit",
+  "ok": false,
+  "status": "normal",
   "price": 156,
   "airline": "Lufthansa",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 130,
+  "note": "live 156 €: δεν είναι αρκετά φθηνό"
  },
  "ATH-LIS-2027-01-17-2027-01-22": {
   "at": "2026-11-23T10:36+02:00",
@@ -122,14 +134,15 @@
   "from": "2027-01-17",
   "to": "2027-01-22",
   "nights": 5,
-  "max_pp": 200,
+  "max_pp": 150,
   "typical": 231,
   "engine": 156,
   "ok": true,
   "status": "hit",
   "price": 147,
   "airline": "TAP",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 110
  },
  "ATH-MAD-2027-05-14-2027-05-16": {
   "at": "2026-11-23T10:36+02:00",
@@ -139,14 +152,16 @@
   "from": "2027-05-14",
   "to": "2027-05-16",
   "nights": 2,
-  "max_pp": 200,
+  "max_pp": 150,
   "typical": 227,
   "engine": 161,
-  "ok": true,
-  "status": "hit",
+  "ok": false,
+  "status": "normal",
   "price": 158,
   "airline": "Iberia",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 110,
+  "note": "live 158 €: δεν είναι αρκετά φθηνό"
  },
  "ATH-AMS-2027-02-10-2027-02-15": {
   "at": "2026-11-23T10:37+02:00",
@@ -156,7 +171,7 @@
   "from": "2027-02-10",
   "to": "2027-02-15",
   "nights": 5,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": null,
   "engine": 163,
   "ok": false,
@@ -164,7 +179,8 @@
   "price": 200,
   "airline": "KLM",
   "direct": true,
-  "note": "live 200 €: δεν είναι αρκετά φθηνό"
+  "note": "live 200 €: δεν είναι αρκετά φθηνό",
+  "hotel_max_night": 130
  },
  "ATH-BCN-2026-12-02-2026-12-05": {
   "at": "2026-11-23T10:37+02:00",
@@ -174,7 +190,7 @@
   "from": "2026-12-02",
   "to": "2026-12-05",
   "nights": 3,
-  "max_pp": 200,
+  "max_pp": 150,
   "typical": null,
   "engine": 169,
   "ok": false,
@@ -182,7 +198,8 @@
   "price": 269,
   "airline": "Aegean",
   "direct": true,
-  "note": "live 269 €: δεν είναι αρκετά φθηνό"
+  "note": "live 269 €: δεν είναι αρκετά φθηνό",
+  "hotel_max_night": 110
  },
  "ATH-PAR-2027-01-16-2027-01-23": {
   "at": "2026-11-23T10:37+02:00",
@@ -192,7 +209,7 @@
   "from": "2027-01-16",
   "to": "2027-01-23",
   "nights": 7,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": null,
   "engine": 179,
   "ok": false,
@@ -200,7 +217,8 @@
   "price": 199,
   "airline": "Air France",
   "direct": true,
-  "note": "live 199 €: δεν είναι αρκετά φθηνό"
+  "note": "live 199 €: δεν είναι αρκετά φθηνό",
+  "hotel_max_night": 130
  },
  "ATH-BRU-2027-05-04-2027-05-09": {
   "at": "2026-11-23T10:37+02:00",
@@ -210,7 +228,7 @@
   "from": "2027-05-04",
   "to": "2027-05-09",
   "nights": 5,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": null,
   "engine": 187,
   "ok": false,
@@ -218,7 +236,8 @@
   "price": 215,
   "airline": "Brussels Airlines",
   "direct": true,
-  "note": "live 215 €: δεν είναι αρκετά φθηνό"
+  "note": "live 215 €: δεν είναι αρκετά φθηνό",
+  "hotel_max_night": 130
  },
  "ATH-TBS-2026-12-17-2026-12-20": {
   "at": "2026-11-23T10:37+02:00",
@@ -228,13 +247,15 @@
   "from": "2026-12-17",
   "to": "2026-12-20",
   "nights": 3,
-  "max_pp": 160,
+  "max_pp": 120,
   "typical": 250,
   "engine": 189,
-  "ok": true,
-  "status": "near",
+  "ok": false,
+  "status": "normal",
   "price": 178,
   "airline": "Aegean",
-  "direct": true
+  "direct": true,
+  "hotel_max_night": 130,
+  "note": "live 178 €: δεν είναι αρκετά φθηνό"
  }
 }
