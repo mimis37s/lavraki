@@ -142,7 +142,20 @@
   "price": 147,
   "airline": "TAP",
   "direct": true,
-  "hotel_max_night": 110
+  "hotel_max_night": 110,
+  "hotel": {
+   "at": "2026-11-23T11:14+02:00",
+   "name": "Numa Lisbon Anjos",
+   "rating": 9.0,
+   "reviews": 2276,
+   "clean": 9.2,
+   "total": 358,
+   "area": "Arroios, 1,5 χλμ. από το κέντρο, κοντά σε μετρό",
+   "url": "https://www.booking.com/hotel/pt/numa-lisbon-anjos.el.html?checkin=2027-01-17&checkout=2027-01-22&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR",
+   "free_cancel": true,
+   "ok": true,
+   "note": ""
+  }
  },
  "ATH-MAD-2027-05-14-2027-05-16": {
   "at": "2026-11-23T10:36+02:00",
