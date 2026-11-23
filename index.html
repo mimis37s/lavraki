@@ -458,7 +458,10 @@ nav.bar div.four{grid-template-columns:repeat(4,1fr)}
         var last=liveItems().map(function(x){return x.at;}).sort().pop();
         $("fresh").textContent=last?"Τελευταίος live έλεγχος "+ago(last)+".":"";
         var h=decodeURIComponent((location.hash||"").slice(1));
-        if(h.indexOf("d=")===0 && !load.jumped){ load.jumped=true; open=h.slice(2); var mine=ME.some(function(x){return x.id===open;}); if(mine&&ME_ON){ show("me"); renderMe(); } else renderList();
+        if(h.indexOf("d=")===0 && !load.jumped){ load.jumped=true; open=h.slice(2);
+          // older links name the engine's entry (auto-f-IATA-date): open the live-checked card for the same trip
+          var m=/^auto-[fp]-([A-Z]{3})-(\d{4}-\d{2}-\d{2})$/.exec(open);
+          if(m){ var hit=liveItems().filter(function(x){ return x.iata===m[1] && x.from===m[2]; })[0]; if(hit) open=hit.id; } var mine=ME.some(function(x){return x.id===open;}); if(mine&&ME_ON){ show("me"); renderMe(); } else renderList();
           var n=document.getElementById("deal-"+open); if(n) setTimeout(function(){ n.scrollIntoView({block:"start"}); },60); }
       }).catch(function(){ $("fresh").textContent="Δεν φόρτωσαν οι τιμές. Έλεγξε τη σύνδεση και άνοιξε ξανά την εφαρμογή."; });
   }
