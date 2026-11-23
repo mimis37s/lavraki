@@ -1339,5 +1339,21 @@
   "status": "normal",
   "ok": false,
   "note": "live 734 €: δεν είναι αρκετά φθηνό"
+ },
+ "ATH-MIL-2027-06-28-2027-07-02": {
+  "at": "2026-11-23T16:21+02:00",
+  "city": "Μιλάνο",
+  "iata": "MIL",
+  "sky": "mila",
+  "from": "2027-06-28",
+  "to": "2027-07-02",
+  "nights": 4,
+  "max_pp": 90,
+  "typical": 134,
+  "engine": null,
+  "hotel_max_night": 100,
+  "ok": false,
+  "status": "normal",
+  "note": "live 23/11: φθηνότερη full-service SKY express 153 € pp > όριο 90"
  }
 }
