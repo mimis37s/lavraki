@@ -160,5 +160,28 @@
   "flight_url": "https://gr.skyscanner.com/transport/flights/ath/mla/270615/270618/?adultsv2=2&cabinclass=economy",
   "note": "Σχεδόν 4 ολόκληρες μέρες στη Μάλτα στα μέσα Ιουνίου. Γκζίρα, δίπλα στη Σλιέμα, με καραβάκι για Βαλέτα. Low-cost: μόνο μικρή τσάντα.",
   "checked": "2026-11-24"
+ },
+ {
+  "key": "DBV-2027-07-14-2027-07-17",
+  "title": "Ξέφρενο πακέτο",
+  "city": "Ντουμπρόβνικ",
+  "from": "2027-07-14",
+  "to": "2027-07-17",
+  "nights": 3,
+  "airline": "Volotea",
+  "direct": true,
+  "price": 86,
+  "times": "πήγαινε 13:05, φτάνεις 13:40 · επιστροφή 17:30",
+  "hotel": {
+   "name": "Rooms Edna",
+   "rating": 8.9,
+   "clean": 9.1,
+   "total": 303,
+   "free_cancel": false,
+   "url": "https://www.booking.com/hotel/hr/rooms-edna.el.html?checkin=2027-07-14&checkout=2027-07-17&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/dbv/270714/270717/?adultsv2=2&cabinclass=economy",
+  "note": "Ντουμπρόβνικ στην καρδιά του Ιουλίου, με σχεδόν 4 ολόκληρες μέρες. Low-cost: μόνο μικρή τσάντα. Η τιμή του δωματίου είναι προσφορά Black Friday, μη επιστρέψιμη· με δωρεάν ακύρωση 326 € (σύνολο 498 €).",
+  "checked": "2026-11-24"
  }
 ]
