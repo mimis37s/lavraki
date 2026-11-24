@@ -1683,5 +1683,39 @@
   "status": "normal",
   "ok": false,
   "note": "live 685 €: δεν είναι αρκετά φθηνό"
+ },
+ "ATH-IST-2027-07-06-2027-07-09": {
+  "at": "2026-11-24T14:03+02:00",
+  "city": "Κωνσταντινούπολη",
+  "iata": "IST",
+  "sky": "ist",
+  "from": "2027-07-06",
+  "to": "2027-07-09",
+  "nights": 3,
+  "max_pp": 90,
+  "typical": 95,
+  "engine": null,
+  "hotel_max_night": 100,
+  "price": 102,
+  "airline": "Aegean Airlines",
+  "direct": true,
+  "status": "normal",
+  "ok": false,
+  "note": "live 102 €: δεν είναι αρκετά φθηνό",
+  "hotel": {
+   "at": "2026-11-24T14:03+02:00",
+   "name": "La Petite Maison Hotel",
+   "rating": 8.5,
+   "reviews": 371,
+   "clean": 8.5,
+   "total": 100,
+   "area": "Sultanahmet, 600 μ. από το κέντρο, τραμ",
+   "url": "https://www.booking.com/hotel/tr/la-petite-maison.el.html?checkin=2027-07-06&checkout=2027-07-09&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR",
+   "free_cancel": true,
+   "status": "hit",
+   "pp": 152,
+   "ok": true,
+   "note": ""
+  }
  }
 }
