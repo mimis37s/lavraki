@@ -183,5 +183,30 @@
   "flight_url": "https://gr.skyscanner.com/transport/flights/ath/dbv/270714/270717/?adultsv2=2&cabinclass=economy",
   "note": "Ντουμπρόβνικ στην καρδιά του Ιουλίου, με σχεδόν 4 ολόκληρες μέρες. Low-cost: μόνο μικρή τσάντα. Η τιμή του δωματίου είναι προσφορά Black Friday, μη επιστρέψιμη· με δωρεάν ακύρωση 326 € (σύνολο 498 €).",
   "checked": "2026-11-24"
+ },
+ {
+  "key": "NYC-2027-04-08-2027-04-17",
+  "kind": "package",
+  "title": "Λαβράκι όλκης · 3 πόλεις",
+  "city": "Νέα Υόρκη",
+  "from": "2027-04-08",
+  "to": "2027-04-19",
+  "nights": 10,
+  "airline": "SAS",
+  "direct": false,
+  "price": 378,
+  "typical": 842,
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/nyca/270408/270417/?adultsv2=2&cabinclass=economy",
+  "times": "πήγαινε 8/4 11:40 με βράδυ στο Όσλο, φτάνεις Νιούαρκ 9/4 13:15 · επιστροφή 17/4 17:20 με βράδυ στη Στοκχόλμη, Αθήνα 19/4 10:50",
+  "hotel": {
+   "name": "Hotel Mimosa (Μανχάταν) + Scandic Grensen (Όσλο) + Scandic Wallin (Στοκχόλμη)",
+   "rating": 8.5,
+   "clean": 8.8,
+   "total": 2036,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/us/mayor.el.html?checkin=2027-04-09&checkout=2027-04-17&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "note": "Η πτήση είναι 55% κάτω από το συνηθισμένο (842 € το άτομο), με SAS, εταιρεία πλήρους υπηρεσίας. Μία βραδιά στο Όσλο και μία στη Στοκχόλμη περιλαμβάνονται χωρίς επιπλέον κόστος πτήσης. Μανχάταν 8 βράδια 1.871 € (δωρεάν ακύρωση), Όσλο 82 €, Στοκχόλμη 83 € με πρωινό.",
+  "checked": "2026-11-24"
  }
 ]
