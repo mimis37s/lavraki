@@ -137,5 +137,28 @@
   "note": "Η πτήση είναι στη μισή τιμή από τις απευθείας (842 € το άτομο), με SAS, εταιρεία πλήρους υπηρεσίας με αποσκευή, και μια βραδιά δώρο στην Κοπεγχάγη. Μανχάταν 4 βράδια 1.087 € (δωρεάν ακύρωση), Κοπεγχάγη 1 βράδυ 121 €.",
   "checked": "2026-11-24",
   "typical": 842
+ },
+ {
+  "key": "MLA-2027-06-15-2027-06-18",
+  "title": "Ξέφρενο πακέτο",
+  "city": "Μάλτα",
+  "from": "2027-06-15",
+  "to": "2027-06-18",
+  "nights": 3,
+  "airline": "Ryanair",
+  "direct": true,
+  "price": 59,
+  "times": "πήγαινε 06:15, φτάνεις 07:05 · επιστροφή 15:45",
+  "hotel": {
+   "name": "Lotus Guest House, σουίτα με βεράντα",
+   "rating": 8.8,
+   "clean": 9.1,
+   "total": 189,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/mt/lotus-guests-house-malta.el.html?checkin=2027-06-15&checkout=2027-06-18&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/mla/270615/270618/?adultsv2=2&cabinclass=economy",
+  "note": "Σχεδόν 4 ολόκληρες μέρες στη Μάλτα στα μέσα Ιουνίου. Γκζίρα, δίπλα στη Σλιέμα, με καραβάκι για Βαλέτα. Low-cost: μόνο μικρή τσάντα.",
+  "checked": "2026-11-24"
  }
 ]
