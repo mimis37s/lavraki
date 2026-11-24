@@ -112,5 +112,30 @@
   "flight_url": "https://gr.skyscanner.com/transport/flights/ath/vce/270816/270819/?adultsv2=2&cabinclass=economy",
   "note": "Low-cost: μόνο μικρή τσάντα. Ήσυχο νησί Sant'Erasmo με βαπορέτο ως τον Άγιο Μάρκο, με πρωινό. Μη επιστρέψιμη τιμή (με δωρεάν ακύρωση 276 €, σύνολο 460 €).",
   "checked": "2026-11-23"
+ },
+ {
+  "key": "NYC-2027-06-04-2027-06-09",
+  "kind": "package",
+  "title": "Εξωφρενικό deal",
+  "city": "Νέα Υόρκη",
+  "from": "2027-06-04",
+  "to": "2027-06-09",
+  "nights": 5,
+  "airline": "SAS",
+  "direct": false,
+  "price": 452,
+  "times": "πήγαινε 4/6 19:30 με βράδυ στην Κοπεγχάγη, φτάνεις 5/6 15:00 · επιστροφή 9/6 17:20",
+  "hotel": {
+   "name": "Hotel Mimosa (Μανχάταν) + CityHub (Κοπεγχάγη)",
+   "rating": 8.5,
+   "clean": 8.8,
+   "total": 1208,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/us/mayor.el.html?checkin=2027-06-05&checkout=2027-06-09&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/nyca/270604/270609/?adultsv2=2&cabinclass=economy&preferdirects=false",
+  "note": "Η πτήση είναι στη μισή τιμή από τις απευθείας (842 € το άτομο), με SAS, εταιρεία πλήρους υπηρεσίας με αποσκευή, και μια βραδιά δώρο στην Κοπεγχάγη. Μανχάταν 4 βράδια 1.087 € (δωρεάν ακύρωση), Κοπεγχάγη 1 βράδυ 121 €.",
+  "checked": "2026-11-24",
+  "typical": 842
  }
 ]
