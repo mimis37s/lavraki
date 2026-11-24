@@ -1,0 +1,116 @@
+[
+ {
+  "key": "TIA-2027-07-06-2027-07-10",
+  "title": "ΠΑΚΕΤΟ ΚΑΤΩ ΑΠΟ 299 €",
+  "city": "Τίρανα",
+  "from": "2027-07-06",
+  "to": "2027-07-10",
+  "nights": 4,
+  "airline": "Wizz Air",
+  "direct": true,
+  "price": 67,
+  "times": "πήγαινε 15:55, επιστροφή 19:50",
+  "hotel": {
+   "name": "Dentart&Apartments",
+   "rating": 9.7,
+   "total": 116,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/al/dentart-amp-apartments.el.html?checkin=2027-07-06&checkout=2027-07-10&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/tia/270706/270710/?adultsv2=2&cabinclass=economy",
+  "note": "Low-cost: μόνο μικρή τσάντα, η χειραποσκευή πληρώνεται χωριστά. Ολόκληρο διαμέρισμα 35 m² με κουζίνα, χωρίς προπληρωμή.",
+  "checked": "2026-11-23"
+ },
+ {
+  "key": "BRI-2027-07-05-2027-07-07",
+  "title": "ΠΑΚΕΤΟ ΚΑΤΩ ΑΠΟ 299 €",
+  "city": "Μπάρι",
+  "from": "2027-07-05",
+  "to": "2027-07-07",
+  "nights": 2,
+  "airline": "Volotea",
+  "direct": true,
+  "price": 73,
+  "times": "πήγαινε 22:55, επιστροφή 09:25",
+  "hotel": {
+   "name": "Golden dreams",
+   "rating": 8.8,
+   "clean": 9.2,
+   "total": 141,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/it/golden-dreams-bari1.el.html?checkin=2027-07-05&checkout=2027-07-07&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/bri/270705/270707/?adultsv2=2&cabinclass=economy",
+  "note": "Low-cost: μόνο μικρή τσάντα. Ουσιαστικά μία ολόκληρη μέρα στο Μπάρι (φτάνεις βράδυ, φεύγεις πρωί).",
+  "checked": "2026-11-23"
+ },
+ {
+  "key": "VIE-2027-08-02-2027-08-05",
+  "title": "ΠΑΚΕΤΟ ΚΑΤΩ ΑΠΟ 450 €",
+  "city": "Βιέννη",
+  "from": "2027-08-02",
+  "to": "2027-08-05",
+  "nights": 3,
+  "airline": "Austrian Airlines",
+  "direct": true,
+  "price": 106,
+  "times": "πήγαινε 06:30, επιστροφή 12:15",
+  "hotel": {
+   "name": "HausPension",
+   "rating": 9.3,
+   "clean": 9.5,
+   "total": 230,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/at/hauspension.el.html?checkin=2027-08-02&checkout=2027-08-05&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/vie/270802/270805/?adultsv2=2&cabinclass=economy",
+  "note": "Εταιρεία πλήρους υπηρεσίας, με αποσκευή. Χωρίς προπληρωμή ως 28/7.",
+  "checked": "2026-11-23"
+ },
+ {
+  "key": "BUD-2027-07-26-2027-07-29",
+  "title": "ΠΑΚΕΤΟ ΚΑΤΩ ΑΠΟ 450 €",
+  "city": "Βουδαπέστη",
+  "from": "2027-07-26",
+  "to": "2027-07-29",
+  "nights": 3,
+  "airline": "Ryanair",
+  "direct": true,
+  "price": 84,
+  "times": "πήγαινε 09:30, επιστροφή 14:10",
+  "hotel": {
+   "name": "Kalvin Apartments",
+   "rating": 9.3,
+   "clean": 9.5,
+   "total": 271,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/hu/kalvin-apartments-budapest.el.html?checkin=2027-07-26&checkout=2027-07-29&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/bud/270726/270729/?adultsv2=2&cabinclass=economy",
+  "note": "Low-cost: μόνο μικρή τσάντα. Ολόκληρο διαμέρισμα στο κέντρο (1,2 χλμ.), χωρίς προπληρωμή ως 19/7.",
+  "checked": "2026-11-23"
+ },
+ {
+  "key": "VCE-2027-08-16-2027-08-19",
+  "title": "ΠΑΚΕΤΟ ΚΑΤΩ ΑΠΟ 450 €",
+  "city": "Βενετία",
+  "from": "2027-08-16",
+  "to": "2027-08-19",
+  "nights": 3,
+  "airline": "Volotea + Wizz Air",
+  "direct": true,
+  "price": 92,
+  "times": "πήγαινε 22:55, επιστροφή 12:50",
+  "hotel": {
+   "name": "Il Lato Azzurro",
+   "rating": 8.9,
+   "clean": 8.8,
+   "total": 252,
+   "free_cancel": false,
+   "url": "https://www.booking.com/hotel/it/il-lato-azzurro.el.html?checkin=2027-08-16&checkout=2027-08-19&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/vce/270816/270819/?adultsv2=2&cabinclass=economy",
+  "note": "Low-cost: μόνο μικρή τσάντα. Ήσυχο νησί Sant'Erasmo με βαπορέτο ως τον Άγιο Μάρκο, με πρωινό. Μη επιστρέψιμη τιμή (με δωρεάν ακύρωση 276 €, σύνολο 460 €).",
+  "checked": "2026-11-23"
+ }
+]
