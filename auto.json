@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T17:05+02:00",
+ "updated": "2026-11-25T22:01+02:00",
  "deals": [],
  "flights": [
   {
@@ -11,7 +11,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-MAD-2026-12-14-2026-12-17",
    "iata": "MAD",
@@ -50,7 +50,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-LIS-2027-01-17-2027-01-22",
    "iata": "LIS",
@@ -61,7 +61,7 @@
    "flight": "TAP απευθείας, 312 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
    "total": 312,
-   "typical": 462,
+   "typical": 461,
    "savings": 32,
    "status": "check",
    "max_pp": 150,
@@ -89,7 +89,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-MAD-2027-05-14-2027-05-16",
    "iata": "MAD",
@@ -128,7 +128,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-STO-2027-04-21-2027-04-26",
    "iata": "STO",
@@ -167,7 +167,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BCN-2027-06-14-2027-06-17",
    "iata": "BCN",
@@ -206,7 +206,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BKK-2027-01-15-2027-01-23",
    "iata": "BKK",
@@ -237,92 +237,131 @@
    ]
   },
   {
-   "destination": "Βερολίνο",
-   "city": "Βερολίνο",
-   "from": "2027-01-27",
-   "to": "2027-01-31",
+   "destination": "Βιέννη",
+   "city": "Βιέννη",
+   "from": "2027-01-22",
+   "to": "2027-01-24",
    "exact": true,
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
-   "key": "ATH-BER-2027-01-27-2027-01-31",
-   "iata": "BER",
-   "sky": "ber",
-   "nights": 4,
-   "id": "auto-f-BER-2027-01-27",
+   "key": "ATH-VIE-2027-01-22-2027-01-24",
+   "iata": "VIE",
+   "sky": "vie",
+   "nights": 2,
+   "id": "auto-f-VIE-2027-01-22",
    "kind": "flight",
-   "flight": "Aegean απευθείας, 412 € για 2 άτομα μετ' επιστροφής",
+   "flight": "Austrian απευθείας, 208 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 412,
-   "typical": 601,
-   "savings": 31,
+   "total": 208,
+   "typical": 314,
+   "savings": 34,
    "status": "normal",
-   "max_pp": 120,
-   "hotel_max_night": 130,
+   "max_pp": 90,
+   "hotel_max_night": 100,
    "candidate": false,
    "alts": [
     {
      "from": "2027-01-09",
-     "to": "2027-01-15",
-     "price": 432
+     "to": "2027-01-11",
+     "price": 212
     }
    ],
    "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
    "links": [
     {
      "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/ber/270127/270131/?adultsv2=2&cabinclass=economy&preferdirects=true"
+     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/270122/270124/?adultsv2=2&cabinclass=economy&preferdirects=true"
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH2701BER31011?t=A318010386001801045500000175ATHBER18014229001801436400000165BERATH_ee04b2d84c40cecf07cbfb2f6698fec8_18475&search_date=24112026&expected_price_uuid=01a20c26-7fdb-8040-a60d-e01f6748db85&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=szd6MAVzGMoEFfYV50X06g&expected_price_source=share&expected_price_currency=eur&expected_price=206"
+     "url": "https://www.aviasales.com/search/ATH2201VIE24011?t=OS18006243001800629100000140ATHVIE18007830001800794400000130VIEATH_443b623d5ef2c7c0d57e522e785ba1e5_9381&search_date=24112026&expected_price_uuid=01a20de6-3cc4-8030-e331-8b50678376dc&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ytzYjYzECR4K64vTw3MACA&expected_price_source=share&expected_price_currency=eur&expected_price=104"
     }
    ]
   },
   {
-   "destination": "Βερολίνο",
-   "city": "Βερολίνο",
-   "from": "2026-12-13",
-   "to": "2026-12-16",
+   "destination": "Μόναχο",
+   "city": "Μόναχο",
+   "from": "2026-12-01",
+   "to": "2026-12-06",
    "exact": true,
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
-   "key": "ATH-BER-2026-12-13-2026-12-16",
-   "iata": "BER",
-   "sky": "ber",
-   "nights": 3,
-   "id": "auto-f-BER-2026-12-13",
+   "key": "ATH-MUC-2026-12-01-2026-12-06",
+   "iata": "MUC",
+   "sky": "muc",
+   "nights": 5,
+   "id": "auto-f-MUC-2026-12-01",
    "kind": "flight",
-   "flight": "Sky Express απευθείας, 440 € για 2 άτομα μετ' επιστροφής",
+   "flight": "Lufthansa απευθείας, 346 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 440,
-   "typical": 637,
-   "savings": 31,
+   "total": 346,
+   "typical": 508,
+   "savings": 32,
    "status": "normal",
    "max_pp": 120,
    "hotel_max_night": 130,
    "candidate": false,
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/muc/261201/261206/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH0112MUC06121?t=LH17961072001796112900000155ATHMUC17965461001796558700000150MUCATH_5bab31144acbc598fc26b5523a7d55d2_15503&search_date=19112026&expected_price_uuid=01a1f437-bf9a-8031-6113-633faf3653ef&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=o-X2WnAPMz3QQE_gFGmhOw&expected_price_source=share&expected_price_currency=eur&expected_price=173"
+    }
+   ]
+  },
+  {
+   "destination": "Βιέννη",
+   "city": "Βιέννη",
+   "from": "2027-02-12",
+   "to": "2027-02-15",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-VIE-2027-02-12-2027-02-15",
+   "iata": "VIE",
+   "sky": "vie",
+   "nights": 3,
+   "id": "auto-f-VIE-2027-02-12",
+   "kind": "flight",
+   "flight": "Austrian απευθείας, 214 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 214,
+   "typical": 314,
+   "savings": 32,
+   "status": "normal",
+   "max_pp": 90,
+   "hotel_max_night": 100,
+   "candidate": false,
    "alts": [
     {
-     "from": "2026-12-03",
-     "to": "2026-12-09",
-     "price": 504
+     "from": "2027-02-17",
+     "to": "2027-02-23",
+     "price": 216
     }
    ],
    "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
    "links": [
     {
      "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/ber/261213/261216/?adultsv2=2&cabinclass=economy&preferdirects=true"
+     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/270212/270215/?adultsv2=2&cabinclass=economy&preferdirects=true"
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH1312BER16121?t=GQ17971632001797170100000175ATHBER17974200001797433500000165BERATH_2d153eebcb1bf288d006c53799093a10_19857&search_date=18112026&expected_price_uuid=01a1f0f6-10b3-8040-a312-659efebaea10&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=b2Jxc8A5YY5B8e7u0CsM_Q&expected_price_source=share&expected_price_currency=eur&expected_price=220"
+     "url": "https://www.aviasales.com/search/ATH1202VIE15021?t=OS18024387001802443500000140ATHVIE18026838001802695200000130VIEATH_28a607d00435098b7ef306781b29fcc0_9558&search_date=22112026&expected_price_uuid=01a20503-5a0e-8030-a252-93ef46946f87&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=amX__say3hzo75_tcgSOdg&expected_price_source=share&expected_price_currency=eur&expected_price=107"
     }
    ]
   },
@@ -335,7 +374,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-ZRH-2026-12-28-2027-01-05",
    "iata": "ZRH",
@@ -346,8 +385,8 @@
    "flight": "SWISS απευθείας, 296 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
    "total": 296,
-   "typical": 428,
-   "savings": 31,
+   "typical": 434,
+   "savings": 32,
    "status": "normal",
    "max_pp": 120,
    "hotel_max_night": 130,
@@ -380,7 +419,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-MUC-2027-04-15-2027-04-18",
    "iata": "MUC",
@@ -391,8 +430,8 @@
    "flight": "Sky Express απευθείας, 348 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
    "total": 348,
-   "typical": 498,
-   "savings": 30,
+   "typical": 508,
+   "savings": 31,
    "status": "normal",
    "max_pp": 120,
    "hotel_max_night": 130,
@@ -411,84 +450,6 @@
    ]
   },
   {
-   "destination": "Βερολίνο",
-   "city": "Βερολίνο",
-   "from": "2027-02-06",
-   "to": "2027-02-09",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-BER-2027-02-06-2027-02-09",
-   "iata": "BER",
-   "sky": "ber",
-   "nights": 3,
-   "id": "auto-f-BER-2027-02-06",
-   "kind": "flight",
-   "flight": "Sky Express απευθείας, 450 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 450,
-   "typical": 637,
-   "savings": 29,
-   "status": "normal",
-   "max_pp": 120,
-   "hotel_max_night": 130,
-   "candidate": false,
-   "alts": [],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/ber/270206/270209/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0602BER09021?t=GQ18019152001801922100000175ATHBER18021720001802185500000165BERATH_ad753935c85d589a871b12dc0c052841_20224&search_date=20112026&expected_price_uuid=01a1f9b2-1e2e-8030-2a72-5538440ef276&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=b2Jxc8A5YY5B8e7u0CsM_Q&expected_price_source=share&expected_price_currency=eur&expected_price=225"
-    }
-   ]
-  },
-  {
-   "destination": "Μόναχο",
-   "city": "Μόναχο",
-   "from": "2026-12-01",
-   "to": "2026-12-06",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-MUC-2026-12-01-2026-12-06",
-   "iata": "MUC",
-   "sky": "muc",
-   "nights": 5,
-   "id": "auto-f-MUC-2026-12-01",
-   "kind": "flight",
-   "flight": "Lufthansa απευθείας, 346 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 346,
-   "typical": 488,
-   "savings": 29,
-   "status": "normal",
-   "max_pp": 120,
-   "hotel_max_night": 130,
-   "candidate": false,
-   "alts": [],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/muc/261201/261206/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0112MUC06121?t=LH17961072001796112900000155ATHMUC17965461001796558700000150MUCATH_5bab31144acbc598fc26b5523a7d55d2_15503&search_date=19112026&expected_price_uuid=01a1f437-bf9a-8031-6113-633faf3653ef&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=o-X2WnAPMz3QQE_gFGmhOw&expected_price_source=share&expected_price_currency=eur&expected_price=173"
-    }
-   ]
-  },
-  {
    "destination": "Πράγα",
    "city": "Πράγα",
    "from": "2027-02-19",
@@ -497,7 +458,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-PRG-2027-02-19-2027-02-21",
    "iata": "PRG",
@@ -536,7 +497,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-PRG-2027-04-09-2027-04-11",
    "iata": "PRG",
@@ -567,51 +528,6 @@
    ]
   },
   {
-   "destination": "Βιέννη",
-   "city": "Βιέννη",
-   "from": "2027-01-22",
-   "to": "2027-01-24",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-VIE-2027-01-22-2027-01-24",
-   "iata": "VIE",
-   "sky": "vie",
-   "nights": 2,
-   "id": "auto-f-VIE-2027-01-22",
-   "kind": "flight",
-   "flight": "Austrian απευθείας, 208 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 208,
-   "typical": 277,
-   "savings": 25,
-   "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
-   "candidate": false,
-   "alts": [
-    {
-     "from": "2027-01-09",
-     "to": "2027-01-11",
-     "price": 212
-    }
-   ],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/270122/270124/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH2201VIE24011?t=OS18006243001800629100000140ATHVIE18007830001800794400000130VIEATH_443b623d5ef2c7c0d57e522e785ba1e5_9381&search_date=24112026&expected_price_uuid=01a20de6-3cc4-8030-e331-8b50678376dc&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ytzYjYzECR4K64vTw3MACA&expected_price_source=share&expected_price_currency=eur&expected_price=104"
-    }
-   ]
-  },
-  {
    "destination": "Μόναχο",
    "city": "Μόναχο",
    "from": "2027-01-08",
@@ -620,7 +536,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-MUC-2027-01-08-2027-01-16",
    "iata": "MUC",
@@ -628,11 +544,11 @@
    "nights": 8,
    "id": "auto-f-MUC-2027-01-08",
    "kind": "flight",
-   "flight": "Lufthansa απευθείας, 380 € για 2 άτομα μετ' επιστροφής",
+   "flight": "Lufthansa απευθείας, 378 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 380,
-   "typical": 498,
-   "savings": 24,
+   "total": 378,
+   "typical": 508,
+   "savings": 26,
    "status": "normal",
    "max_pp": 120,
    "hotel_max_night": 130,
@@ -646,7 +562,7 @@
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0801MUC16011?t=LH17993904001799396100000155ATHMUC18001368001800149400000150MUCATH_c1ad1351f9cddc2a9f62589aa546e45a_17060&search_date=25112026&expected_price_uuid=01a211bf-e85f-8030-2700-c81f7af8547e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6EXtu1HZb5WUy2U7pd8aDg&expected_price_source=share&expected_price_currency=eur&expected_price=190"
+     "url": "https://www.aviasales.com/search/ATH0801MUC16011?t=LH17993904001799396100000155ATHMUC18001368001800149400000150MUCATH_c1ad1351f9cddc2a9f62589aa546e45a_17060&search_date=25112026&expected_price_uuid=01a211bf-e85f-8030-2700-c81f7af8547e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6EXtu1HZb5WUy2U7pd8aDg&expected_price_source=share&expected_price_currency=eur&expected_price=189"
     }
    ]
   },
@@ -659,7 +575,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-LIS-2026-12-06-2026-12-10",
    "iata": "LIS",
@@ -670,7 +586,7 @@
    "flight": "TAP απευθείας, 356 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
    "total": 356,
-   "typical": 462,
+   "typical": 461,
    "savings": 23,
    "status": "normal",
    "max_pp": 150,
@@ -690,51 +606,6 @@
    ]
   },
   {
-   "destination": "Βιέννη",
-   "city": "Βιέννη",
-   "from": "2027-02-12",
-   "to": "2027-02-15",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-VIE-2027-02-12-2027-02-15",
-   "iata": "VIE",
-   "sky": "vie",
-   "nights": 3,
-   "id": "auto-f-VIE-2027-02-12",
-   "kind": "flight",
-   "flight": "Austrian απευθείας, 214 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 214,
-   "typical": 277,
-   "savings": 23,
-   "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
-   "candidate": false,
-   "alts": [
-    {
-     "from": "2027-02-17",
-     "to": "2027-02-23",
-     "price": 216
-    }
-   ],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/270212/270215/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH1202VIE15021?t=OS18024387001802443500000140ATHVIE18026838001802695200000130VIEATH_28a607d00435098b7ef306781b29fcc0_9558&search_date=22112026&expected_price_uuid=01a20503-5a0e-8030-a252-93ef46946f87&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=amX__say3hzo75_tcgSOdg&expected_price_source=share&expected_price_currency=eur&expected_price=107"
-    }
-   ]
-  },
-  {
    "destination": "Λισαβόνα",
    "city": "Λισαβόνα",
    "from": "2027-05-06",
@@ -743,7 +614,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-LIS-2027-05-06-2027-05-08",
    "iata": "LIS",
@@ -754,8 +625,8 @@
    "flight": "TAP απευθείας, 376 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
    "total": 376,
-   "typical": 462,
-   "savings": 19,
+   "typical": 461,
+   "savings": 18,
    "status": "normal",
    "max_pp": 150,
    "hotel_max_night": 110,
@@ -782,7 +653,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-MAD-2027-02-06-2027-02-11",
    "iata": "MAD",
@@ -819,6 +690,45 @@
    ]
   },
   {
+   "destination": "Βερολίνο",
+   "city": "Βερολίνο",
+   "from": "2027-01-28",
+   "to": "2027-02-01",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-BER-2027-01-28-2027-02-01",
+   "iata": "BER",
+   "sky": "ber",
+   "nights": 4,
+   "id": "auto-f-BER-2027-01-28",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 354 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 354,
+   "typical": 432,
+   "savings": 18,
+   "status": "normal",
+   "max_pp": 120,
+   "hotel_max_night": 130,
+   "candidate": false,
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ber/270128/270201/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH2801BER01021?t=A318011535001801160400000175ATHBER18014964001801509900000165BERATH_84dc8723eab8094f89ae0c6bb64bcdb1_16031&search_date=25112026&expected_price_uuid=01a213fb-abcc-8030-6afb-353d8d2f5535&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=tE0g6gXQf29s5fitj9PKhg&expected_price_source=share&expected_price_currency=eur&expected_price=177"
+    }
+   ]
+  },
+  {
    "destination": "Πράγα",
    "city": "Πράγα",
    "from": "2027-05-15",
@@ -827,7 +737,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-PRG-2027-05-15-2027-05-18",
    "iata": "PRG",
@@ -872,7 +782,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-TBS-2027-01-19-2027-01-26",
    "iata": "TBS",
@@ -911,7 +821,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-IST-2027-01-09-2027-01-13",
    "iata": "IST",
@@ -922,7 +832,7 @@
    "flight": "Aegean απευθείας, 162 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
    "total": 162,
-   "typical": 188,
+   "typical": 189,
    "savings": 14,
    "status": "normal",
    "max_pp": 90,
@@ -958,6 +868,51 @@
    ]
   },
   {
+   "destination": "Βερολίνο",
+   "city": "Βερολίνο",
+   "from": "2026-12-13",
+   "to": "2026-12-16",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-BER-2026-12-13-2026-12-16",
+   "iata": "BER",
+   "sky": "ber",
+   "nights": 3,
+   "id": "auto-f-BER-2026-12-13",
+   "kind": "flight",
+   "flight": "Sky Express απευθείας, 440 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 440,
+   "typical": 504,
+   "savings": 13,
+   "status": "normal",
+   "max_pp": 120,
+   "hotel_max_night": 130,
+   "candidate": false,
+   "alts": [
+    {
+     "from": "2026-12-03",
+     "to": "2026-12-09",
+     "price": 504
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ber/261213/261216/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH1312BER16121?t=GQ17971632001797170100000175ATHBER17974200001797433500000165BERATH_2d153eebcb1bf288d006c53799093a10_19857&search_date=18112026&expected_price_uuid=01a1f0f6-10b3-8040-a312-659efebaea10&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=b2Jxc8A5YY5B8e7u0CsM_Q&expected_price_source=share&expected_price_currency=eur&expected_price=220"
+    }
+   ]
+  },
+  {
    "destination": "Τιφλίδα",
    "city": "Τιφλίδα",
    "from": "2026-12-02",
@@ -966,7 +921,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-TBS-2026-12-02-2026-12-08",
    "iata": "TBS",
@@ -1003,91 +958,91 @@
    ]
   },
   {
-   "destination": "Κωνσταντινούπολη",
-   "city": "Κωνσταντινούπολη",
-   "from": "2027-02-03",
-   "to": "2027-02-05",
+   "destination": "Βερολίνο",
+   "city": "Βερολίνο",
+   "from": "2027-02-06",
+   "to": "2027-02-09",
    "exact": true,
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
-   "key": "ATH-IST-2027-02-03-2027-02-05",
-   "iata": "IST",
-   "sky": "ist",
-   "nights": 2,
-   "id": "auto-f-IST-2027-02-03",
+   "key": "ATH-BER-2027-02-06-2027-02-09",
+   "iata": "BER",
+   "sky": "ber",
+   "nights": 3,
+   "id": "auto-f-BER-2027-02-06",
    "kind": "flight",
-   "flight": "Aegean απευθείας, 178 € για 2 άτομα μετ' επιστροφής",
+   "flight": "Sky Express απευθείας, 450 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 178,
-   "typical": 193,
-   "savings": 8,
+   "total": 450,
+   "typical": 504,
+   "savings": 11,
    "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
-   "candidate": false,
-   "alts": [
-    {
-     "from": "2027-02-04",
-     "to": "2027-02-08",
-     "price": 198
-    },
-    {
-     "from": "2027-02-01",
-     "to": "2027-02-03",
-     "price": 204
-    }
-   ],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270203/270205/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0302IST05021?t=A318016602001801669500000095ATHIST18018459001801847700000090ISTATH_4b859aa2a3fb393222c235022fe9b97e_7993&search_date=19112026&expected_price_uuid=01a1f3a0-ebbc-8030-2fdc-4169e23eb7d2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=kFKpoTy-4ChHFyrCcsBVaA&expected_price_source=share&expected_price_currency=eur&expected_price=89"
-    }
-   ]
-  },
-  {
-   "destination": "Κωνσταντινούπολη",
-   "city": "Κωνσταντινούπολη",
-   "from": "2027-06-05",
-   "to": "2027-06-07",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-IST-2027-06-05-2027-06-07",
-   "iata": "IST",
-   "sky": "ist",
-   "nights": 2,
-   "id": "auto-f-IST-2027-06-05",
-   "kind": "flight",
-   "flight": "Aegean απευθείας, 180 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 180,
-   "typical": 193,
-   "savings": 7,
-   "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
+   "max_pp": 120,
+   "hotel_max_night": 130,
    "candidate": false,
    "alts": [],
    "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
    "links": [
     {
      "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270605/270607/?adultsv2=2&cabinclass=economy&preferdirects=true"
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ber/270206/270209/?adultsv2=2&cabinclass=economy&preferdirects=true"
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0506IST07061?t=A318121824001812188100000095ATHIST18123831001812388500000090ISTATH_0117fb934e87f89264c28c5c743e456c_8075&search_date=23112026&expected_price_uuid=01a209b3-5f49-8040-2952-f98ea4c11231&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=c_j3TOZMS0osjtayfDnKCw&expected_price_source=share&expected_price_currency=eur&expected_price=90"
+     "url": "https://www.aviasales.com/search/ATH0602BER09021?t=GQ18019152001801922100000175ATHBER18021720001802185500000165BERATH_ad753935c85d589a871b12dc0c052841_20224&search_date=20112026&expected_price_uuid=01a1f9b2-1e2e-8030-2a72-5538440ef276&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=b2Jxc8A5YY5B8e7u0CsM_Q&expected_price_source=share&expected_price_currency=eur&expected_price=225"
+    }
+   ]
+  },
+  {
+   "destination": "Κωνσταντινούπολη",
+   "city": "Κωνσταντινούπολη",
+   "from": "2027-02-13",
+   "to": "2027-02-17",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-IST-2027-02-13-2027-02-17",
+   "iata": "IST",
+   "sky": "ist",
+   "nights": 4,
+   "id": "auto-f-IST-2027-02-13",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 168 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 168,
+   "typical": 178,
+   "savings": 6,
+   "status": "normal",
+   "max_pp": 90,
+   "hotel_max_night": 100,
+   "candidate": false,
+   "alts": [
+    {
+     "from": "2027-02-12",
+     "to": "2027-02-15",
+     "price": 176
+    },
+    {
+     "from": "2027-02-03",
+     "to": "2027-02-05",
+     "price": 178
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270213/270217/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH1302IST17021?t=A318025434001802552400000090ATHIST18028827001802884500000090ISTATH_8311576459dbed032e775b2897aaf058_7605&search_date=25112026&expected_price_uuid=01a213d1-a5bf-8040-64bb-f86eac48da96&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=S9V8lombGnTN7DBGo0q_Bw&expected_price_source=share&expected_price_currency=eur&expected_price=84"
     }
    ]
   },
@@ -1100,7 +1055,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-ROM-2026-12-14-2026-12-17",
    "iata": "ROM",
@@ -1155,7 +1110,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-ROM-2027-01-21-2027-01-24",
    "iata": "ROM",
@@ -1202,6 +1157,45 @@
    ]
   },
   {
+   "destination": "Κωνσταντινούπολη",
+   "city": "Κωνσταντινούπολη",
+   "from": "2027-06-05",
+   "to": "2027-06-07",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-IST-2027-06-05-2027-06-07",
+   "iata": "IST",
+   "sky": "ist",
+   "nights": 2,
+   "id": "auto-f-IST-2027-06-05",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 180 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 180,
+   "typical": 189,
+   "savings": 5,
+   "status": "normal",
+   "max_pp": 90,
+   "hotel_max_night": 100,
+   "candidate": false,
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/ist/270605/270607/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH0506IST07061?t=A318121824001812188100000095ATHIST18123831001812388500000090ISTATH_0117fb934e87f89264c28c5c743e456c_8075&search_date=23112026&expected_price_uuid=01a209b3-5f49-8040-2952-f98ea4c11231&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=c_j3TOZMS0osjtayfDnKCw&expected_price_source=share&expected_price_currency=eur&expected_price=90"
+    }
+   ]
+  },
+  {
    "destination": "Ρώμη",
    "city": "Ρώμη",
    "from": "2027-02-23",
@@ -1210,7 +1204,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-ROM-2027-02-23-2027-03-01",
    "iata": "ROM",
@@ -1265,7 +1259,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-TBS-2027-04-07-2027-04-14",
    "iata": "TBS",
@@ -1296,90 +1290,6 @@
    ]
   },
   {
-   "destination": "Βιέννη",
-   "city": "Βιέννη",
-   "from": "2026-12-16",
-   "to": "2026-12-19",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-VIE-2026-12-16-2026-12-19",
-   "iata": "VIE",
-   "sky": "vie",
-   "nights": 3,
-   "id": "auto-f-VIE-2026-12-16",
-   "kind": "flight",
-   "flight": "Austrian απευθείας, 338 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 338,
-   "typical": 277,
-   "savings": null,
-   "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
-   "candidate": false,
-   "alts": [
-    {
-     "from": "2026-12-18",
-     "to": "2026-12-21",
-     "price": 362
-    }
-   ],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/261216/261219/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH1612VIE19121?t=OS17974275001797432300000140ATHVIE17976726001797684000000130VIEATH_5675c90c8c73d7e2ac130007862f6d60_15255&search_date=19112026&expected_price_uuid=01a1f131-6c71-8030-ec50-f442df5b9102&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=amX__say3hzo75_tcgSOdg&expected_price_source=share&expected_price_currency=eur&expected_price=169"
-    }
-   ]
-  },
-  {
-   "destination": "Μάλτα",
-   "city": "Μάλτα",
-   "from": "2027-01-07",
-   "to": "2027-01-11",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-MLA-2027-01-07-2027-01-11",
-   "iata": "MLA",
-   "sky": "mla",
-   "nights": 4,
-   "id": "auto-f-MLA-2027-01-07",
-   "kind": "flight",
-   "flight": "Aegean απευθείας, 202 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 202,
-   "typical": null,
-   "savings": null,
-   "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
-   "candidate": false,
-   "alts": [],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/mla/270107/270111/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0701MLA11011?t=A317993100001799312700000105ATHMLA17996496001799658900000095MLAATH_537a806d7e6eddd2126854c72f84bf01_9135&search_date=18112026&expected_price_uuid=01a1ef78-e93e-8030-6419-5c6b35b0b218&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=1grhkoeyD-BHBZQ6DpkiEA&expected_price_source=share&expected_price_currency=eur&expected_price=101"
-    }
-   ]
-  },
-  {
    "destination": "Μάλτα",
    "city": "Μάλτα",
    "from": "2027-03-01",
@@ -1388,7 +1298,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-MLA-2027-03-01-2027-03-03",
    "iata": "MLA",
@@ -1419,6 +1329,45 @@
    ]
   },
   {
+   "destination": "Κοπεγχάγη",
+   "city": "Κοπεγχάγη",
+   "from": "2027-03-04",
+   "to": "2027-03-07",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-CPH-2027-03-04-2027-03-07",
+   "iata": "CPH",
+   "sky": "cph",
+   "nights": 3,
+   "id": "auto-f-CPH-2027-03-04",
+   "kind": "flight",
+   "flight": "SAS απευθείας, 268 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 268,
+   "typical": null,
+   "savings": null,
+   "status": "normal",
+   "max_pp": 120,
+   "hotel_max_night": 130,
+   "candidate": false,
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270304/270307/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH0403CPH07031?t=SK18041694001804178400000210ATHCPH18044079001804423200000195CPHATH_938577b67ce3558f200ceaa191255ea5_12155&search_date=25112026&expected_price_uuid=01a21390-7ca5-8040-62eb-259a68b3abb6&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-uNs8D7iwYwWjFVsvo82Cw&expected_price_source=share&expected_price_currency=eur&expected_price=134"
+    }
+   ]
+  },
+  {
    "destination": "Ζυρίχη",
    "city": "Ζυρίχη",
    "from": "2027-01-15",
@@ -1427,7 +1376,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-ZRH-2027-01-15-2027-01-18",
    "iata": "ZRH",
@@ -1466,7 +1415,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-GVA-2027-01-14-2027-01-17",
    "iata": "GVA",
@@ -1505,7 +1454,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-PAR-2026-12-07-2026-12-10",
    "iata": "PAR",
@@ -1536,6 +1485,96 @@
    ]
   },
   {
+   "destination": "Μιλάνο",
+   "city": "Μιλάνο",
+   "from": "2027-01-23",
+   "to": "2027-01-26",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-MIL-2027-01-23-2027-01-26",
+   "iata": "MIL",
+   "sky": "mila",
+   "nights": 3,
+   "id": "auto-f-MIL-2027-01-23",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 312 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 312,
+   "typical": null,
+   "savings": null,
+   "status": "normal",
+   "max_pp": 90,
+   "hotel_max_night": 100,
+   "candidate": false,
+   "alts": [
+    {
+     "from": "2027-01-27",
+     "to": "2027-01-30",
+     "price": 320
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/mila/270123/270126/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH2301MIL26011?t=A318007209001800726600000155ATHMXP18009849001800997200000145MXPATH_1315ad1b986159dbf2fd67deaafc64d6_14201&search_date=25112026&expected_price_uuid=01a21384-9f88-8040-a340-ad4906e12ecd&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BV8acUAWwAkMYuffh6J8EQ&expected_price_source=share&expected_price_currency=eur&expected_price=156"
+    }
+   ]
+  },
+  {
+   "destination": "Βιέννη",
+   "city": "Βιέννη",
+   "from": "2026-12-11",
+   "to": "2026-12-13",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-VIE-2026-12-11-2026-12-13",
+   "iata": "VIE",
+   "sky": "vie",
+   "nights": 2,
+   "id": "auto-f-VIE-2026-12-11",
+   "kind": "flight",
+   "flight": "Austrian απευθείας, 314 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 314,
+   "typical": 314,
+   "savings": null,
+   "status": "normal",
+   "max_pp": 90,
+   "hotel_max_night": 100,
+   "candidate": false,
+   "alts": [
+    {
+     "from": "2026-12-16",
+     "to": "2026-12-19",
+     "price": 338
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/vie/261211/261213/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH1112VIE13121?t=OS17969757001796980500000140ATHVIE17971482001797159900000135VIEATH_c067261fd8c1b925d35e9768694b9a9c_14217&search_date=25112026&expected_price_uuid=01a21428-b6e3-8030-e7e0-2ab8933223f3&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=V20RfsIRiyt0SLPIhyEmxg&expected_price_source=share&expected_price_currency=eur&expected_price=157"
+    }
+   ]
+  },
+  {
    "destination": "Παρίσι",
    "city": "Παρίσι",
    "from": "2027-06-22",
@@ -1544,7 +1583,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-PAR-2027-06-22-2027-06-26",
    "iata": "PAR",
@@ -1575,45 +1614,6 @@
    ]
   },
   {
-   "destination": "Μιλάνο",
-   "city": "Μιλάνο",
-   "from": "2027-01-27",
-   "to": "2027-01-30",
-   "exact": true,
-   "people": 2,
-   "lowcost": false,
-   "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
-   "auto": true,
-   "key": "ATH-MIL-2027-01-27-2027-01-30",
-   "iata": "MIL",
-   "sky": "mila",
-   "nights": 3,
-   "id": "auto-f-MIL-2027-01-27",
-   "kind": "flight",
-   "flight": "Aegean απευθείας, 320 € για 2 άτομα μετ' επιστροφής",
-   "hotel": null,
-   "total": 320,
-   "typical": null,
-   "savings": null,
-   "status": "normal",
-   "max_pp": 90,
-   "hotel_max_night": 100,
-   "candidate": false,
-   "alts": [],
-   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
-   "links": [
-    {
-     "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/mila/270127/270130/?adultsv2=2&cabinclass=economy&preferdirects=true"
-    },
-    {
-     "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH2701MIL30011?t=A318010665001801072200000155ATHMXP18013278001801340100000145MXPATH_4e5061bdab80c170070ba88ca4978c85_14411&search_date=24112026&expected_price_uuid=01a20e8f-a5a5-8030-24dc-0903b6629b7d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=M9F60WpJver5iCz-SstADQ&expected_price_source=share&expected_price_currency=eur&expected_price=160"
-    }
-   ]
-  },
-  {
    "destination": "Άμστερνταμ",
    "city": "Άμστερνταμ",
    "from": "2027-02-10",
@@ -1622,7 +1622,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-AMS-2027-02-10-2027-02-15",
    "iata": "AMS",
@@ -1661,7 +1661,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BCN-2026-12-02-2026-12-05",
    "iata": "BCN",
@@ -1706,7 +1706,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-PAR-2027-01-16-2027-01-23",
    "iata": "PAR",
@@ -1745,7 +1745,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-FLR-2027-02-13-2027-02-15",
    "iata": "FLR",
@@ -1784,7 +1784,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BRU-2027-05-04-2027-05-09",
    "iata": "BRU",
@@ -1815,6 +1815,45 @@
    ]
   },
   {
+   "destination": "Κοπεγχάγη",
+   "city": "Κοπεγχάγη",
+   "from": "2027-01-22",
+   "to": "2027-01-24",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-CPH-2027-01-22-2027-01-24",
+   "iata": "CPH",
+   "sky": "cph",
+   "nights": 2,
+   "id": "auto-f-CPH-2027-01-22",
+   "kind": "flight",
+   "flight": "Aegean απευθείας, 384 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 384,
+   "typical": null,
+   "savings": null,
+   "status": "normal",
+   "max_pp": 120,
+   "hotel_max_night": 130,
+   "candidate": false,
+   "alts": [],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/cph/270122/270124/?adultsv2=2&cabinclass=economy&preferdirects=true"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH2201CPH24011?t=A318006060001800614700000205ATHCPH18007791001800794400000195CPHATH_81bdb59cbcddbc99f63726d851b51283_17382&search_date=25112026&expected_price_uuid=01a213de-0ac9-8031-220b-d4a14839dc56&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iIgY0gztbH5COPhhZmeNmA&expected_price_source=share&expected_price_currency=eur&expected_price=192"
+    }
+   ]
+  },
+  {
    "destination": "Βρυξέλλες",
    "city": "Βρυξέλλες",
    "from": "2026-12-11",
@@ -1823,7 +1862,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BRU-2026-12-11-2026-12-14",
    "iata": "BRU",
@@ -1831,9 +1870,9 @@
    "nights": 3,
    "id": "auto-f-BRU-2026-12-11",
    "kind": "flight",
-   "flight": "Brussels Airlines απευθείας, 388 € για 2 άτομα μετ' επιστροφής",
+   "flight": "Brussels Airlines απευθείας, 386 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 388,
+   "total": 386,
    "typical": null,
    "savings": null,
    "status": "normal",
@@ -1849,7 +1888,7 @@
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH1112BRU14121?t=SN17970048001797013200000200ATHBRU17972460001797261000000190BRUATH_89514d6a912c7b57796a9e59d645a261_17464&search_date=25112026&expected_price_uuid=01a21210-6772-8031-2665-887b99965e7e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=j2r4y4YeOBygMNC_aFo_pg&expected_price_source=share&expected_price_currency=eur&expected_price=194"
+     "url": "https://www.aviasales.com/search/ATH1112BRU14121?t=SN17970048001797013200000200ATHBRU17972460001797261000000190BRUATH_89514d6a912c7b57796a9e59d645a261_17464&search_date=25112026&expected_price_uuid=01a21210-6772-8031-2665-887b99965e7e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=j2r4y4YeOBygMNC_aFo_pg&expected_price_source=share&expected_price_currency=eur&expected_price=193"
     }
    ]
   },
@@ -1862,7 +1901,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-FLR-2027-01-08-2027-01-12",
    "iata": "FLR",
@@ -1901,7 +1940,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BRU-2027-01-08-2027-01-12",
    "iata": "BRU",
@@ -1934,39 +1973,84 @@
   {
    "destination": "Φλωρεντία",
    "city": "Φλωρεντία",
-   "from": "2026-12-07",
-   "to": "2026-12-14",
+   "from": "2026-12-11",
+   "to": "2026-12-13",
    "exact": true,
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
-   "key": "ATH-FLR-2026-12-07-2026-12-14",
+   "key": "ATH-FLR-2026-12-11-2026-12-13",
    "iata": "FLR",
    "sky": "flr",
-   "nights": 7,
-   "id": "auto-f-FLR-2026-12-07",
+   "nights": 2,
+   "id": "auto-f-FLR-2026-12-11",
    "kind": "flight",
-   "flight": "ITA Airways με 1 στάση, 416 € για 2 άτομα μετ' επιστροφής",
+   "flight": "ITA Airways με 1 στάση, 414 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 416,
+   "total": 414,
    "typical": null,
    "savings": null,
    "status": "normal",
    "max_pp": 90,
    "hotel_max_night": 100,
    "candidate": false,
+   "alts": [
+    {
+     "from": "2026-12-07",
+     "to": "2026-12-14",
+     "price": 416
+    }
+   ],
+   "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
+   "links": [
+    {
+     "label": "Πτήση (Skyscanner)",
+     "url": "https://www.skyscanner.gr/transport/flights/ath/flr/261211/261213/?adultsv2=2&cabinclass=economy&preferdirects=false"
+    },
+    {
+     "label": "Η ίδια τιμή (Aviasales)",
+     "url": "https://www.aviasales.com/search/ATH1112FLR13121?t=AZ17970174001797029400000260ATHFCOFLR17971884001797209700000295FLRFCOATH_f6aaaabd9ca9283e16c8caa4690c8aad_18738&search_date=25112026&expected_price_uuid=01a21433-8469-8030-ab47-7f0b4cf69466&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=45taHjmZUUeV4nvnirTzYw&expected_price_source=share&expected_price_currency=eur&expected_price=207"
+    }
+   ]
+  },
+  {
+   "destination": "Στοκχόλμη",
+   "city": "Στοκχόλμη",
+   "from": "2027-03-04",
+   "to": "2027-03-07",
+   "exact": true,
+   "people": 2,
+   "lowcost": false,
+   "checked": "2026-11-25",
+   "checkedAt": "2026-11-25T22:01+02:00",
+   "auto": true,
+   "key": "ATH-STO-2027-03-04-2027-03-07",
+   "iata": "STO",
+   "sky": "stoc",
+   "nights": 3,
+   "id": "auto-f-STO-2027-03-04",
+   "kind": "flight",
+   "flight": "SAS απευθείας, 466 € για 2 άτομα μετ' επιστροφής",
+   "hotel": null,
+   "total": 466,
+   "typical": null,
+   "savings": null,
+   "status": "normal",
+   "max_pp": 150,
+   "hotel_max_night": 110,
+   "candidate": false,
    "alts": [],
    "source": "Αυτόματος έλεγχος · τιμές που βρέθηκαν τις τελευταίες 48 ώρες",
    "links": [
     {
      "label": "Πτήση (Skyscanner)",
-     "url": "https://www.skyscanner.gr/transport/flights/ath/flr/261207/261214/?adultsv2=2&cabinclass=economy&preferdirects=false"
+     "url": "https://www.skyscanner.gr/transport/flights/ath/stoc/270304/270307/?adultsv2=2&cabinclass=economy&preferdirects=true"
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0712FLR14121?t=AZ17966718001796726400000970ATHFCOFLR17972475001797273300000370FLRFCOATH_f196ca787ac20b9b0bd9074a9f3312bc_18744&search_date=22112026&expected_price_uuid=01a20168-3b62-8031-2f65-abdc7e083696&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=HWg-BvfJBD_ag9SdqpYF1g&expected_price_source=share&expected_price_currency=eur&expected_price=208"
+     "url": "https://www.aviasales.com/search/ATH0403STO07031?t=SK18041595001804170000000235ATHARN18043992001804415700000215ARNATH_ae4de58ea333f80a25f74ca4b4f29a54_21167&search_date=25112026&expected_price_uuid=01a2138e-25d6-8040-2e87-5c33007798a3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PFuAw3AyjatEYpmzH6m8jA&expected_price_source=share&expected_price_currency=eur&expected_price=233"
     }
    ]
   },
@@ -1979,7 +2063,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-NAP-2026-12-23-2026-12-30",
    "iata": "NAP",
@@ -2018,7 +2102,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-RAK-2027-01-03-2027-01-10",
    "iata": "RAK",
@@ -2026,9 +2110,9 @@
    "nights": 7,
    "id": "auto-f-RAK-2027-01-03",
    "kind": "flight",
-   "flight": "TAP με 1 στάση, 524 € για 2 άτομα μετ' επιστροφής",
+   "flight": "TAP με 1 στάση, 522 € για 2 άτομα μετ' επιστροφής",
    "hotel": null,
-   "total": 524,
+   "total": 522,
    "typical": null,
    "savings": null,
    "status": "normal",
@@ -2044,7 +2128,7 @@
     },
     {
      "label": "Η ίδια τιμή (Aviasales)",
-     "url": "https://www.aviasales.com/search/ATH0301RAK10011?t=TP17989494001798973700000525ATHLISRAK17995815001799637000000805RAKLISATH_d1a559bc85f879b63760044f5ceeb873_23626&search_date=25112026&expected_price_uuid=01a2120d-e109-8030-6f7a-ce29526d125e&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fuWuh4za9ui-SYL4XdUzlw&expected_price_source=share&expected_price_currency=eur&expected_price=262"
+     "url": "https://www.aviasales.com/search/ATH0301RAK10011?t=TP17989494001798973700000525ATHLISRAK17995815001799637000000805RAKLISATH_d1a559bc85f879b63760044f5ceeb873_23626&search_date=25112026&expected_price_uuid=01a2120d-e109-8030-6f7a-ce29526d125e&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fuWuh4za9ui-SYL4XdUzlw&expected_price_source=share&expected_price_currency=eur&expected_price=261"
     }
    ]
   },
@@ -2057,7 +2141,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-OSL-2027-06-15-2027-06-18",
    "iata": "OSL",
@@ -2096,7 +2180,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-AMS-2027-01-12-2027-01-19",
    "iata": "AMS",
@@ -2135,7 +2219,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-AMS-2026-12-17-2026-12-23",
    "iata": "AMS",
@@ -2174,7 +2258,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BOS-2027-01-06-2027-01-13",
    "iata": "BOS",
@@ -2213,7 +2297,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BKK-2026-12-10-2026-12-17",
    "iata": "BKK",
@@ -2263,7 +2347,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-LAX-2027-03-10-2027-03-17",
    "iata": "LAX",
@@ -2302,7 +2386,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-NYC-2026-12-07-2026-12-13",
    "iata": "NYC",
@@ -2341,7 +2425,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-BKK-2027-08-15-2027-08-22",
    "iata": "BKK",
@@ -2380,7 +2464,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-YMQ-2027-07-07-2027-07-14",
    "iata": "YMQ",
@@ -2419,7 +2503,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-LAX-2027-01-10-2027-01-17",
    "iata": "LAX",
@@ -2458,7 +2542,7 @@
    "people": 2,
    "lowcost": false,
    "checked": "2026-11-25",
-   "checkedAt": "2026-11-25T17:05+02:00",
+   "checkedAt": "2026-11-25T22:01+02:00",
    "auto": true,
    "key": "ATH-TYO-2027-03-15-2027-03-22",
    "iata": "TYO",
@@ -2492,7 +2576,7 @@
  "stats": {
   "routes": 45,
   "months": 9,
-  "priced_trips": 71,
+  "priced_trips": 72,
   "errors": 0,
   "hotels": false
  }
