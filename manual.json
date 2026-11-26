@@ -292,5 +292,31 @@
   },
   "note": "Black Friday της SKY: κρατήσεις έως 30/11. Χειραποσκευή στην τιμή.",
   "checked": "2026-11-26"
+ },
+ {
+  "key": "DBV-2027-08-09-2027-08-13",
+  "kind": "package",
+  "style": "lean",
+  "title": "Πακέτο-λαβράκι",
+  "city": "Ντουμπρόβνικ",
+  "iata": "DBV",
+  "from": "2027-08-09",
+  "to": "2027-08-13",
+  "nights": 4,
+  "airline": "Aegean",
+  "direct": true,
+  "price": 130,
+  "flight_url": "https://gr.skyscanner.com/transport/flights/ath/dbv/270809/270813/?adultsv2=2&cabinclass=economy&preferdirects=true",
+  "times": "9/8 08:30 → 09:00, επιστροφή 13/8 09:50 → 12:15",
+  "hotel": {
+   "name": "Alto Rooms and Apartments, ολόκληρο διαμέρισμα με μπαλκόνι, 1 χλμ. από την Παλιά Πόλη",
+   "rating": 9.7,
+   "clean": 9.9,
+   "total": 464,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/hr/alto-rooms-and-apartments.el.html?checkin=2027-08-09&checkout=2027-08-13&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "note": "Δωρεάν ακύρωση ξενοδοχείου ως 26/7. Με Volotea αντί για Aegean το σύνολο πέφτει στα 650 €.",
+  "checked": "2026-11-26"
  }
 ]
