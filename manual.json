@@ -240,5 +240,57 @@
   ],
   "note": "Volotea απευθείας 75 € το άτομο (η Aegean 166 €). Ολόκληρο διαμέρισμα 1,2 χλμ. από το κέντρο, 368 € για 4 βράδια, δωρεάν ακύρωση ως 11/7, χωρίς προπληρωμή.",
   "checked": "2026-11-24"
+ },
+ {
+  "key": "LIS-2027-04-06-2027-04-11",
+  "kind": "package",
+  "style": "lean",
+  "title": "Black Friday SKY",
+  "city": "Λισαβόνα",
+  "iata": "LIS",
+  "from": "2027-04-06",
+  "to": "2027-04-11",
+  "nights": 5,
+  "airline": "SKY express",
+  "direct": true,
+  "price": 144,
+  "flight_url": "https://flights.skyexpress.gr/el/search?execute=true&promoCode=&currency=EUR&lowestFare=false&routes%5B0%5D%5Bfrom%5D=ATH&routes%5B0%5D%5Bto%5D=LIS&routes%5B0%5D%5Bdate%5D=2027-04-06&routes%5B1%5D%5Bfrom%5D=LIS&routes%5B1%5D%5Bto%5D=ATH&routes%5B1%5D%5Bdate%5D=2027-04-11&passengers%5B0%5D%5Bcode%5D=ADT&passengers%5B0%5D%5Bcount%5D=2&passengers%5B1%5D%5Bcode%5D=CHD&passengers%5B1%5D%5Bcount%5D=0&passengers%5B2%5D%5Bcode%5D=INF&passengers%5B2%5D%5Bcount%5D=0",
+  "times": "6/4 19:35 → 22:05, επιστροφή 11/4 23:05 → 05:05 (12/4)",
+  "hotel": {
+   "name": "Hotel Luena",
+   "rating": 8.7,
+   "clean": 9.2,
+   "total": 527,
+   "free_cancel": true,
+   "url": "https://www.booking.com/hotel/pt/luena.el.html?checkin=2027-04-06&checkout=2027-04-11&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "note": "Black Friday της SKY: κρατήσεις έως 30/11. Χειραποσκευή στην τιμή.",
+  "checked": "2026-11-26"
+ },
+ {
+  "key": "MAD-2027-01-21-2027-01-26",
+  "kind": "package",
+  "style": "lean",
+  "title": "Black Friday SKY",
+  "city": "Μαδρίτη",
+  "iata": "MAD",
+  "from": "2027-01-21",
+  "to": "2027-01-26",
+  "nights": 5,
+  "airline": "SKY express",
+  "direct": true,
+  "price": 136,
+  "flight_url": "https://flights.skyexpress.gr/el/search?execute=true&promoCode=&currency=EUR&lowestFare=false&routes%5B0%5D%5Bfrom%5D=ATH&routes%5B0%5D%5Bto%5D=MAD&routes%5B0%5D%5Bdate%5D=2027-01-21&routes%5B1%5D%5Bfrom%5D=MAD&routes%5B1%5D%5Bto%5D=ATH&routes%5B1%5D%5Bdate%5D=2027-01-26&passengers%5B0%5D%5Bcode%5D=ADT&passengers%5B0%5D%5Bcount%5D=2&passengers%5B1%5D%5Bcode%5D=CHD&passengers%5B1%5D%5Bcount%5D=0&passengers%5B2%5D%5Bcode%5D=INF&passengers%5B2%5D%5Bcount%5D=0",
+  "times": "21/1 10:30 → 13:20, επιστροφή 26/1 14:20 → 18:45",
+  "hotel": {
+   "name": "Posada del Dragón, La Latina",
+   "rating": 8.7,
+   "clean": 9.1,
+   "total": 697,
+   "free_cancel": false,
+   "url": "https://www.booking.com/hotel/es/posada-del-dragon.el.html?checkin=2027-01-21&checkout=2027-01-26&group_adults=2&no_rooms=1&group_children=0&selected_currency=EUR"
+  },
+  "note": "Black Friday της SKY: κρατήσεις έως 30/11. Χειραποσκευή στην τιμή.",
+  "checked": "2026-11-26"
  }
 ]
